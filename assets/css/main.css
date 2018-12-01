@@ -394,7 +394,12 @@ p {
     top: 0;
     z-index: 999;
 }
-
+#main section {
+    padding-bottom: 20px;
+}
+#main section:last-child {
+    padding-bottom: 0;
+}
 .slider {
     position: relative;
 }
@@ -457,4 +462,101 @@ p {
 }
 .featured-product li:last-child{
     padding: 0;
+}
+.box .box-content.bullet-list li{
+    line-height: 30px;
+}
+.box .box-content.bullet-list li:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #e21800;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+}
+.featured-tab-container {
+    display: flex;
+}
+.featured-tab-container.left-tab {
+    flex-direction: row-reverse;
+}
+.featured-tab-container.left-tab .featured-head {
+    border-right: 3px solid #e21800;
+    margin-right: 15px;
+}
+.featured-tab-container.right-tab .featured-head {
+    border-left: 3px solid #e21800;
+    margin-left: 15px;
+}
+.featured-tab-container .featured-head{
+    width: 23%;
+    display: inline-block;
+    text-align: center;
+}
+.featured-tab-container .featured-head h3{
+    padding: 25px 0;
+}
+.featured-tab-container .featured-head li{
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.featured-tab-container .featured-head li a{
+    display: block;
+    padding: 6px 4px;
+}
+.featured-tab-container .featured-head li.active a{
+    background: #e21800;
+    color: white;
+}
+.featured-tab-container .featured-head li:last-child{
+    margin-bottom: 0;
+}
+
+.featured-tab-container .featured-content {
+    display: inline-block;
+    width: 75%;
+}
+.article-1 {
+    position: relative;
+    margin-bottom: 7px;
+    display: inline-flex;
+}
+.article-1 .article-body h3{
+    font-weight: normal;
+    line-height: 30px;
+}
+.article-1 .article-body p{
+    font-size: 12px
+}
+.article-1 .article-body {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    padding: 7px;
+}
+.article-half-wrapper {
+    display: flex;
+}
+.article-half-wrapper .article-hlaf {
+    width: 49%;
+}
+.article-half-wrapper .article-half:first-child {
+    margin-left: 7px;
+}
+.left-border {
+    border-left: 3px solid #e21800;
+}
+.btn-full {
+    display: block;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+}
+.category-link {
+    background: #ef7e70;
+    color: white !important;
 }
