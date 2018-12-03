@@ -721,3 +721,21 @@ p {
     max-width: 100%;
     display: block;
 }
+.product-tab .product-item {
+    margin-bottom: 20px;
+}
+.product-tab .product-item img{
+    width: 125px;
+    float: left;
+    padding: 10px;
+    vertical-align: middle;
+}
+.product-tab .product-item h3 {
+    font-weight: normal;
+    line-height: 35px;
+    margin-bottom: 5px;
+}
+.banners-2-wrapper .banner-item {
+    display: block;
+    margin-bottom: 10px;
+}
