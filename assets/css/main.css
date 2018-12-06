@@ -182,6 +182,16 @@ p {
     border: 0
 }
 
+input[type="email"],
+textarea {
+    width: 100%;
+    border: 1px solid #ef7e70;
+    line-height: 35px;
+    padding-right: 7px;
+    border-radius: 0px;
+    font-size: 15px;
+}
+
 /* --------------------------------- H E A D E R ----------------------------------------*/
 
 #header {
@@ -415,7 +425,7 @@ p {
 }
 
 #main section:last-child {
-    padding-bottom: 0;
+/*     padding-bottom: 0; */
 }
 
 .slider {
@@ -601,18 +611,28 @@ p {
     border-left: 3px solid #e21800;
 }
 
+.bottom-border {
+    border-bottom: 3px solid #e21800;
+}
+
+.top-border {
+    border-top: 4px solid #e21800;
+}
+
+.btn {
+    border: none;
+    margin-top: 10px;
+    background: #ef7e70;
+    color: white !important;
+    font-size: 15px;
+}
+
 .btn-full {
     display: block;
     padding: 5px;
     width: 100%;
     text-align: center;
 }
-
-.category-link {
-    background: #ef7e70;
-    color: white !important;
-}
-
 
 .sale-slider-product {}
 
@@ -705,37 +725,178 @@ p {
     right: 0;
     left: 0;
 }
-.three .middle-banner {
+
+.middle-banner {
     display: flex;
     justify-content: space-between;
 }
+
 .middle-banner .banner-item {
     display: block;
     width: 90%;
     margin-left: 20px;
 }
+
 .middle-banner .banner-item:last-child {
     margin-left: 0;
 }
-.middle-banner .banner-item img{
+
+.middle-banner .banner-item img {
     max-width: 100%;
     display: block;
 }
+
 .product-tab .product-item {
     margin-bottom: 20px;
 }
-.product-tab .product-item img{
-    width: 125px;
+
+.product-tab .product-item img {
+    width: 150px;
     float: left;
     padding: 10px;
     vertical-align: middle;
 }
+
 .product-tab .product-item h3 {
     font-weight: normal;
     line-height: 35px;
     margin-bottom: 5px;
 }
+
 .banners-2-wrapper .banner-item {
     display: block;
     margin-bottom: 10px;
+}
+
+.ht-blog-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ht-blog-box .ht-blog-item {
+    width: 45%;
+    overflow: hidden;
+}
+
+.ht-blog-box .ht-blog-item img {
+    float: right;
+    max-width: 45%;
+    margin-left: 15px;
+}
+
+.ht-blog-box .ht-blog-item h3 {
+    font-weight: normal;
+    margin: 25px 0;
+}
+
+.ht-blog-box .ht-blog-item span {
+    color: #aaa;
+    font-weight: lighter;
+}
+
+.g-blog-box li {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.g-blog-box li img {
+    float: right;
+    width: 40%;
+    margin-left: 10px;
+}
+
+.g-blog-box li h3 {
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.g-blog-box li p {}
+
+.mailpoet-wrapper p,
+.poll-wrapper p {
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+.row.fixe-height-seven div {
+    min-height: 225px;
+}
+
+#footer {
+    padding-top: 15px;
+    margin-top: 15px;
+    background: #ffe5e1;
+    border-bottom: 3px solid #f4a69c;
+}
+#footer .footer-widg ul li {
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+#footer .footer-widg ul li:last-child {
+    margin-bottom: 0;
+}
+#footer ul li a {
+    display: block;
+    font-size: 17px;
+    font-weight: lighter;
+}
+#footer .socials {
+    text-align: center;
+}
+#footer .socials li {
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    margin: 4px;
+}
+#footer .socials li a {
+    padding: 2px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+#footer .socials li a.facebook {
+    background-color: #3b589e;
+}
+#footer .socials li a.instagram {
+    background-color: #c738aa;
+}
+#footer .socials li a.rss {
+    background-color: #db2824;
+}
+#footer .socials li a.telegram {
+    background-color: #2fa7db;
+}
+#footer .socials li a.twitter {
+    background-color: #12c1ff;
+}
+#footer .socials li a.linkedin {
+    background-color: #0274b3;
+}
+#footer .socials li a.youtube {
+    background-color: #db2824;
+}
+#footer .socials li a.google-plus {
+    background: #c02126;
+}
+#footer .socials li a.aparat {
+    display: block;
+    width: 38px;
+    height: 38px;
+    background-image: url("img/aparat.png");
+    background-size: cover;
+}
+#footer .copyright-wrapper {
+    width: 100%;
+    text-align: center;
+}
+#footer .copyright {
+    background: #f4a69c;
+    width: 70%;
+    display: inline-block;
+    padding: 8px 0 6px;
+    margin-top: 5px;
 }
