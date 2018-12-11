@@ -51,12 +51,17 @@
             </div>
             <!--.top-header-->
             <nav class="navigation-wrapper">
+                <a href="#" class="menu-toggler" title="منو"><span>منوی اصلی</span><i class="fa fa-bars"></i></a>
                 <ul id="main-menu">
                     <li class="active"><a href="#">صفحه اصلی</a></li>
-                    <li><a href="">دوره ها</a>
+                    <li class="menu-item-has-children">
+                        <a href="">دوره ها</a>
+                        <span class="menu-plus"></span>
                         <ul>
                             <li><a href="#">سطح دوم</a></li>
-                            <li> <a href="#">مهارت های ICDL</a>
+                            <li class="menu-item-has-children">
+                                <a href="#">مهارت های ICDL</a>
+                                <span class="menu-plus"></span>
                                 <ul>
                                     <li><a href="#">مهارت دوم مایکروسافت آفیس</a></li>
                                     <li><a href="#">مهارت سوم مایکروسافت اکسل</a></li>
@@ -80,7 +85,39 @@
 
     <main id="main">
         <section class="one container">
-            <div class="col-md-4 featured">
+            <div class="col-md-8 slider-wrapper pull-left-md">
+                <div class="slider full-slider">
+                    <a href="#" class="slide">
+                        <img src="images/slider/slider.jpg" alt="" class="img-responsive slider-img">
+                        <div class="slider-body">
+                            <h3 class="item-title">لورم ایپسوم متن ساختگی</h3>
+                            <p class="item-excerpt">تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط</p>
+                        </div>
+                        <!--.slider-body-->
+                    </a>
+                    <!--.slide-->
+                    <a href="#" class="slide">
+                        <img src="images/slider/slider2.jpg" alt="" class="img-responsive slider-img">
+                        <div class="slider-body">
+                            <h3 class="item-title">لورم ایپسوم متن ساختگی</h3>
+                            <p class="item-excerpt">تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط</p>
+                        </div>
+                        <!--.slider-body-->
+                    </a>
+                    <!--.slide-->
+                    <a href="#" class="slide">
+                        <img src="images/slider/slider3.jpg" alt="" class="img-responsive slider-img">
+                        <div class="slider-body">
+                            <h3 class="item-title">لورم ایپسوم متن ساختگی</h3>
+                            <p class="item-excerpt">تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط</p>
+                        </div>
+                        <!--.slider-body-->
+                    </a>
+                    <!--.slide-->
+                </div>
+            </div>
+            <!--.slider-->
+            <div class="col-md-4 featured pull-right-md">
                 <div class="box">
                     <header class="box-title">
                         <h3>محصولات برگزیده</h3>
@@ -121,38 +158,6 @@
                 </div>
             </div>
             <!--.featured-->
-            <div class="col-md-8 slider-wrapper">
-                <div class="slider full-slider">
-                    <a href="#" class="slide">
-                        <img src="images/slider/slider.jpg" alt="" class="img-responsive slider-img">
-                        <div class="slider-body">
-                            <h3 class="item-title">لورم ایپسوم متن ساختگی</h3>
-                            <p class="item-excerpt">تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط</p>
-                        </div>
-                        <!--.slider-body-->
-                    </a>
-                    <!--.slide-->
-                    <a href="#" class="slide">
-                        <img src="images/slider/slider2.jpg" alt="" class="img-responsive slider-img">
-                        <div class="slider-body">
-                            <h3 class="item-title">لورم ایپسوم متن ساختگی</h3>
-                            <p class="item-excerpt">تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط</p>
-                        </div>
-                        <!--.slider-body-->
-                    </a>
-                    <!--.slide-->
-                    <a href="#" class="slide">
-                        <img src="images/slider/slider3.jpg" alt="" class="img-responsive slider-img">
-                        <div class="slider-body">
-                            <h3 class="item-title">لورم ایپسوم متن ساختگی</h3>
-                            <p class="item-excerpt">تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط</p>
-                        </div>
-                        <!--.slider-body-->
-                    </a>
-                    <!--.slide-->
-                </div>
-            </div>
-            <!--.slider-->
         </section>
         <!--.one-->
         <section class="tow container">
@@ -311,7 +316,7 @@
         <section class="four container">
             <div class="row">
 
-                <div class="col-md-4 product-slider left-border">
+                <div class="col-md-5 product-slider left-border">
                     <div class="box box-background">
                         <header class="box-title">
                             <h3>پیشنهاد ویژه</h3>
@@ -377,7 +382,7 @@
                     <!--.box-->
                 </div>
                 <!--.product-slider-->
-                <div class="col-md-8 home-video-wrapper">
+                <div class="col-md-7 home-video-wrapper">
                     <div class="home-video">
                         <video id="home-video-dom" width="100%" loop preload="none" poster="images/fidelcastro.jpg">
                             <source src="https://hw16.cdn.asset.aparat.com/aparat-video/d0791f4c904bf8402148775953b07a2412792129-480p__24836.mp4" type="video/mp4" />
@@ -422,7 +427,7 @@
                         <div class="featured-content">
                             <div class="tab-menu-content product-tab">
                                 <div class="row">
-                                    <div class="col-md-6 product-item">
+                                    <div class="col-sm-6 product-item">
                                         <img class="img-responsive" src="images/product.jpg">
                                         <h3>محصول یک</h3>
                                         <span>
@@ -439,7 +444,7 @@
                                             </ins>
                                         </span>
                                     </div>
-                                    <div class="col-md-6 product-item">
+                                    <div class="col-sm-6 product-item">
                                         <img class="img-responsive" src="images/product.jpg">
                                         <h3>محصول دو</h3>
                                         <span>
@@ -454,7 +459,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-md-6 product-item">
+                                    <div class="col-sm-6 product-item">
                                         <img class="img-responsive" src="images/product.jpg">
                                         <h3>محصول سه</h3>
                                         <span>
@@ -466,7 +471,7 @@
                                             </span>
                                         </span>
                                     </div>
-                                    <div class="col-md-6 product-item">
+                                    <div class="col-sm-6 product-item">
                                         <img class="img-responsive" src="images/product.jpg">
                                         <h3>محصول چهار</h3>
                                         <span>
@@ -483,7 +488,7 @@
                             <!--.tab-menu-content-->
                             <div class="tab-menu-content product-tab">
                                 <div class="row">
-                                    <div class="col-md-6 product-item">
+                                    <div class="col-sm-6 product-item">
                                         <img class="img-responsive" src="images/product2.jpg">
                                         <h3>محصول یک</h3>
                                         <span>
@@ -500,7 +505,7 @@
                                             </ins>
                                         </span>
                                     </div>
-                                    <div class="col-md-6 product-item">
+                                    <div class="col-sm-6 product-item">
                                         <img class="img-responsive" src="images/product.jpg">
                                         <h3>محصول دو</h3>
                                         <span>
@@ -515,7 +520,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-md-6 product-item">
+                                    <div class="col-sm-6 product-item">
                                         <img class="img-responsive" src="images/product2.jpg">
                                         <h3>محصول سه</h3>
                                         <span>
@@ -527,7 +532,7 @@
                                             </span>
                                         </span>
                                     </div>
-                                    <div class="col-md-6 product-item">
+                                    <div class="col-sm-6 product-item">
                                         <img class="img-responsive" src="images/product.jpg">
                                         <h3>محصول چهار</h3>
                                         <span>

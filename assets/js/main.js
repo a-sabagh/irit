@@ -42,36 +42,45 @@ jQuery(document).ready(function ($) {
         autoplay: true,
         autoplaySpeed: 5000,
         infinite: true,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    centerMode: true,
-                    infinite: true,
-                    dots: false
-                }
-            },
-            {
-                breakpoint: 980,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    centerMode: true,
-                    dots: false,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    centerMode: true,
-                    dots: false,
-                }
-            }
-        ]
+//        responsive: [
+//            {
+//                breakpoint: 1024,
+//                settings: {
+//                    slidesToShow: 3,
+//                    slidesToScroll: 3,
+//                    centerMode: true,
+//                    infinite: true,
+//                    dots: false
+//                }
+//            },
+//            {
+//                breakpoint: 980,
+//                settings: {
+//                    slidesToShow: 3,
+//                    slidesToScroll: 2,
+//                    centerMode: true,
+//                    dots: false,
+//                }
+//            },
+//            {
+//                breakpoint: 768,
+//                settings: {
+//                    slidesToShow: 3,
+//                    slidesToScroll: 1,
+//                    centerMode: true,
+//                    dots: false,
+//                }
+//            },
+//            {
+//                breakpoint: 450,
+//                settings: {
+//                    slidesToShow: 3,
+//                    slidesToScroll: 1,
+//                    centerMode: true,
+//                    dots: false,
+//                }
+//            }
+//        ]
     });
     //home-video-dom
     $(".home-video .play-icon").on('click', function (e) {
@@ -79,5 +88,13 @@ jQuery(document).ready(function ($) {
         $("#home-video-dom").get(0).play();
         $(".home-video .play-icon").hide();
         $(".home-video h3").hide();
+    });
+    //responsive menu
+    $(".menu-item-has-children .menu-plus").on('click', function () {
+        $(this).toggleClass("open");
+        $(this).next("ul").slideToggle('normal');
+    });
+    $(".navigation-wrapper .menu-toggler").on('click', function () {
+        $(this).next("#main-menu").slideToggle();
     });
 });
