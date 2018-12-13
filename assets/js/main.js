@@ -31,57 +31,61 @@ jQuery(document).ready(function ($) {
         });
     });
     //sale-product-slider
-    $(".sale-slider-product").slick({
-        rtl: true,
-        centerMode: true,
-        centerPadding: '0px',
-        prevArrow: '<span class="slider-arrow arrow-prev fa fa-angle-left multiple"></span>',
-        nextArrow: '<span class="slider-arrow arrow-next fa fa-angle-right multiple"></span>',
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        infinite: true,
-//        responsive: [
-//            {
-//                breakpoint: 1024,
-//                settings: {
-//                    slidesToShow: 3,
-//                    slidesToScroll: 3,
-//                    centerMode: true,
-//                    infinite: true,
-//                    dots: false
-//                }
-//            },
-//            {
-//                breakpoint: 980,
-//                settings: {
-//                    slidesToShow: 3,
-//                    slidesToScroll: 2,
-//                    centerMode: true,
-//                    dots: false,
-//                }
-//            },
-//            {
-//                breakpoint: 768,
-//                settings: {
-//                    slidesToShow: 3,
-//                    slidesToScroll: 1,
-//                    centerMode: true,
-//                    dots: false,
-//                }
-//            },
-//            {
-//                breakpoint: 450,
-//                settings: {
-//                    slidesToShow: 3,
-//                    slidesToScroll: 1,
-//                    centerMode: true,
-//                    dots: false,
-//                }
-//            }
-//        ]
-    });
+    var saleSliderProduct = $(".sale-slider-product");
+    if (saleSliderProduct.length) {
+        $(".sale-slider-product").slick({
+            rtl: true,
+            centerMode: true,
+            centerPadding: '0px',
+            prevArrow: '<span class="slider-arrow arrow-prev fa fa-angle-left multiple"></span>',
+            nextArrow: '<span class="slider-arrow arrow-next fa fa-angle-right multiple"></span>',
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            infinite: true,
+        });
+    }
+    //slick-multiple-simple
+    var sliderMultipleSimple = $(".slider-multiple-simple");
+    if (sliderMultipleSimple.length) {
+        sliderMultipleSimple.slick({
+            rtl: true,
+            centerMode: true,
+            centerPadding: '0px',
+            prevArrow: '<span class="slider-arrow arrow-prev fa fa-angle-left multiple"></span>',
+            nextArrow: '<span class="slider-arrow arrow-next fa fa-angle-right multiple"></span>',
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            infinite: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                    }
+			},
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+			},
+                {
+                    breakpoint: 550,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+			}
+		]
+        });
+    }
     //home-video-dom
     $(".home-video .play-icon").on('click', function (e) {
         e.preventDefault();
