@@ -1238,12 +1238,12 @@ textarea {
 
 .single-header .subtitle {
     z-index: 99;
-    margin-top: ;
     font-weight: normal;
     color: white;
     padding-top: 15px;
     text-align: center;
-    font-size: 20px
+    font-size: 18px;
+    font-weight: lighter;
 }
 
 .single-header .breadcrumbs-wrapper {
@@ -1817,4 +1817,47 @@ table {
     margin: 5px 0px 2px 0px;
     border-radius: 4px;
     font-weight: lighter;
+}
+.post {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.post .p-title{
+    font-weight: normal;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+.post .p-meta i {
+    padding: 0 5px;
+    
+}
+.post .p-meta span {
+    margin-left: 5px;
+}
+.post .p-content p{
+    line-height: 23px;
+}
+.post .p-read-more{
+    float: left;
+}
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.pagination li {
+    display: inline-block;
+}
+.pagination li a{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.pagination li a.active {
+    background: #ffeded;
 }
