@@ -120,7 +120,9 @@ p {
     max-width: 100%;
     height: auto;
 }
-
+.img-circle {
+    border-radius: 50%;
+}
 .clearfix {
     *zoom: 1;
 }
@@ -1840,6 +1842,9 @@ table {
 }
 .post .p-read-more{
     float: left;
+    display: block;
+    padding: 8px 10px;
+    margin-top: 20px;
 }
 .pagination {
   display: inline-block;
@@ -1860,4 +1865,128 @@ table {
 }
 .pagination li a.active {
     background: #ffeded;
+}
+.author-header {
+    background: #eee;
+    padding: 30px 0 70px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.author-header .author-img img {
+    max-width: 280px;
+}
+.author-header .author-description .author-name {
+    font-weight: normal;
+    margin-top: 10%;
+    line-height: 50px;
+}
+.author-header .author-description .position {
+    margin-top: 5%;
+    display: block;
+}
+.author-header .skills {
+    line-height: 27px;
+    margin-top: 7%;
+}
+.author-header .author-description .skills span {
+    color: #6e0000;
+}
+.author-header .author-social {
+    margin-top: 7%;
+}
+.author-header .author-social ul {
+    border-right: 2px solid #ccc;
+    padding-right: 20px;
+    margin-right: 10px;
+    
+}
+.author-header .author-social ul li{
+    list-style: none;
+    display: block;
+    margin-bottom: 10px;
+    
+}
+.author-header .author-social ul li .fa {
+    float: right;
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 16px;
+}
+.author-main-content .author-tab-header {
+    position: relative;
+    top: -54px
+}
+.author-main-content .author-tab-header li {
+    display: inline-block;
+    list-style: none;
+}
+.author-main-content .author-tab-header li a {
+    padding: 13px 19px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    display: block;
+    background: #6e0000;
+    color: white;
+    font-weight: lighter;
+}
+.author-main-content .author-tab-header li.active a {
+    background: white;
+    border-bottom: 1px solid white;
+    color: inherit;
+}
+.author-main-content .author-research-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.author-main-content .author-research-header .research-count {
+    font-size: 19px;
+}
+.author-main-content .author-research-header .research-order-wrapper span {
+    padding-left: 8px;
+}
+.author-main-content .author-research-header .research-order-wrapper .research-order {
+    position: relative;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    display: inline-block;
+    min-width: 150px;
+}
+.author-main-content .author-research-header .research-order-wrapper .research-order:hover ul {
+    display: block;
+}
+.author-main-content .author-research-header .research-order-wrapper .research-order .current-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 8px;
+    display: block;
+cursor: pointer;
+}
+.author-main-content .author-research-header .research-order-wrapper .research-order ul {
+     display: none;
+    border: 1px solid #ccc;
+    border-top: 0;
+    background: white;
+    border-bottom: none;
+    position: absolute;
+    z-index: 99;
+    left: -1px;
+    right: -1px;
+    
+}
+.author-main-content .author-research-header .research-order-wrapper .research-order ul li {
+    line-height: 28px;
+}
+.author-main-content .author-research-header .research-order-wrapper .research-order ul li a{
+    display: block;
+        padding: 5px 8px;
+
+    border-bottom: 1px solid #ccc;
+}
+.author-main-content .author-research-header .research-order-wrapper .research-order ul li:hover a {
+    background: #6e0000;
+    color: white;
 }
