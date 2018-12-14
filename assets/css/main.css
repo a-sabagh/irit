@@ -90,9 +90,11 @@ h6 {
 }
 
 p {
-    font-family: fontname;
+    font-family: shabnam;
     letter-spacing: normal;
     direction: rtl;
+    line-height: 25px;
+    font-weight: lighter;
 }
 
 .fa,
@@ -454,7 +456,17 @@ textarea {
     background: #e21800;
     color: white;
 }
-
+.featured-tab-container.author-info-tab .featured-head li.active a {
+    background: #ffe5e1; 
+    color: black;
+}
+.featured-tab-container.author-info-tab {
+    margin-bottom: 20px;
+}
+.featured-tab-container.author-info-tab .featured-head {
+    padding: 15px;
+    border-left: 2px solid #eee;
+}
 .featured-tab-container .featured-head li:last-child {
     margin-bottom: 0;
 }
@@ -463,7 +475,9 @@ textarea {
     display: inline-block;
     width: 75%;
 }
-
+.featured-tab-container.author-info-tab .featured-content{
+    padding: 15px;
+}
 .article-1 {
     position: relative;
     margin-bottom: 7px;
