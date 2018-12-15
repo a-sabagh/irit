@@ -666,6 +666,10 @@ textarea {
     margin-bottom: 5px;
 }
 
+.col-sm-6.product-item span {
+    display: block;
+}
+
 .product-tab .product-item img {
     width: 150px;
     float: left;
