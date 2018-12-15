@@ -16,20 +16,20 @@ jQuery(document).ready(function ($) {
                 e.preventDefault();
                 var child_count = $(this).index();
                 $(this)
-                    .parents(".featured-head")
-                    .siblings(".featured-content")
-                    .children(".tab-menu-content")
-                    .hide(); //hide all contenet of tab
+                        .parents(".featured-head")
+                        .siblings(".featured-content")
+                        .children(".tab-menu-content")
+                        .hide(); //hide all contenet of tab
                 $(this)
-                    .parents(".featured-head")
-                    .find("li")
-                    .removeClass("active"); //remove all active class
+                        .parents(".featured-head")
+                        .find("li")
+                        .removeClass("active"); //remove all active class
 
                 $(this).addClass("active"); //active the tab that you click this
                 $(this).parents(".featured-head")
-                    .siblings(".featured-content")
-                    .find(".tab-menu-content:nth-child(" + (child_count + 1) + ")")
-                    .fadeIn(); //fade in the content of tab you click on this
+                        .siblings(".featured-content")
+                        .find(".tab-menu-content:nth-child(" + (child_count + 1) + ")")
+                        .fadeIn(); //fade in the content of tab you click on this
                 return false;
             });
         });
@@ -73,22 +73,22 @@ jQuery(document).ready(function ($) {
                         slidesToScroll: 2,
                         infinite: true,
                     }
-			},
+                },
                 {
                     breakpoint: 768,
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 2
                     }
-			},
+                },
                 {
                     breakpoint: 550,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1
                     }
-			}
-		]
+                }
+            ]
         });
     }
     //home-video-dom
