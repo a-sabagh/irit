@@ -489,7 +489,7 @@ textarea {
 .article-1 {
     position: relative;
     margin-bottom: 7px;
-    display: inline-flex;
+    display: grid;
 }
 
 .article-1 .article-body h3 {
