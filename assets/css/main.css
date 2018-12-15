@@ -889,7 +889,7 @@ textarea {
 }
 
 .single-header h1 {
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid #e21800;
     text-align: center;
     padding: 10px 5px;
     font-size: 40px;
@@ -1027,7 +1027,7 @@ textarea {
 
 .container .single-main-content .editor-content blockquote {
     border-left: none;
-    border-right: 5px solid red;
+    border-right: 5px solid #e21800;
     background: rgba(0, 0, 0, .05);
     font-size: 14.5px;
     margin: 4px 0px;
@@ -1210,7 +1210,7 @@ table {
 }
 
 .container .single-main-content .editor-content .main-color {
-    color: red;
+    color: #e21800;
 }
 
 .container .single-main-content .editor-content {
@@ -1235,7 +1235,7 @@ table {
 
 .single-tag-list ul li.tag-label {
     padding: 5px 8px;
-    background: red;
+    background: #e21800;
     color: white;
 }
 
@@ -1318,11 +1318,11 @@ table {
 .widget .widget-title {
     padding: 0;
     margin-bottom: 10px;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #e21800;
 }
 
 .widget .widget-title h3 {
-    background: red;
+    background: #e21800;
     display: inline-block;
     margin-left: 15px;
     font-size: 18px;
@@ -1977,7 +1977,7 @@ table {
     .navigation-wrapper .menu-toggler {
         display: inline-block;
         padding: 7px 10px;
-        background: red;
+        background: #e21800;
         color: white;
         font-size: 18px;
     }
