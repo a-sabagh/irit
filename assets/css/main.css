@@ -2103,4 +2103,12 @@ table {
     .single-header .author {
         font-size: 13px;
     }
+
+    .pagination li a {
+        border-left: 1px solid #ccc;
+    }
+
+    .pagination a {
+        padding: 10px 14px;
+    }
 }
