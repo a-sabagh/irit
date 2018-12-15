@@ -197,7 +197,9 @@ textarea {
     border-radius: 0px;
     font-size: 15px;
 }
-
+.pull-wrapper textarea {
+    padding-bottom: 10px;
+}
 /* --------------------------------- H E A D E R ----------------------------------------*/
 
 #header {
@@ -537,7 +539,7 @@ textarea {
 
 .btn {
     border: none;
-    margin-top: 10px;
+    margin-top: 0px;
     background: #ef7e70;
     color: white !important;
     font-size: 15px;
@@ -738,7 +740,9 @@ textarea {
     line-height: 26px;
     margin-bottom: 10px;
 }
-
+.mailpoet-wrapper input[type="email"] {
+    margin-bottom: 10px;
+}
 #footer {
     padding-top: 15px;
     margin-top: 15px;
