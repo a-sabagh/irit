@@ -1,35 +1,40 @@
 jQuery(document).ready(function ($) {
-    $(".full-slider").slick({
-        rtl: true,
-        prevArrow: '<span class="slider-arrow arrow-prev fa fa-angle-left"></span>',
-        nextArrow: '<span class="slider-arrow arrow-next fa fa-angle-right"></span>'
-    });
-    //featured-tab
-    $(".featured-tab-container").each(function () {
-        $(this).find(".featured-content .tab-menu-content").hide(); //hide all contenet of tab
-        $(this).find(".featured-head li:first").addClass("active"); //show first tab is active
-        $(this).find(".featured-content .tab-menu-content").first().show(); //show first content is of tab
-        $(this).find(".featured-head li").click(function (e) {
-            e.preventDefault();
-            var child_count = $(this).index();
-            $(this)
-                .parents(".featured-head")
-                .siblings(".featured-content")
-                .children(".tab-menu-content")
-                .hide(); //hide all contenet of tab
-            $(this)
-                .parents(".featured-head")
-                .find("li")
-                .removeClass("active"); //remove all active class
-
-            $(this).addClass("active"); //active the tab that you click this
-            $(this).parents(".featured-head")
-                .siblings(".featured-content")
-                .find(".tab-menu-content:nth-child(" + (child_count + 1) + ")")
-                .fadeIn(); //fade in the content of tab you click on this
-            return false;
+    if ($(".full-slider").length) {
+        $(".full-slider").slick({
+            rtl: true,
+            prevArrow: '<span class="slider-arrow arrow-prev fa fa-angle-left"></span>',
+            nextArrow: '<span class="slider-arrow arrow-next fa fa-angle-right"></span>'
         });
-    });
+    }
+    //featured-tab
+    if ($(".featured-tab-container").length) {
+        $(".featured-tab-container").each(function () {
+            $(this).find(".featured-content .tab-menu-content").hide(); //hide all contenet of tab
+            $(this).find(".featured-head li:first").addClass("active"); //show first tab is active
+            $(this).find(".featured-content .tab-menu-content").first().show(); //show first content is of tab
+            $(this).find(".featured-head li").click(function (e) {
+                e.preventDefault();
+                var child_count = $(this).index();
+                $(this)
+                    .parents(".featured-head")
+                    .siblings(".featured-content")
+                    .children(".tab-menu-content")
+                    .hide(); //hide all contenet of tab
+                $(this)
+                    .parents(".featured-head")
+                    .find("li")
+                    .removeClass("active"); //remove all active class
+
+                $(this).addClass("active"); //active the tab that you click this
+                $(this).parents(".featured-head")
+                    .siblings(".featured-content")
+                    .find(".tab-menu-content:nth-child(" + (child_count + 1) + ")")
+                    .fadeIn(); //fade in the content of tab you click on this
+                return false;
+            });
+        });
+    }
+
     //sale-product-slider
     var saleSliderProduct = $(".sale-slider-product");
     if (saleSliderProduct.length) {
