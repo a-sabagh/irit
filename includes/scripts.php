@@ -16,7 +16,7 @@ if (!function_exists("irtt_enqueue_style")) {
 }
 
 function irtt_admin_enqueue_scripts() {
-    wp_enqueue_style('admin-style', trailingslashit(IRTT_ADMIN) . '/assest/css/main.css');
+    wp_enqueue_style('admin-style', trailingslashit(IRTT_ADMIN) . 'assets/css/main.css');
     wp_enqueue_script('admin-script', trailingslashit(IRTT_ADMIN) . 'assets/js/main.js',array('jquery'),wp_get_theme()->get( 'Version' ),true);
 }
 

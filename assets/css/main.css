@@ -1727,7 +1727,9 @@ table {
 .page-header h1 {
     font-weight: normal;
 }
-
+.bullet-list textarea {
+    margin-bottom: 10px;
+}
 /*---------------------------- R E S P O N S I V E -------------------------------*/
 
 @media (min-width: 1200px) {}
