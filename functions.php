@@ -15,3 +15,4 @@ require_once 'includes/post-types/member.php';
 
 //metabox
 require_once 'includes/metaboxes/category-featured.php';
+require_once 'includes/metaboxes/subtitle.php';
