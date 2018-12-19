@@ -6,7 +6,7 @@ $user_description = get_the_author_meta('description');
 ?>
 <section class="single-author">
     <?php echo $user_avatar; ?>
-    <a href="#" title="<?php echo $display_name; ?>">
+    <a href="<?php echo (get_the_author_link())? get_the_author_link() : '#'; ?>" title="<?php echo $display_name; ?>">
         <h3><?php echo $display_name; ?></h3>
     </a>
     <p><?php echo $user_description; ?></p>
