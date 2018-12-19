@@ -1,6 +1,6 @@
 <?php
 get_header();
-get_template_part('templates/headers/single');
+get_template_part('templates/headers/archive');
 ?>
 <main class="container">
     <div class="single-main-content row">
