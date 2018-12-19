@@ -57,7 +57,7 @@ function irtt_widgets_init() {
     ));
     register_sidebar(array(
         'name' => __('سایدبار فروشگاه', 'irtt'),
-        'id' => 'archive_side',
+        'id' => 'shop_side',
         'before_widget' => '<section class="widget">',
         'before_title' => '<div class="widget-title"><h3>',
         'after_title' => '</h3></div><div class="widget-content">',
