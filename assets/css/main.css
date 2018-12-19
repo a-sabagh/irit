@@ -1799,7 +1799,7 @@ table {
 
     }
 
-    .navigation-wrapper #main-menu > li.active a {
+    .navigation-wrapper #main-menu > li.current-menu-item a {
         background: #e21800;
         color: #fff;
     }
@@ -1837,7 +1837,7 @@ table {
         top: 50px;
         box-shadow: 0 0 4px #f8f8f8;
         border-top: 3px solid #e21800;
-        z-index: 999;
+        z-index: 9999;
     }
 
     .navigation-wrapper #main-menu > li > ul > li {
@@ -1978,7 +1978,7 @@ table {
         position: relative;
     }
 
-    .navigation-wrapper #main-menu li.menu-item-has-children .menu-plus {
+    .navigation-wrapper #main-menu li.menu-item-has-children > .menu-plus {
         display: inline-block;
         cursor: pointer;
         background: #ccc;

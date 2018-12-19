@@ -73,5 +73,7 @@ function irtt_widgets_init() {
     ));
 }
 
+$menu_position = array("main"=>__('منوی اصلی','irtt'));
+register_nav_menus($menu_position);
 add_action("widgets_init", "irtt_widgets_init");
 add_action("after_setup_theme", "irtt_setup");

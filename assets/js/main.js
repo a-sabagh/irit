@@ -99,8 +99,8 @@ jQuery(document).ready(function ($) {
         $(".home-video h3").hide();
     });
     //responsive menu
-    $(".menu-item-has-children .menu-plus").on('click', function () {
-        $(this).toggleClass("open");
+    $(".menu-item-has-children .menu-plus").on('click',function () {
+        $(this).toggleClass("open");        
         $(this).next("ul").slideToggle('normal');
     });
     $(".navigation-wrapper .menu-toggler").on('click', function () {
