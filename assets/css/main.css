@@ -1346,7 +1346,10 @@ table {
     font-size: 16px;
     padding: 6px 0;
 }
-
+.related-item img {
+    display: block;
+    margin: auto;
+}
 .widg-content .slider-arrow {
     top: 30%;
 }
