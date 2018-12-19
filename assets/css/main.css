@@ -1072,7 +1072,7 @@ textarea {
 
 .container .single-main-content .editor-content table tr:first-child {
     /*! font-size: 20px;
-     */
+    */
 }
 
 table {
@@ -1349,6 +1349,7 @@ table {
 .related-item img {
     display: block;
     margin: auto;
+    width: 100%;
 }
 .widg-content .slider-arrow {
     top: 30%;
@@ -1410,7 +1411,7 @@ table {
     min-height: 150px;
     max-height: 200px;
 }
-
+.search-submit,
 .comment-form .submit {
     background: black;
     color: white;
@@ -1734,6 +1735,17 @@ table {
 .bullet-list textarea {
     margin-bottom: 10px;
 }
+/* widgets stylesheet */
+.search-field {
+    padding: 7px;
+    width: 80%;
+}
+.search-form {
+    text-align: center;
+}
+.screen-reader-text {
+    display: none;
+}
 /*---------------------------- R E S P O N S I V E -------------------------------*/
 
 @media (min-width: 1200px) {}
@@ -1895,6 +1907,9 @@ table {
         float: none;
         display: block;
         margin: auto;
+        width: 70%;
+    }
+    .search-field {
         width: 70%;
     }
 }

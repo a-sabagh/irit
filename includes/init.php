@@ -21,12 +21,57 @@ if (!function_exists("irtt_setup")) {
     }
 
 }
-if (!function_exists("irtt_load_text_domain")) {
 
-    function irtt_load_text_domain() {
-        
-    }
-
+function irtt_widgets_init() {
+    register_sidebar(array(
+        'name' => __('سایدبار آرشیو', 'irtt'),
+        'id' => 'archive_side',
+        'before_widget' => '<section class="widget">',
+        'before_title' => '<div class="widget-title"><h3>',
+        'after_title' => '</h3></div><div class="widget-content">',
+        'after_widget' => '</div></section>',
+    ));
+    register_sidebar(array(
+        'name' => __('سایدبار صفحه داخلی', 'irtt'),
+        'id' => 'blog_inner_side',
+        'before_widget' => '<section class="widget">',
+        'before_title' => '<div class="widget-title"><h3>',
+        'after_title' => '</h3></div><div class="widget-content">',
+        'after_widget' => '</div></section>',
+    ));
+    register_sidebar(array(
+        'name' => __('سایدبار جستجو', 'irtt'),
+        'id' => 'search_side',
+        'before_widget' => '<section class="widget">',
+        'before_title' => '<div class="widget-title"><h3>',
+        'after_title' => '</h3></div><div class="widget-content">',
+        'after_widget' => '</div></section>',
+    ));
+    register_sidebar(array(
+        'name' => __('سایدبار ۴۰۴', 'irtt'),
+        'id' => 'not_found_side',
+        'before_widget' => '<section class="widget">',
+        'before_title' => '<div class="widget-title"><h3>',
+        'after_title' => '</h3></div><div class="widget-content">',
+        'after_widget' => '</div></section>',
+    ));
+    register_sidebar(array(
+        'name' => __('سایدبار فروشگاه', 'irtt'),
+        'id' => 'archive_side',
+        'before_widget' => '<section class="widget">',
+        'before_title' => '<div class="widget-title"><h3>',
+        'after_title' => '</h3></div><div class="widget-content">',
+        'after_widget' => '</div></section>',
+    ));
+    register_sidebar(array(
+        'name' => __('سایدبار فوتر', 'irtt'),
+        'id' => 'footer_widg',
+        'before_widget' => '<section class="col-md-3"><div class="widg">',
+        'before_title' => '<div class="widg-title"><h4>',
+        'after_title' => '</h4></div><div class="widg-content">',
+        'after_widget' => '</div></div></section>',
+    ));
 }
 
+add_action("widgets_init", "irtt_widgets_init");
 add_action("after_setup_theme", "irtt_setup");
