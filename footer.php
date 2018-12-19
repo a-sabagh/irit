@@ -1,34 +1,12 @@
 <div class="container top-border clear"></div>
 <footer class="container" id="footer">
     <div class="row">
-        <div class="col-md-3 footer-widg">
-            <ul>
-                <li><a href="#">اندیشکده بین الملل</a></li>
-                <li><a href="#">خدمات چاپ و کتاب</a></li>
-                <li><a href="#">طراحی صفحات</a></li>
-                <li><a href="#">اندیشکده امام</a></li>
-                <li><a href="#">جامعه اسلامی</a></li>
-            </ul>
-        </div>
-        <div class="col-md-3 footer-widg">
-            <ul>
-                <li><a href="#">اندیشکده بین الملل</a></li>
-                <li><a href="#">خدمات چاپ و کتاب</a></li>
-                <li><a href="#">طراحی صفحات</a></li>
-                <li><a href="#">اندیشکده امام</a></li>
-                <li><a href="#">جامعه اسلامی</a></li>
-            </ul>
-        </div>
-        <div class="col-md-3 footer-widg">
-            <ul>
-                <li><a href="#">اندیشکده بین الملل</a></li>
-                <li><a href="#">خدمات چاپ و کتاب</a></li>
-                <li><a href="#">طراحی صفحات</a></li>
-                <li><a href="#">اندیشکده امام</a></li>
-                <li><a href="#">جامعه اسلامی</a></li>
-            </ul>
-        </div>
-        <div class="col-md-3 footer-widg">
+        <?php
+        if (is_active_sidebar("footer_widg")):
+            dynamic_sidebar("footer_widg");
+        endif;
+        ?>
+        <section class="col-md-3 footer-widg">
             <img src="<?php echo trailingslashit(IRTT_FRONT); ?>images/logo.jpg" alt="" class="img-responsive footer-logo">
             <ul class="socials">
                 <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
@@ -41,10 +19,10 @@
                 <li><a class="youtube" href="#"><i class="fa fa-youtube"></i></a></li>
                 <li><a class="aparat" href="#"></a></li>
             </ul>
-        </div>
+        </section>
     </div>
     <div class="copyright-wrapper">
-        <p class="copyright">ّInternational Relation Think Tank(www.irthink.com) All Right Reserved 2004-2018</p>
+        <p class="copyright"><?php _e('ّInternational Relation Think Tank(www.irthink.com) All Right Reserved 2004-2018','irtt') ?></p>
     </div>
     <!--.copright-wrapper-->
 

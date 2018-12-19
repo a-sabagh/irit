@@ -1746,6 +1746,9 @@ table {
 .screen-reader-text {
     display: none;
 }
+.footer-widg h3 {
+    
+}
 /*---------------------------- R E S P O N S I V E -------------------------------*/
 
 @media (min-width: 1200px) {}

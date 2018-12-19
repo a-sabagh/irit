@@ -66,10 +66,10 @@ function irtt_widgets_init() {
     register_sidebar(array(
         'name' => __('سایدبار فوتر', 'irtt'),
         'id' => 'footer_widg',
-        'before_widget' => '<section class="col-md-3"><div class="widg">',
-        'before_title' => '<div class="widg-title"><h4>',
-        'after_title' => '</h4></div><div class="widg-content">',
-        'after_widget' => '</div></div></section>',
+        'before_widget' => '<section class="footer-widg col-md-3">',
+        'before_title' => '<div class="widg-title"><h3>',
+        'after_title' => '</h3></div>',
+        'after_widget' => '</section>',
     ));
 }
 
