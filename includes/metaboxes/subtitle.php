@@ -15,14 +15,14 @@ function irtt_subtitle_metabox_save($post_id) {
     if ($is_autosave || $is_revision || !$is_valid_nonce) {
         return;
     } else {
-        update_post_meta($post_id, "irtt_subtitle", 'irtt_subtitle', $_POST['irtt_subtitle']);
+        update_post_meta($post_id, 'irtt_subtitle', $_POST['irtt_subtitle']);
     }
 }
 
 add_action('save_post', 'irtt_subtitle_metabox_save');
 
 function irtt_subtitle_metabox_init() {
-    add_meta_box("irtt-subtitle", __('زیر عنوان', 'irtt'), "irtt_subtitle_metabox_input", array('post', 'page'), 'side' , 'high');
+    add_meta_box("irtt-subtitle", __('زیر عنوان', 'irtt'), "irtt_subtitle_metabox_input", array('post', 'page'), 'side', 'high');
 }
 
 add_action('add_meta_boxes', 'irtt_subtitle_metabox_init');
