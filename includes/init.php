@@ -73,7 +73,33 @@ function irtt_widgets_init() {
     ));
 }
 
-$menu_position = array("main"=>__('منوی اصلی','irtt'));
+$menu_position = array("main" => __('منوی اصلی', 'irtt'));
 register_nav_menus($menu_position);
+
+/**
+ * adding single software endpoints
+ */
+function rngwc_add_endpoints() {
+    add_rewrite_endpoint('research', EP_PERMALINK);
+    add_rewrite_endpoint('intro', EP_PERMALINK);
+}
+
+/**
+ * single software tab rewrite endpoint
+ * @param type $vars
+ * @return boolean
+ */
+function rngwc_filter_request($vars) {
+    if (isset($vars['research']))
+        $vars['research'] = TRUE;
+    if (isset($vars['intro']))
+        $vars['intro'] = TRUE;
+    return $vars;
+}
+
+add_action('init', 'rngwc_add_endpoints');
+add_filter('request', 'rngwc_filter_request');
 add_action("widgets_init", "irtt_widgets_init");
 add_action("after_setup_theme", "irtt_setup");
+
+

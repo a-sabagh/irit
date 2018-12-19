@@ -2,10 +2,20 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 author-img">
-                <img src="<?php echo trailingslashit(IRTT_FRONT); ?>images/personal.jpg" alt="" class="img-responsive img-circle">
+                <?php
+                if (has_post_thumbnail()) {
+                    $post_thumbnail_id = get_post_thumbnail_id(get_the_ID());
+                    $thumbnail_alt = get_post_meta($post_thumbnail_id, '_wp_attachment_image_alt', TRUE);
+                    $thumbnail_url = wp_get_attachment_image_src($post_thumbnail_id, 'large', FALSE);
+                    echo '<img src="' . $thumbnail_url[0] . '" class="img-responsive img-circle" alt="' . $thumbnail_alt . '" >';
+                } else {
+                    ?>
+                    <img src="<?php echo trailingslashit(IRTT_FRONT); ?>images/personal.jpg" alt="<?php the_excerpt(); ?>" class="img-responsive img-circle">
+                <?php } ?>
+
             </div>
             <div class="col-md-5 author-description">
-                <h1 class="author-name">مهدی جنتیان</h1>
+                <h1 class="author-name"><?php the_title(); ?></h1>
                 <span class="position">کارشناس ارشد</span>
                 <p class="skills">
                     <strong>تخصص : </strong>
