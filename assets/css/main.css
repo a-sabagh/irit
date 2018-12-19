@@ -1303,6 +1303,7 @@ table {
     float: right;
     margin-left: 18px;
     border: 1px solid #ccc;
+    height: auto;
 }
 
 .single-author h3 {
