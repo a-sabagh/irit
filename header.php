@@ -25,12 +25,12 @@
                             if (is_user_logged_in()) {
                                 ?>
                                 <li class="login">
-                                    <a href="<?php echo wp_logout_url( get_permalink( get_option('woocommerce_myaccount_page_id') ) ) ?>" title="<?php _e('پروفایل','irtt') ?>">
+                                    <a href="<?php echo wp_logout_url( get_permalink( get_option('woocommerce_myaccount_page_id') ) ) ?>" title="<?php _e('خروج از ناحیه کاربری','irtt') ?>">
                                         <i class="fa fa-sign-in"></i><?php _e('خروج','irtt') ?><span></span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="">
+                                    <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('پروفایل کاربری','irtt') ?>">
                                         <i class="fa fa fa-user-circle-o"></i><?php _e('پروفایل','irtt') ?><span></span>
                                     </a>
                                 </li>

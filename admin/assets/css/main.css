@@ -26,3 +26,34 @@ and open the template in the editor.
 	border-right: none;
 	height: 35px;
 }
+.input-full {
+    width: 100%;
+    padding: 10px;
+}
+.irtt-admin-section {
+    border-bottom: 1px solid #8c8c8c;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.irtt-admin-section:last-child {
+    border-bottom: none;
+}
+.irtt-admin-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.irtt-admin-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.irtt-admin-table td:first-child {
+    text-align: bold;
+}
+.irtt-admin-section p {
+
+    display: block;
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 10px;
+
+}
