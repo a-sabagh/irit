@@ -1752,6 +1752,22 @@ table {
 .footer-widg h3 {
 
 }
+.no-result {
+    margin: 20px 0;
+    font-size: 20px;
+}
+.no-result::before {
+
+    font-family: fontAwesome;
+    content: '\f2d4';
+    display: inline-block;
+    padding-left: 7px;
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+    font-weight: lighter;
+
+}
 /*---------------------------- R E S P O N S I V E -------------------------------*/
 
 @media (min-width: 1200px) {

@@ -44,7 +44,7 @@ $post_count = $rq->found_posts;
     } else {
         ?>
         <div class="author-research-posts">
-            <?php _e('پستی جهت نمایش وجود ندارد', 'irtt'); ?>
+            <?php get_template_part('templates/loops/no','result'); ?>
         </div>
         <?php
     }//have not any posts

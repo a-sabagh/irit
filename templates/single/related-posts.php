@@ -41,7 +41,7 @@
             endwhile;
             echo '</div>';
         } else {
-            _e('پستی جهت نمایش وجود ندارد', 'irtt');
+            get_template_part('templates/loops/no','result');
         }
         ?>
     </div>
