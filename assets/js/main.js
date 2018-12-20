@@ -9,9 +9,10 @@ jQuery(document).ready(function ($) {
     //featured-tab
     if ($(".featured-tab-container").length) {
         $(".featured-tab-container").each(function () {
+            $(this).find(".featured-head li").removeClass("active"); //remove active class
+            $(this).find(".featured-head li:first-child").addClass("active"); //show first tab is active
             $(this).find(".featured-content .tab-menu-content").hide(); //hide all contenet of tab
-            $(this).find(".featured-head li:first").addClass("active"); //show first tab is active
-            $(this).find(".featured-content .tab-menu-content").first().show(); //show first content is of tab
+            $(this).find(".featured-content .tab-menu-content:first-child").show(); //show first content is of tab
             $(this).find(".featured-head li").click(function (e) {
                 e.preventDefault();
                 var child_count = $(this).index();
@@ -99,8 +100,8 @@ jQuery(document).ready(function ($) {
         $(".home-video h3").hide();
     });
     //responsive menu
-    $(".menu-item-has-children .menu-plus").on('click',function () {
-        $(this).toggleClass("open");        
+    $(".menu-item-has-children .menu-plus").on('click', function () {
+        $(this).toggleClass("open");
         $(this).next("ul").slideToggle('normal');
     });
     $(".navigation-wrapper .menu-toggler").on('click', function () {

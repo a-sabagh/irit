@@ -1498,16 +1498,19 @@ table {
 
 .post {
     border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .post .p-title {
     font-weight: normal;
     line-height: 30px;
-    margin-bottom: 5px;
+    margin: 13px 0;
+    
 }
-
+.p-content .p-meta {
+    margin-bottom: 13px;
+}
 .post .p-meta i {
     padding: 0 5px;
 
@@ -1747,11 +1750,18 @@ table {
     display: none;
 }
 .footer-widg h3 {
-    
+
 }
 /*---------------------------- R E S P O N S I V E -------------------------------*/
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .p-thumbnail {
+        max-height: 280px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+}
 
 @media (min-width: 992px) {
     .pull-right-md {
