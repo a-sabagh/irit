@@ -6,8 +6,8 @@ function irtt_category_featured_add() {
     <label><?php _e('تصویر شاخص', 'irtt') ?></label>
     <div class="rngwp-btn-wrapper">
         <input type="hidden" class="rng-link-banner2" name="irtt_category_featured" value="">
-        <button class="rng-button-banner2 wp-core-ui button rng-btn-select">افزودن فایل</button>
-        <button class="wp-core-ui button rng-btn-reset2" disabled="">پاک کردن فایل</button>
+        <button class="rng-button-banner2 wp-core-ui button rng-btn-select"><?php _e('افزودن فایل','irtt') ?></button>
+        <button class="wp-core-ui button rng-btn-reset2" disabled=""><?php _e('پاک کردن فایل','irtt') ?></button>
     </div>
     <?php
 }
@@ -31,8 +31,8 @@ function irtt_category_featured_edit($term) {
 
                     <div class="rngwp-btn-wrapper">
                         <input type="hidden" class="rng-link-banner2" name="irtt_category_featured" value="<?php echo $category_featured; ?>">
-                        <button class="rng-button-banner2 wp-core-ui button rng-btn-select">افزودن فایل</button>
-                        <button class="wp-core-ui button rng-btn-reset2" <?php echo (empty($category_featured))? "disabled" : "";  ?>>پاک کردن فایل</button>
+                        <button class="rng-button-banner2 wp-core-ui button rng-btn-select"><?php _e('افزودن فایل','irtt') ?></button>
+                        <button class="wp-core-ui button rng-btn-reset2" <?php echo (empty($category_featured))? "disabled" : "";  ?>><?php _e('پاک کردن فایل','irtt') ?></button>
                     </div>
                 </td>
             </tr>
@@ -50,3 +50,9 @@ add_action('category_add_form_fields', 'irtt_category_featured_add', 50);
 add_action('created_category', 'irtt_category_featured_created');
 add_action('category_edit_form_fields', 'irtt_category_featured_edit', 50);
 add_action('edited_category', 'irtt_category_featured_update');
+
+
+add_action('post_tag_add_form_fields', 'irtt_category_featured_add', 50);
+add_action('created_post_tag', 'irtt_category_featured_created');
+add_action('post_tag_edit_form_fields', 'irtt_category_featured_edit', 50);
+add_action('edited_post_tag', 'irtt_category_featured_update');
