@@ -22,3 +22,6 @@ require_once 'includes/metaboxes/member.php';
 require_once 'includes/widgets/latest-blog-cat.php';
 require_once 'includes/widgets/latest-blog.php';
 require_once 'includes/widgets/papular-tag.php';
+
+//admin-settings
+require_once 'includes/admin-settings.php';
