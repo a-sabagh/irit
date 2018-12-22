@@ -7,7 +7,7 @@
 .woocommerce-page .woocommerce-error .button,
 .woocommerce-page .woocommerce-info .button,
 .woocommerce-page .woocommerce-message .button {
-    float: right
+    float: left
 }
 
 .woocommerce .col2-set,
@@ -30,13 +30,13 @@
 
 .woocommerce .col2-set .col-1,
 .woocommerce-page .col2-set .col-1 {
-    float: left;
+    float: right;
     width: 48%
 }
 
 .woocommerce .col2-set .col-2,
 .woocommerce-page .col2-set .col-2 {
-    float: right;
+    float: left;
     width: 48%
 }
 
@@ -50,7 +50,7 @@
 .woocommerce div.product div.images,
 .woocommerce-page #content div.product div.images,
 .woocommerce-page div.product div.images {
-    float: left;
+    float: right;
     width: 48%
 }
 
@@ -77,9 +77,9 @@
 .woocommerce div.product div.thumbnails a,
 .woocommerce-page #content div.product div.thumbnails a,
 .woocommerce-page div.product div.thumbnails a {
-    float: left;
+    float: right;
     width: 30.75%;
-    margin-right: 3.8%;
+    margin-left: 3.8%;
     margin-bottom: 1em
 }
 
@@ -87,7 +87,7 @@
 .woocommerce div.product div.thumbnails a.last,
 .woocommerce-page #content div.product div.thumbnails a.last,
 .woocommerce-page div.product div.thumbnails a.last {
-    margin-right: 0
+    margin-left: 0
 }
 
 .woocommerce #content div.product div.thumbnails a.first,
@@ -102,7 +102,7 @@
 .woocommerce-page #content div.product div.thumbnails.columns-1 a,
 .woocommerce-page div.product div.thumbnails.columns-1 a {
     width: 100%;
-    margin-right: 0;
+    margin-left: 0;
     float: none
 }
 
@@ -131,7 +131,7 @@
 .woocommerce div.product div.summary,
 .woocommerce-page #content div.product div.summary,
 .woocommerce-page div.product div.summary {
-    float: right;
+    float: left;
     width: 48%;
     clear: none
 }
@@ -192,7 +192,7 @@
 .woocommerce div.product #reviews .comment img,
 .woocommerce-page #content div.product #reviews .comment img,
 .woocommerce-page div.product #reviews .comment img {
-    float: right;
+    float: left;
     height: auto
 }
 
@@ -216,12 +216,12 @@
 
 .woocommerce ul.products li.product,
 .woocommerce-page ul.products li.product {
-    float: left;
-    margin: 0 3.8% 2.992em 0;
+    float: right;
+    margin: 0 0 2.992em 3.8%;
     padding: 0;
     position: relative;
     width: 22.05%;
-    margin-left: 0
+    margin-right: 0
 }
 
 .woocommerce ul.products li.first,
@@ -231,13 +231,13 @@
 
 .woocommerce ul.products li.last,
 .woocommerce-page ul.products li.last {
-    margin-right: 0
+    margin-left: 0
 }
 
 .woocommerce ul.products.columns-1 li.product,
 .woocommerce-page ul.products.columns-1 li.product {
     width: 100%;
-    margin-right: 0
+    margin-left: 0
 }
 
 .woocommerce ul.products.columns-2 li.product,
@@ -263,7 +263,7 @@
 .woocommerce-page.columns-1 ul.products li.product,
 .woocommerce.columns-1 ul.products li.product {
     width: 100%;
-    margin-right: 0
+    margin-left: 0
 }
 
 .woocommerce-page.columns-2 ul.products li.product,
@@ -288,12 +288,12 @@
 
 .woocommerce .woocommerce-result-count,
 .woocommerce-page .woocommerce-result-count {
-    float: left
+    float: right
 }
 
 .woocommerce .woocommerce-ordering,
 .woocommerce-page .woocommerce-ordering {
-    float: right
+    float: left
 }
 
 .woocommerce .woocommerce-pagination ul.page-numbers::after,
@@ -325,7 +325,7 @@
 .woocommerce table.cart td.actions,
 .woocommerce-page #content table.cart td.actions,
 .woocommerce-page table.cart td.actions {
-    text-align: right
+    text-align: left
 }
 
 .woocommerce #content table.cart td.actions .input-text,
@@ -339,7 +339,7 @@
 .woocommerce table.cart td.actions .coupon,
 .woocommerce-page #content table.cart td.actions .coupon,
 .woocommerce-page table.cart td.actions .coupon {
-    float: left
+    float: right
 }
 
 .woocommerce #content table.cart td.actions .coupon label,
@@ -370,13 +370,13 @@
 .woocommerce .cart-collaterals .related,
 .woocommerce-page .cart-collaterals .related {
     width: 30.75%;
-    float: left
+    float: right
 }
 
 .woocommerce .cart-collaterals .cross-sells,
 .woocommerce-page .cart-collaterals .cross-sells {
     width: 48%;
-    float: left
+    float: right
 }
 
 .woocommerce .cart-collaterals .cross-sells ul.products,
@@ -392,8 +392,8 @@
 .woocommerce .cart-collaterals .shipping_calculator,
 .woocommerce-page .cart-collaterals .shipping_calculator {
     width: 48%;
-    clear: right;
-    float: right
+    clear: left;
+    float: left
 }
 
 .woocommerce .cart-collaterals .shipping_calculator::after,
@@ -418,7 +418,7 @@
 
 .woocommerce .cart-collaterals .cart_totals,
 .woocommerce-page .cart-collaterals .cart_totals {
-    float: right;
+    float: left;
     width: 48%
 }
 
@@ -445,7 +445,7 @@
 .woocommerce ul.product_list_widget li img,
 .woocommerce-page ul.cart_list li img,
 .woocommerce-page ul.product_list_widget li img {
-    float: right;
+    float: left;
     height: auto
 }
 
@@ -493,12 +493,12 @@
 
 .woocommerce form .form-row-first,
 .woocommerce-page form .form-row-first {
-    float: left
+    float: right
 }
 
 .woocommerce form .form-row-last,
 .woocommerce-page form .form-row-last {
-    float: right
+    float: left
 }
 
 .woocommerce form .form-row-wide,
@@ -515,14 +515,14 @@
 .woocommerce #payment .wc-terms-and-conditions,
 .woocommerce-page #payment .terms,
 .woocommerce-page #payment .wc-terms-and-conditions {
-    text-align: left;
-    padding: 0 1em 0 0;
-    float: left
+    text-align: right;
+    padding: 0 0 0 1em;
+    float: right
 }
 
 .woocommerce #payment #place_order,
 .woocommerce-page #payment #place_order {
-    float: right
+    float: left
 }
 
 .woocommerce .woocommerce-billing-fields::after,
@@ -556,25 +556,25 @@
 }
 
 .woocommerce-account .woocommerce-MyAccount-navigation {
-    float: left;
+    float: right;
     width: 30%
 }
 
 .woocommerce-account .woocommerce-MyAccount-content {
-    float: right;
+    float: left;
     width: 68%
 }
 
 .woocommerce-page.left-sidebar #content.twentyeleven {
     width: 58.4%;
     margin: 0 7.6%;
-    float: right
+    float: left
 }
 
 .woocommerce-page.right-sidebar #content.twentyeleven {
     margin: 0 7.6%;
     width: 58.4%;
-    float: left
+    float: right
 }
 
 .twentyfourteen .tfwc {
@@ -594,37 +594,37 @@
 
 @media screen and (min-width:673px) {
     .twentyfourteen .tfwc {
-        padding-right: 30px;
-        padding-left: 30px
+        padding-left: 30px;
+        padding-right: 30px
     }
 }
 
 @media screen and (min-width:1040px) {
     .twentyfourteen .tfwc {
-        padding-right: 15px;
-        padding-left: 15px
+        padding-left: 15px;
+        padding-right: 15px
     }
 }
 
 @media screen and (min-width:1110px) {
     .twentyfourteen .tfwc {
-        padding-right: 30px;
-        padding-left: 30px
+        padding-left: 30px;
+        padding-right: 30px
     }
 }
 
 @media screen and (min-width:1218px) {
     .twentyfourteen .tfwc {
-        margin-right: 54px
+        margin-left: 54px
     }
     .full-width .twentyfourteen .tfwc {
-        margin-right: auto
+        margin-left: auto
     }
 }
 
 .twentyfifteen .t15wc {
-    padding-left: 7.6923%;
     padding-right: 7.6923%;
+    padding-left: 7.6923%;
     padding-top: 7.6923%;
     margin-bottom: 7.6923%;
     background: #fff;
@@ -632,21 +632,21 @@
 }
 
 .twentyfifteen .t15wc .page-title {
-    margin-left: 0
+    margin-right: 0
 }
 
 @media screen and (min-width:38.75em) {
     .twentyfifteen .t15wc {
-        margin-right: 7.6923%;
         margin-left: 7.6923%;
+        margin-right: 7.6923%;
         margin-top: 8.3333%
     }
 }
 
 @media screen and (min-width:59.6875em) {
     .twentyfifteen .t15wc {
-        margin-left: 8.3333%;
         margin-right: 8.3333%;
+        margin-left: 8.3333%;
         padding: 10%
     }
     .single-product .twentyfifteen .entry-summary {
@@ -655,13 +655,13 @@
 }
 
 .twentysixteen .site-main {
-    margin-right: 7.6923%;
-    margin-left: 7.6923%
+    margin-left: 7.6923%;
+    margin-right: 7.6923%
 }
 
 .twentysixteen .entry-summary {
-    margin-right: 0;
-    margin-left: 0
+    margin-left: 0;
+    margin-right: 0
 }
 
 #content .twentysixteen div.product div.images,
@@ -671,33 +671,33 @@
 
 @media screen and (min-width:44.375em) {
     .twentysixteen .site-main {
-        margin-right: 23.0769%
+        margin-left: 23.0769%
     }
 }
 
 @media screen and (min-width:56.875em) {
     .twentysixteen .site-main {
-        margin-right: 0;
-        margin-left: 0
+        margin-left: 0;
+        margin-right: 0
     }
     .no-sidebar .twentysixteen .site-main {
-        margin-right: 15%;
-        margin-left: 15%
+        margin-left: 15%;
+        margin-right: 15%
     }
     .no-sidebar .twentysixteen .entry-summary {
-        margin-right: 0;
-        margin-left: 0
+        margin-left: 0;
+        margin-right: 0
     }
 }
 
 .rtl .woocommerce .col2-set .col-1,
 .rtl .woocommerce-page .col2-set .col-1 {
-    float: right
+    float: left
 }
 
 .rtl .woocommerce .col2-set .col-2,
 .rtl .woocommerce-page .col2-set .col-2 {
-    float: left
+    float: right
 }
 
 /******************************* W O O C O M M E R C E - G E N E R A L ************************************/
@@ -739,8 +739,8 @@
 p.demo_store {
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
+    left: 0;
     margin: 0;
     width: 100%;
     font-size: 1em;
@@ -786,8 +786,8 @@ p.demo_store a {
     display: block;
     position: absolute;
     top: 50%;
-    left: 50%;
-    margin-left: -.5em;
+    right: 50%;
+    margin-right: -.5em;
     margin-top: -.5em;
     content: '';
     -webkit-animation: spin 1s ease-in-out infinite;
@@ -806,8 +806,8 @@ p.demo_store a {
     display: block;
     position: absolute;
     top: 50%;
-    left: 50%;
-    margin-left: -.5em;
+    right: 50%;
+    margin-right: -.5em;
     margin-top: -.5em;
     content: '';
     -webkit-animation: spin 1s ease-in-out infinite;
@@ -961,7 +961,7 @@ p.demo_store a {
 .woocommerce div.product div.images .woocommerce-product-gallery__trigger {
     position: absolute;
     top: .5em;
-    right: .5em;
+    left: .5em;
     font-size: 2em;
     z-index: 9;
     width: 36px;
@@ -981,7 +981,7 @@ p.demo_store a {
     border-radius: 100%;
     position: absolute;
     top: 9px;
-    left: 9px;
+    right: 9px;
     box-sizing: content-box
 }
 
@@ -994,7 +994,7 @@ p.demo_store a {
     border-radius: 6px;
     position: absolute;
     top: 19px;
-    left: 22px;
+    right: 22px;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
@@ -1010,7 +1010,7 @@ p.demo_store a {
 
 .woocommerce div.product div.images .flex-control-thumbs li {
     width: 25%;
-    float: left;
+    float: right;
     margin: 0;
     list-style: none
 }
@@ -1027,15 +1027,15 @@ p.demo_store a {
 }
 
 .woocommerce div.product .woocommerce-product-gallery--columns-3 .flex-control-thumbs li:nth-child(3n+1) {
-    clear: left
+    clear: right
 }
 
 .woocommerce div.product .woocommerce-product-gallery--columns-4 .flex-control-thumbs li:nth-child(4n+1) {
-    clear: left
+    clear: right
 }
 
 .woocommerce div.product .woocommerce-product-gallery--columns-5 .flex-control-thumbs li:nth-child(5n+1) {
-    clear: left
+    clear: right
 }
 
 .woocommerce div.product div.summary {
@@ -1043,12 +1043,12 @@ p.demo_store a {
 }
 
 .woocommerce div.product div.social {
-    text-align: right;
+    text-align: left;
     margin: 0 0 1em
 }
 
 .woocommerce div.product div.social span {
-    margin: 0 0 0 2px
+    margin: 0 2px 0 0
 }
 
 .woocommerce div.product div.social span span {
@@ -1056,18 +1056,18 @@ p.demo_store a {
 }
 
 .woocommerce div.product div.social span .stButton .chicklets {
-    padding-left: 16px;
+    padding-right: 16px;
     width: 0
 }
 
 .woocommerce div.product div.social iframe {
-    float: left;
+    float: right;
     margin-top: 3px
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs {
     list-style: none;
-    padding: 0 0 0 1em;
+    padding: 0 1em 0 0;
     margin: 0 0 1.618em;
     overflow: hidden;
     position: relative
@@ -1105,15 +1105,15 @@ p.demo_store a {
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
     color: inherit;
-    text-shadow: inherit
+    text-shadow: -inherit-
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active::before {
-    box-shadow: 2px 2px 0 #fff
+    box-shadow: -2px 2px 0 #fff
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active::after {
-    box-shadow: -2px 2px 0 #fff
+    box-shadow: 2px 2px 0 #fff
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li::after,
@@ -1128,17 +1128,17 @@ p.demo_store a {
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li::before {
-    left: -5px;
-    border-bottom-right-radius: 4px;
-    border-width: 0 1px 1px 0;
-    box-shadow: 2px 2px 0 #ebe9eb
-}
-
-.woocommerce div.product .woocommerce-tabs ul.tabs li::after {
     right: -5px;
     border-bottom-left-radius: 4px;
     border-width: 0 0 1px 1px;
     box-shadow: -2px 2px 0 #ebe9eb
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li::after {
+    left: -5px;
+    border-bottom-right-radius: 4px;
+    border-width: 0 1px 1px 0;
+    box-shadow: 2px 2px 0 #ebe9eb
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs::before {
@@ -1146,7 +1146,7 @@ p.demo_store a {
     content: ' ';
     width: 100%;
     bottom: 0;
-    left: 0;
+    right: 0;
     border-bottom: 1px solid #d3ced2;
     z-index: 1
 }
@@ -1185,16 +1185,16 @@ p.demo_store a {
 }
 
 .woocommerce div.product form.cart div.quantity {
-    float: left;
-    margin: 0 4px 0 0
-}
+    float: right;
+    margin: 0 0
+ 0 4px}
 
 .woocommerce div.product form.cart table {
     border-width: 0 0 1px
 }
 
 .woocommerce div.product form.cart table td {
-    padding-left: 0
+    padding-right: 0
 }
 
 .woocommerce div.product form.cart table div.quantity {
@@ -1228,11 +1228,11 @@ p.demo_store a {
     max-width: 100%;
     min-width: 75%;
     display: inline-block;
-    margin-right: 1em
+    margin-left: 1em
 }
 
 .woocommerce div.product form.cart .variations td.label {
-    padding-right: 1em
+    padding-left: 1em
 }
 
 .woocommerce div.product form.cart .woocommerce-variation-description p {
@@ -1250,12 +1250,12 @@ p.demo_store a {
 
 .woocommerce div.product form.cart .button {
     vertical-align: middle;
-    float: left
+    float: right
 }
 
 .woocommerce div.product form.cart .group_table td.woocommerce-grouped-product-list-item__label {
-    padding-right: 1em;
-    padding-left: 1em
+    padding-left: 1em;
+    padding-right: 1em
 }
 
 .woocommerce div.product form.cart .group_table td {
@@ -1288,7 +1288,7 @@ p.demo_store a {
     text-align: center;
     line-height: 3.236;
     top: -.5em;
-    left: -.5em;
+    right: -.5em;
     margin: 0;
     border-radius: 100%;
     background-color: #77a464;
@@ -1325,10 +1325,10 @@ p.demo_store a {
 
 .woocommerce ul.products li.product .onsale {
     top: 0;
-    right: 0;
-    left: auto;
-    margin: -.5em -.5em 0 0
-}
+    left: 0;
+    right: auto;
+    margin: -.5em 0
+ 0 -.5em}
 
 .woocommerce ul.products li.product .woocommerce-loop-category__title,
 .woocommerce ul.products li.product .woocommerce-loop-product__title,
@@ -1415,15 +1415,15 @@ p.demo_store a {
     padding: 0;
     clear: both;
     border: 1px solid #d3ced2;
-    border-right: 0;
+    border-left: 0;
     margin: 1px
 }
 
 .woocommerce nav.woocommerce-pagination ul li {
-    border-right: 1px solid #d3ced2;
+    border-left: 1px solid #d3ced2;
     padding: 0;
     margin: 0;
-    float: left;
+    float: right;
     display: inline;
     overflow: hidden
 }
@@ -1462,7 +1462,7 @@ p.demo_store a {
     padding: .618em 1em;
     font-weight: 700;
     border-radius: 3px;
-    left: auto;
+    right: auto;
     color: #515151;
     background-color: #ebe9eb;
     border: 0;
@@ -1477,7 +1477,7 @@ p.demo_store a {
 .woocommerce button.button.loading,
 .woocommerce input.button.loading {
     opacity: .25;
-    padding-right: 2.618em
+    padding-left: 2.618em
 }
 
 .woocommerce #respond input#submit.loading::after,
@@ -1490,7 +1490,7 @@ p.demo_store a {
     font-weight: 400;
     position: absolute;
     top: .618em;
-    right: 1em;
+    left: 1em;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite
 }
@@ -1501,7 +1501,7 @@ p.demo_store a {
 .woocommerce input.button.added::after {
     font-family: WooCommerce;
     content: '\e017';
-    margin-left: .53em;
+    margin-right: .53em;
     vertical-align: bottom
 }
 
@@ -1605,7 +1605,7 @@ p.demo_store a {
 }
 
 .woocommerce #reviews h2 small {
-    float: right;
+    float: left;
     color: #777;
     font-size: 15px;
     margin: 10px 0 0
@@ -1676,10 +1676,10 @@ p.demo_store a {
 }
 
 .woocommerce #reviews #comments ol.commentlist li img.avatar {
-    float: left;
+    float: right;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     padding: 3px;
     width: 32px;
     height: auto;
@@ -1690,7 +1690,7 @@ p.demo_store a {
 }
 
 .woocommerce #reviews #comments ol.commentlist li .comment-text {
-    margin: 0 0 0 50px;
+    margin: 0 50px 0 0;
     border: 1px solid #e4e1e3;
     border-radius: 4px;
     padding: 1em 1em 0
@@ -1716,7 +1716,7 @@ p.demo_store a {
 
 .woocommerce #reviews #comments ol.commentlist ul.children {
     list-style: none outside;
-    margin: 20px 0 0 50px
+    margin: 20px 50px 0 0
 }
 
 .woocommerce #reviews #comments ol.commentlist ul.children .star-rating {
@@ -1727,7 +1727,7 @@ p.demo_store a {
     border: 1px solid #e4e1e3;
     border-radius: 4px;
     padding: 1em 1em 0;
-    margin: 20px 0 0 50px
+    margin: 20px 50px 0 0
 }
 
 .woocommerce #reviews #comments .commentlist>li::before {
@@ -1735,7 +1735,7 @@ p.demo_store a {
 }
 
 .woocommerce .star-rating {
-    float: right;
+    float: left;
     overflow: hidden;
     position: relative;
     height: 1em;
@@ -1748,17 +1748,17 @@ p.demo_store a {
 .woocommerce .star-rating::before {
     content: '\73\73\73\73\73';
     color: #d3ced2;
-    float: left;
+    float: right;
     top: 0;
-    left: 0;
+    right: 0;
     position: absolute
 }
 
 .woocommerce .star-rating span {
     overflow: hidden;
-    float: left;
+    float: right;
     top: 0;
-    left: 0;
+    right: 0;
     position: absolute;
     padding-top: 1.5em
 }
@@ -1767,7 +1767,7 @@ p.demo_store a {
     content: '\53\53\53\53\53';
     top: 0;
     position: absolute;
-    left: 0
+    right: 0
 }
 
 .woocommerce .woocommerce-product-rating {
@@ -1786,8 +1786,8 @@ p.demo_store a {
 }
 
 .woocommerce .woocommerce-product-rating .star-rating {
-    margin: .5em 4px 0 0;
-    float: left
+    margin: .5em 0 0 4px;
+    float: right
 }
 
 .woocommerce .products .star-rating {
@@ -1824,7 +1824,7 @@ p.demo_store a {
 }
 
 .woocommerce #review_form #respond .form-submit input {
-    left: auto
+    right: auto
 }
 
 .woocommerce #review_form #respond textarea {
@@ -1845,7 +1845,7 @@ p.demo_store a {
     display: block;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 1em;
     height: 1em;
     line-height: 1;
@@ -1912,8 +1912,8 @@ p.demo_store a {
 
 .woocommerce table.shop_table {
     border: 1px solid rgba(0, 0, 0, .1);
-    margin: 0 -1px 24px 0;
-    text-align: left;
+    margin: 0 0 24px -1px;
+    text-align: right;
     width: 100%;
     border-collapse: separate;
     border-radius: 5px
@@ -1963,11 +1963,11 @@ p.demo_store a {
 }
 
 .woocommerce table.my_account_orders .order-actions {
-    text-align: right
+    text-align: left
 }
 
 .woocommerce table.my_account_orders .order-actions .button {
-    margin: .125em 0 .125em .25em
+    margin: .125em .25em .125em 0
 }
 
 .woocommerce table.woocommerce-MyAccount-downloads td,
@@ -1978,12 +1978,12 @@ p.demo_store a {
 
 .woocommerce table.woocommerce-MyAccount-downloads td:first-child,
 .woocommerce table.woocommerce-MyAccount-downloads th:first-child {
-    text-align: left
+    text-align: right
 }
 
 .woocommerce table.woocommerce-MyAccount-downloads td:last-child,
 .woocommerce table.woocommerce-MyAccount-downloads th:last-child {
-    text-align: left
+    text-align: right
 }
 
 .woocommerce table.woocommerce-MyAccount-downloads td .woocommerce-MyAccount-downloads-file::before,
@@ -2001,9 +2001,9 @@ p.demo_store a {
 .woocommerce td.product-name .wc-item-meta dt,
 .woocommerce td.product-name dl.variation .wc-item-meta-label,
 .woocommerce td.product-name dl.variation dt {
-    float: left;
+    float: right;
     clear: both;
-    margin-right: .25em;
+    margin-left: .25em;
     display: inline-block;
     list-style: none outside
 }
@@ -2063,8 +2063,8 @@ p.demo_store a {
 
 .woocommerce ul.cart_list li img,
 .woocommerce ul.product_list_widget li img {
-    float: right;
-    margin-left: 4px;
+    float: left;
+    margin-right: 4px;
     width: 32px;
     height: auto;
     box-shadow: none
@@ -2073,8 +2073,8 @@ p.demo_store a {
 .woocommerce ul.cart_list li dl,
 .woocommerce ul.product_list_widget li dl {
     margin: 0;
-    padding-left: 1em;
-    border-left: 2px solid rgba(0, 0, 0, .1)
+    padding-right: 1em;
+    border-right: 2px solid rgba(0, 0, 0, .1)
 }
 
 .woocommerce ul.cart_list li dl::after,
@@ -2095,7 +2095,7 @@ p.demo_store a {
 .woocommerce ul.product_list_widget li dl dd,
 .woocommerce ul.product_list_widget li dl dt {
     display: inline-block;
-    float: left;
+    float: right;
     margin-bottom: 1em
 }
 
@@ -2103,8 +2103,8 @@ p.demo_store a {
 .woocommerce ul.product_list_widget li dl dt {
     font-weight: 700;
     padding: 0 0 .25em;
-    margin: 0 4px 0 0;
-    clear: left
+    margin: 0 0 0 4px;
+    clear: right
 }
 
 .woocommerce ul.cart_list li dl dd,
@@ -2136,7 +2136,7 @@ p.demo_store a {
 
 .woocommerce .widget_shopping_cart .cart_list li,
 .woocommerce.widget_shopping_cart .cart_list li {
-    padding-left: 2em;
+    padding-right: 2em;
     position: relative;
     padding-top: 0
 }
@@ -2145,7 +2145,7 @@ p.demo_store a {
 .woocommerce.widget_shopping_cart .cart_list li a.remove {
     position: absolute;
     top: 0;
-    left: 0
+    right: 0
 }
 
 .woocommerce .widget_shopping_cart .buttons::after,
@@ -2163,7 +2163,7 @@ p.demo_store a {
 
 .woocommerce .widget_shopping_cart .buttons a,
 .woocommerce.widget_shopping_cart .buttons a {
-    margin-right: 5px;
+    margin-left: 5px;
     margin-bottom: 5px
 }
 
@@ -2209,12 +2209,12 @@ p.demo_store a {
 }
 
 .woocommerce form .form-row .woocommerce-input-wrapper .description:before {
-    left: 50%;
+    right: 50%;
     top: 0;
     margin-top: -4px;
-    -webkit-transform: translatex(-50%) rotate(180deg);
-    -ms-transform: translatex(-50%) rotate(180deg);
-    transform: translatex(-50%) rotate(180deg);
+    -webkit-transform: translatex(50%) rotate(180deg);
+    -ms-transform: translatex(50%) rotate(180deg);
+    transform: translatex(50%) rotate(180deg);
     content: "";
     position: absolute;
     border-width: 4px 6px 0 6px;
@@ -2243,7 +2243,7 @@ p.demo_store a {
 
 .woocommerce form .form-row .input-checkbox {
     display: inline;
-    margin: -2px 8px 0 0;
+    margin: -2px 0 0 8px;
     text-align: center;
     vertical-align: middle
 }
@@ -2303,7 +2303,7 @@ p.demo_store a {
     border: 1px solid #d3ced2;
     padding: 20px;
     margin: 2em 0;
-    text-align: left;
+    text-align: right;
     border-radius: 5px
 }
 
@@ -2320,7 +2320,7 @@ p.demo_store a {
 }
 
 .woocommerce ul#shipping_method li input {
-    margin: 3px .4375em 0 0;
+    margin: 3px 0 0 .4375em;
     vertical-align: top
 }
 
@@ -2352,15 +2352,15 @@ p.demo_store a {
 }
 
 .woocommerce ul.order_details li {
-    float: left;
-    margin-right: 2em;
+    float: right;
+    margin-left: 2em;
     text-transform: uppercase;
     font-size: .715em;
     line-height: 1;
-    border-right: 1px dashed #d3ced2;
-    padding-right: 2em;
-    margin-left: 0;
-    padding-left: 0;
+    border-left: 1px dashed #d3ced2;
+    padding-left: 2em;
+    margin-right: 0;
+    padding-right: 0;
     list-style-type: none
 }
 
@@ -2396,8 +2396,8 @@ p.demo_store a {
     margin-bottom: 0;
     border: 1px solid rgba(0, 0, 0, .1);
     border-bottom-width: 2px;
-    border-right-width: 2px;
-    text-align: left;
+    border-left-width: 2px;
+    text-align: right;
     width: 100%;
     border-radius: 5px;
     padding: 6px 12px
@@ -2406,7 +2406,7 @@ p.demo_store a {
 .woocommerce .woocommerce-customer-details .woocommerce-customer-details--email,
 .woocommerce .woocommerce-customer-details .woocommerce-customer-details--phone {
     margin-bottom: 0;
-    padding-left: 1.5em
+    padding-right: 1.5em
 }
 
 .woocommerce .woocommerce-customer-details .woocommerce-customer-details--phone::before {
@@ -2417,10 +2417,10 @@ p.demo_store a {
     text-transform: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
-    margin-right: .618em;
+    margin-left: .618em;
     content: "";
     text-decoration: none;
-    margin-left: -1.5em;
+    margin-right: -1.5em;
     line-height: 1.75;
     position: absolute
 }
@@ -2433,10 +2433,10 @@ p.demo_store a {
     text-transform: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
-    margin-right: .618em;
+    margin-left: .618em;
     content: "";
     text-decoration: none;
-    margin-left: -1.5em;
+    margin-right: -1.5em;
     line-height: 1.75;
     position: absolute
 }
@@ -2476,7 +2476,7 @@ p.demo_store a {
     text-transform: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
-    margin-right: .618em;
+    margin-left: .618em;
     content: "";
     text-decoration: none;
     color: #a00
@@ -2496,8 +2496,8 @@ p.demo_store a {
 }
 
 .woocommerce .widget_layered_nav_filters ul li {
-    float: left;
-    padding: 0 1em 1px 1px;
+    float: right;
+    padding: 0 1px 1px 1em;
     list-style: none
 }
 
@@ -2513,12 +2513,12 @@ p.demo_store a {
     text-transform: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
-    margin-right: .618em;
+    margin-left: .618em;
     content: "";
     text-decoration: none;
     color: #a00;
     vertical-align: inherit;
-    margin-right: .5em
+    margin-left: .5em
 }
 
 .woocommerce .widget_price_filter .price_slider {
@@ -2526,21 +2526,21 @@ p.demo_store a {
 }
 
 .woocommerce .widget_price_filter .price_slider_amount {
-    text-align: right;
+    text-align: left;
     line-height: 2.4;
     font-size: .8751em
 }
 
 .woocommerce .widget_price_filter .price_slider_amount .button {
     font-size: 1.15em;
-    float: left
+    float: right
 }
 
 .woocommerce .widget_price_filter .ui-slider {
     position: relative;
-    text-align: left;
-    margin-left: .5em;
-    margin-right: .5em
+    text-align: right;
+    margin-right: .5em;
+    margin-left: .5em
 }
 
 .woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
@@ -2553,7 +2553,7 @@ p.demo_store a {
     cursor: ew-resize;
     outline: 0;
     top: -.3em;
-    margin-left: -.5em
+    margin-right: -.5em
 }
 
 .woocommerce .widget_price_filter .ui-slider .ui-slider-range {
@@ -2582,11 +2582,11 @@ p.demo_store a {
 }
 
 .woocommerce .widget_price_filter .ui-slider-horizontal .ui-slider-range-min {
-    left: -1px
+    right: -1px
 }
 
 .woocommerce .widget_price_filter .ui-slider-horizontal .ui-slider-range-max {
-    right: -1px
+    left: -1px
 }
 
 .woocommerce .widget_rating_filter ul {
@@ -2629,7 +2629,7 @@ p.demo_store a {
     text-transform: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
-    margin-right: .618em;
+    margin-left: .618em;
     content: "";
     text-decoration: none;
     color: #a00
@@ -2649,7 +2649,7 @@ p.demo_store a {
 .woocommerce-error,
 .woocommerce-info,
 .woocommerce-message {
-    padding: 1em 2em 1em 3.5em;
+    padding: 1em 3.5em 1em 2em;
     margin: 0 0 2em;
     position: relative;
     background-color: #f7f6f7;
@@ -2684,26 +2684,26 @@ p.demo_store a {
     display: inline-block;
     position: absolute;
     top: 1em;
-    left: 1.5em
+    right: 1.5em
 }
 
 .woocommerce-error .button,
 .woocommerce-info .button,
 .woocommerce-message .button {
-    float: right
+    float: left
 }
 
 .woocommerce-error li,
 .woocommerce-info li,
 .woocommerce-message li {
     list-style: none outside!important;
-    padding-left: 0!important;
-    margin-left: 0!important
+    padding-right: 0!important;
+    margin-right: 0!important
 }
 
 .rtl.woocommerce .price_label,
 .rtl.woocommerce .price_label span {
-    direction: ltr;
+    direction: rtl;
     unicode-bidi: embed
 }
 
@@ -2754,11 +2754,11 @@ p.demo_store a {
 }
 
 .woocommerce-account .addresses .title h3 {
-    float: left
+    float: right
 }
 
 .woocommerce-account .addresses .title .edit {
-    float: right
+    float: left
 }
 
 .woocommerce-account ol.commentlist.notes li.note p.meta {
@@ -2771,14 +2771,14 @@ p.demo_store a {
 }
 
 .woocommerce-account ul.digital-downloads {
-    margin-left: 0;
-    padding-left: 0
+    margin-right: 0;
+    padding-right: 0
 }
 
 .woocommerce-account ul.digital-downloads li {
     list-style: none;
-    margin-left: 0;
-    padding-left: 0
+    margin-right: 0;
+    padding-right: 0
 }
 
 .woocommerce-account ul.digital-downloads li::before {
@@ -2789,13 +2789,13 @@ p.demo_store a {
     text-transform: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
-    margin-right: .618em;
+    margin-left: .618em;
     content: "";
     text-decoration: none
 }
 
 .woocommerce-account ul.digital-downloads li .count {
-    float: right
+    float: left
 }
 
 #add_payment_method table.cart .product-thumbnail,
@@ -2823,11 +2823,11 @@ p.demo_store a {
 #add_payment_method table.cart td.actions .coupon .input-text,
 .woocommerce-cart table.cart td.actions .coupon .input-text,
 .woocommerce-checkout table.cart td.actions .coupon .input-text {
-    float: left;
+    float: right;
     box-sizing: border-box;
     border: 1px solid #d3ced2;
     padding: 6px 6px 5px;
-    margin: 0 4px 0 0;
+    margin: 0 0 0 4px;
     outline: 0
 }
 
@@ -2888,7 +2888,7 @@ p.demo_store a {
     text-transform: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
-    margin-left: .618em;
+    margin-right: .618em;
     content: "";
     text-decoration: none
 }
@@ -2896,8 +2896,8 @@ p.demo_store a {
 #add_payment_method .cart-collaterals .shipping-calculator-form,
 .woocommerce-cart .cart-collaterals .shipping-calculator-form,
 .woocommerce-checkout .cart-collaterals .shipping-calculator-form {
-    margin: 1em 0 0 0
-}
+    margin: 1em 0
+ 0 0}
 
 #add_payment_method .cart-collaterals .cart_totals p small,
 .woocommerce-cart .cart-collaterals .cart_totals p small,
@@ -2936,8 +2936,8 @@ p.demo_store a {
 .woocommerce-checkout .cart-collaterals .cart_totals table td,
 .woocommerce-checkout .cart-collaterals .cart_totals table th {
     vertical-align: top;
-    border-left: 0;
     border-right: 0;
+    border-left: 0;
     line-height: 1.5em
 }
 
@@ -2983,20 +2983,20 @@ p.demo_store a {
 #add_payment_method .checkout .col-2 h3#ship-to-different-address,
 .woocommerce-cart .checkout .col-2 h3#ship-to-different-address,
 .woocommerce-checkout .checkout .col-2 h3#ship-to-different-address {
-    float: left;
+    float: right;
     clear: none
 }
 
 #add_payment_method .checkout .col-2 .notes,
 .woocommerce-cart .checkout .col-2 .notes,
 .woocommerce-checkout .checkout .col-2 .notes {
-    clear: left
+    clear: right
 }
 
 #add_payment_method .checkout .col-2 .form-row-first,
 .woocommerce-cart .checkout .col-2 .form-row-first,
 .woocommerce-checkout .checkout .col-2 .form-row-first {
-    clear: left
+    clear: right
 }
 
 #add_payment_method .checkout .create-account small,
@@ -3011,7 +3011,7 @@ p.demo_store a {
 .woocommerce-cart .checkout div.shipping-address,
 .woocommerce-checkout .checkout div.shipping-address {
     padding: 0;
-    clear: left;
+    clear: right;
     width: 100%
 }
 
@@ -3031,7 +3031,7 @@ p.demo_store a {
 #add_payment_method #payment ul.payment_methods,
 .woocommerce-cart #payment ul.payment_methods,
 .woocommerce-checkout #payment ul.payment_methods {
-    text-align: left;
+    text-align: right;
     padding: 1em;
     border-bottom: 1px solid #d3ced2;
     margin: 0;
@@ -3058,7 +3058,7 @@ p.demo_store a {
 .woocommerce-cart #payment ul.payment_methods li,
 .woocommerce-checkout #payment ul.payment_methods li {
     line-height: 2;
-    text-align: left;
+    text-align: right;
     margin: 0;
     font-weight: 400
 }
@@ -3066,14 +3066,14 @@ p.demo_store a {
 #add_payment_method #payment ul.payment_methods li input,
 .woocommerce-cart #payment ul.payment_methods li input,
 .woocommerce-checkout #payment ul.payment_methods li input {
-    margin: 0 1em 0 0
-}
+    margin: 0 0
+ 0 1em}
 
 #add_payment_method #payment ul.payment_methods li img,
 .woocommerce-cart #payment ul.payment_methods li img,
 .woocommerce-checkout #payment ul.payment_methods li img {
     vertical-align: middle;
-    margin: -2px 0 0 .5em;
+    margin: -2px .5em 0 0;
     padding: 0;
     position: relative;
     box-shadow: none
@@ -3082,7 +3082,7 @@ p.demo_store a {
 #add_payment_method #payment ul.payment_methods li img+img,
 .woocommerce-cart #payment ul.payment_methods li img+img,
 .woocommerce-checkout #payment ul.payment_methods li img+img {
-    margin-left: 2px
+    margin-right: 2px
 }
 
 #add_payment_method #payment ul.payment_methods li:not(.woocommerce-notice)::after,
@@ -3179,7 +3179,7 @@ p.demo_store a {
 .woocommerce-cart #payment div.payment_box .woocommerce-SavedPaymentMethods .woocommerce-SavedPaymentMethods-tokenInput,
 .woocommerce-checkout #payment div.payment_box .woocommerce-SavedPaymentMethods .woocommerce-SavedPaymentMethods-tokenInput {
     vertical-align: middle;
-    margin: -3px 1em 0 0;
+    margin: -3px 0 0 1em;
     position: relative
 }
 
@@ -3203,7 +3203,7 @@ p.demo_store a {
     font-size: 1.5em;
     padding: 8px;
     background-repeat: no-repeat;
-    background-position: right .618em center;
+    background-position: left .618em center;
     background-size: 32px 20px
 }
 
@@ -3329,19 +3329,19 @@ p.demo_store a {
     content: '';
     display: block;
     border: 1em solid #dfdcde;
-    border-right-color: transparent;
     border-left-color: transparent;
+    border-right-color: transparent;
     border-top-color: transparent;
     position: absolute;
     top: -.75em;
-    left: 0;
-    margin: -1em 0 0 2em
+    right: 0;
+    margin: -1em 2em 0 0
 }
 
 #add_payment_method #payment .payment_method_paypal .about_paypal,
 .woocommerce-cart #payment .payment_method_paypal .about_paypal,
 .woocommerce-checkout #payment .payment_method_paypal .about_paypal {
-    float: right;
+    float: left;
     line-height: 52px;
     font-size: .83em
 }
