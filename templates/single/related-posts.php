@@ -27,12 +27,14 @@
                         if (has_post_thumbnail()) {
                             $post_thumbnail_id = get_post_thumbnail_id(get_the_ID());
                             $thumbnail_alt = get_post_meta($post_thumbnail_id, '_wp_attachment_image_alt', TRUE);
-                            $thumbnail_url = wp_get_attachment_image_src($post_thumbnail_id, 'thumbnail', FALSE);
-                            echo '<img src="' . $thumbnail_url[0] . '" class="img-responsive" alt="' . $thumbnail_alt . '" >';
+                            $thumbnail_url = wp_get_attachment_image_src($post_thumbnail_id, 'full', FALSE);
                         } else {
-                            ?>
-                            <figure><img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/thumb.jpg" alt=""></figure>
-                            <?php } ?>
+                            $group_options = get_option('irtt_settings');
+                            $post_thumbnail_id = $group_options['post_thumbnail'];
+                            $thumbnail_url = wp_get_attachment_image_src($post_thumbnail_id, 'full', FALSE);
+                        }
+                        echo '<img src="' . $thumbnail_url[0] . '" class="img-responsive" alt="' . $thumbnail_alt . '" >';
+                        ?>
                         <h3><?php the_title(); ?></h3>
                     </a>
                 </div>
@@ -41,7 +43,7 @@
             endwhile;
             echo '</div>';
         } else {
-            get_template_part('templates/loops/no','result');
+            get_template_part('templates/loops/no', 'result');
         }
         ?>
     </div>
