@@ -25,3 +25,6 @@ require_once 'includes/widgets/papular-tag.php';
 
 //admin-settings
 require_once 'includes/admin-settings.php';
+
+//woocommerce
+require_once 'includes/woocommerce.php';
