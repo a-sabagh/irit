@@ -2,6 +2,7 @@
 get_header();
 if (have_posts()):
     while (have_posts()):
+        the_post();
         get_template_part('templates/headers/page')
         ?>
         <main class="container">
@@ -12,7 +13,7 @@ if (have_posts()):
                     </article>
                     <!--.editor-content-->
                     <?php
-                    get_template_part('templates/single/share');
+                    //get_template_part('templates/single/share');
                     // If comments are open or we have at least one comment, load up the comment template.
                     if (get_comments_number()) {
                         get_template_part('templates/single/comment', 'template');
@@ -25,7 +26,6 @@ if (have_posts()):
                 <!--.col-md-12-->
             </div>
         </main>
-
         <?php
     endwhile;
 endif;
