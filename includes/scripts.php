@@ -5,6 +5,7 @@ if (!function_exists("irtt_enqueue_style")) {
     function irtt_enqueue_style() {
         wp_enqueue_style('reset', trailingslashit(IRTT_FRONT) . 'assets/css/reset.css');
         wp_enqueue_style('bootstrap', trailingslashit(IRTT_FRONT) . 'assets/css/bootstrap.css');
+        wp_enqueue_style('woocommerce-general-layout', trailingslashit(IRTT_FRONT) . 'assets/css/woocommerce.css');
         wp_enqueue_style('slick-style', trailingslashit(IRTT_FRONT) . 'assets/css/slick.css');
         wp_enqueue_style('font-awesome', trailingslashit(IRTT_FRONT) . 'assets/css/font-awesome.css');
         wp_enqueue_style('main-style', trailingslashit(IRTT_FRONT) . 'assets/css/main.css');
