@@ -104,7 +104,8 @@ jQuery(document).ready(function ($) {
         $(this).toggleClass("open");
         $(this).next("ul").slideToggle('normal');
     });
-    $(".navigation-wrapper .menu-toggler").on('click', function () {
+    $(".navigation-wrapper .menu-toggler").on('click', function (e) {
+        e.preventDefault();
         $(this).next("#main-menu").slideToggle();
     });
 });
