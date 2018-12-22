@@ -78,7 +78,7 @@
                         );
                         wp_nav_menu($header_menu);
                         ?>
-
+                    <a class="header-cart" href="<?php echo get_permalink( get_option('woocommerce_cart_page_id') ); ?>" title="<?php _e('سبد خرید','irtt'); ?>" ><i class="fa fa-cart-arrow-down"></i><?php _e('سبد خرید','irtt'); ?></a>
                 </nav>
                 <!--.navigation-wrapper-->
             </header>
