@@ -6,12 +6,14 @@
                 if (has_post_thumbnail()) {
                     $post_thumbnail_id = get_post_thumbnail_id(get_the_ID());
                     $thumbnail_alt = get_post_meta($post_thumbnail_id, '_wp_attachment_image_alt', TRUE);
-                    $thumbnail_url = wp_get_attachment_image_src($post_thumbnail_id, 'large', FALSE);
-                    echo '<img src="' . $thumbnail_url[0] . '" class="r-post-thumb img-responsive" alt="' . $thumbnail_alt . '" >';
+                    $thumbnail_url = wp_get_attachment_image_src($post_thumbnail_id, 'full', FALSE);
                 } else {
-                    ?>
-                    <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/thumb.jpg" alt="<?php the_excerpt(); ?>">
-                <?php } ?>
+                    $group_options = get_option('irtt_settings');
+                    $post_thumbnail_id = $group_options['post_thumbnail'];
+                    $thumbnail_url = wp_get_attachment_image_src($post_thumbnail_id, 'full', FALSE);
+                }
+                echo '<img src="' . $thumbnail_url[0] . '" class="r-post-thumb img-responsive" alt="' . $thumbnail_alt . '" >';
+                ?>
             </a>
         </figure><!--.post-thumbnail-->
         <section class="col-md-8 pull-md-left p-content">

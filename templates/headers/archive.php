@@ -1,7 +1,13 @@
 <?php
 $category = $wp_query->get_queried_object();
 $category_id = $category->term_id;
-$category_cover_id = get_term_meta($category_id, "irtt_category_featured", true);
+if (!empty(get_term_meta($category_id, "irtt_category_featured", true))) {
+    $category_cover_id = get_term_meta($category_id, "irtt_category_featured", true);
+} else {
+    $group_options = get_option('irtt_settings');
+    $category_cover_id = $group_options['category_thumbnail'];
+}
+
 $category_cover_src = current(wp_get_attachment_image_src($category_cover_id, 'full', true));
 ?>
 <header class="single-header">
@@ -16,10 +22,6 @@ $category_cover_src = current(wp_get_attachment_image_src($category_cover_id, 'f
     <?php
     if (!empty($category_cover_id)) {
         echo '<img class="single-header-image" src="' . $category_cover_src . '" alt="' . $category->category_description . '">';
-    } else {
-        ?>
-        <img class="single-header-image" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/slider/slider.jpg" alt="<?php echo $category->category_description; ?>">
-        <?php
     }
     ?>
 

@@ -32,12 +32,18 @@ class rng_visual_blog_cat extends WP_Widget {
                 $post_thumbnail_id = get_post_thumbnail_id(get_the_ID());
                 $thumbnail_alt = get_post_meta($post_thumbnail_id, '_wp_attachment_image_alt', TRUE);
                 $thumbnail_url = wp_get_attachment_image_src($post_thumbnail_id, 'widget-thumb', FALSE);
-                $default_thumb = strip_tags(stripcslashes(get_option('srng_default_blog_thumb')));
+                
+                
+                $group_options = get_option('irtt_settings');
+                $dpost_thumbnail_id = $group_options['post_thumbnail'];
+                $default_blog_thumb = wp_get_attachment_image_src($dpost_thumbnail_id, 'full', FALSE);
+                     
+                
                 $output .= "<li>";
                 if (!empty($post_thumbnail_id)) {
                     $output .= '<a class="img-block" href="' . get_the_permalink() . '" title="' . get_the_title() . '"><img class="img-responsive" src="' . $thumbnail_url[0] . '" alt="' . $thumbnail_alt . '"></a>';
                 } else {
-                    $output .= '<a class="img-block" href="' . get_the_permalink() . '" title="' . get_the_title() . '"><img class="img-responsive" src="' . $default_thumb . '" alt="' . $thumbnail_alt . '"></a>';
+                    $output .= '<a class="img-block" href="' . get_the_permalink() . '" title="' . get_the_title() . '"><img class="img-responsive" src="' . $default_blog_thumb[0] . '" alt="' . $thumbnail_alt . '"></a>';
                 }
                 $output .= '<a href="' . get_the_permalink() . '" title="' . get_the_title() . '"><h4 class="course-title-widg">' . get_the_title() . '</h4></a>';
                 $output .= '<span class="date">' . get_the_date() . '</span>';

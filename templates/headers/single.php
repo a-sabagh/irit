@@ -12,11 +12,13 @@
         $post_thumbnail_id = get_post_thumbnail_id(get_the_ID());
         $thumbnail_alt = get_post_meta($post_thumbnail_id, '_wp_attachment_image_alt', TRUE);
         $thumbnail_url = wp_get_attachment_image_src($post_thumbnail_id, 'full', FALSE);
-        echo '<img src="' . $thumbnail_url[0] . '" class="r-post-thumb img-responsive" alt="' . $thumbnail_alt . '" >';
     } else {
-        ?>
-        <img class="single-header-image" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/slider/slider.jpg" alt="<?php echo alt_excerpt(); ?>">
-    <?php } ?>
+        $group_options = get_option('irtt_settings');
+        $post_thumbnail_id = $group_options['post_thumbnail'];
+        $thumbnail_url = wp_get_attachment_image_src($post_thumbnail_id, 'full', FALSE);
+    }
+    echo '<img src="' . $thumbnail_url[0] . '" class="r-post-thumb img-responsive" alt="' . $thumbnail_alt . '" >';
+    ?>
 
     <div class="black-layer"></div>
     <div class="single-header-content">
