@@ -3458,6 +3458,9 @@ body:not(.search-results) .twentysixteen .entry-summary {
 .related.products h2 {
     margin-bottom: 15px;
     font-weight: normal;
+    display: block;
+    width: 100%;
+    clear: both;
 }
 .woocommerce-MyAccount-navigation li a {
     display: block;
