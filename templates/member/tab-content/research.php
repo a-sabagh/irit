@@ -1,9 +1,12 @@
 <?php
 $author_id = get_post_meta(get_the_ID(), "irtt_memberuser", true);
 $posts_per_page = get_option('posts_per_page');
+$paginate_num = (get_query_var("paged")) ? get_query_var("paged") : false;
+$offset = ($paginate_num) ? (($paginate_num - 1) * $posts_per_page) : "0";
 $researc_query_args = array(
     'post_type' => 'post',
     'author' => $author_id,
+    'offset' => $offset,
     'posts_per_page' => $posts_per_page
 );
 $rq = new WP_Query($researc_query_args);
@@ -39,26 +42,16 @@ $post_count = $rq->found_posts;
             ?>
         </div>
         <!--.author-research-posts-->
-
         <?php
+        irtt_pagination($rq);
     } else {
         ?>
         <div class="author-research-posts">
-            <?php get_template_part('templates/loops/no','result'); ?>
+            <?php get_template_part('templates/loops/no', 'result'); ?>
         </div>
         <?php
     }//have not any posts
     wp_reset_postdata();
     ?>
-
-    <ul class="pagination pagination-border">
-        <li><a href="#">1</a></li>
-        <li><a class="active" href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">6</a></li>
-        <li><a href="#">7</a></li>
-    </ul>
 </div>
 <!--.author-research-body-->

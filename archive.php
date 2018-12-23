@@ -11,19 +11,13 @@ get_template_part('templates/headers/archive');
                     the_post();
                     get_template_part('templates/loops/archive');
                 }
+                
             } else {
-                get_template_part('templates/loops/no','result');
+                get_template_part('templates/loops/no', 'result');
             }
+            irtt_pagination();
             ?>
-            <ul class="pagination pagination-border">
-                <li><a href="#">1</a></li>
-                <li><a class="active" href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="#">7</a></li>
-            </ul>
+
         </div>
         <!--.col-md-8-->
         <?php get_sidebar(); ?>

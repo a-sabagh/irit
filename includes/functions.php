@@ -50,14 +50,13 @@ if (!function_exists("irtt_pagination")) {
         if ($n < ($p / 2) || $p > $q) {
             $start = 1;
             $end = (int)($p > $q) ? $q : $p;
-        } elseif ($n + floor($p / 2) > $q) {
-            $start = (int) $q - $p;
+        } elseif ($n + ($p / 2) > $q) {
+            $start = (int) $q - $p + 1;
             $end = (int) $q;
         } else {
             $start = (int) ( $n - floor($p / 2));
             $end = (int) ($n + floor($p / 2));
         }
-
         echo '<ul class="pagination pagination-border">';
         for ($i = $start; $i <= $end; $i++):
             $active = ($i == $n) ? 'class="active"' : '';
