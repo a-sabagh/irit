@@ -1448,11 +1448,11 @@ p.demo_store a {
 .woocommerce nav.woocommerce-pagination ul li span {
     margin: 0;
     text-decoration: none;
-    padding: 0;
+    padding: 0px;
     line-height: 1;
     font-size: 1em;
     font-weight: 400;
-    padding: .5em;
+    padding: 10px 13px;
     min-width: 1em;
     display: block
 }
