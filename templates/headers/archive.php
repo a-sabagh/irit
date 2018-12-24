@@ -11,15 +11,8 @@ if (!empty(get_term_meta($category_id, "irtt_category_featured", true))) {
 $category_cover_src = current(wp_get_attachment_image_src($category_cover_id, 'full', true));
 ?>
 <header class="single-header">
-    <nav class="breadcrumbs-wrapper">
-        <ul>
-            <li><a href="#">اندیشکده بین الملل</a></li>
-            <li><a href="#">اقتصاد</a></li>
-            <li class="last-item">اقتصاد خلاق ابزار قدرتمند ثروت</li>
-        </ul>
-    </nav>
-    <!--.breadcrumbs-wrapper-->
     <?php
+    irtt_breadcrumbs();
     if (!empty($category_cover_id)) {
         echo '<img class="single-header-image" src="' . $category_cover_src . '" alt="' . $category->category_description . '">';
     }

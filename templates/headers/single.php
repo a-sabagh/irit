@@ -1,13 +1,6 @@
 <header class="single-header">
-    <nav class="breadcrumbs-wrapper">
-        <ul>
-            <li><a href="#">اندیشکده بین الملل</a></li>
-            <li><a href="#">اقتصاد</a></li>
-            <li class="last-item">اقتصاد خلاق ابزار قدرتمند ثروت</li>
-        </ul>
-    </nav>
-    <!--.breadcrumbs-wrapper-->
     <?php
+    irtt_breadcrumbs();
     if (has_post_thumbnail()) {
         $post_thumbnail_id = get_post_thumbnail_id(get_the_ID());
         $thumbnail_alt = get_post_meta($post_thumbnail_id, '_wp_attachment_image_alt', TRUE);
