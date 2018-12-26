@@ -673,7 +673,7 @@ textarea {
 }
 
 .product-tab .product-item img {
-    width: 150px;
+    width: 135px;
     float: left;
     padding: 10px;
     vertical-align: middle;
@@ -681,8 +681,9 @@ textarea {
 
 .product-tab .product-item h3 {
     font-weight: normal;
-    line-height: 35px;
+    line-height: 25px;
     margin-bottom: 5px;
+    font-size: 15px;
 }
 
 .banners-2-wrapper .banner-item {

@@ -30,61 +30,74 @@
                 <div class="featured-content">
                     <div class="tab-menu-content product-tab">
                         <div class="row">
+
                             <div class="col-sm-6 product-item">
-                                <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/product.jpg">
-                                <h3>محصول یک</h3>
-                                <span>
-                                    <del>
-                                        <span class="woocommerce-Price-amount amount">
-                                            <span class="woocommerce-Price-currencySymbol">ریال</span>
-                                            ۳,۲۰۰,۰۰۰
-                                        </span>
-                                    </del>
-                                    <ins>
-                                        <span class="woocommerce-Price-amount amount">
-                                            <span class="woocommerce-Price-currencySymbol">ریال</span>۲,۹۹۰,۰۰۰
-                                        </span>
-                                    </ins>
-                                </span>
-                            </div>
-                            <div class="col-sm-6 product-item">
-                                <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/product.jpg">
-                                <h3>محصول دو</h3>
-                                <span>
-                                    <span class="woocommerce-Price-amount amount">
-                                        <span class="woocommerce-Price-currencySymbol">
-                                            ریال
-                                        </span>
-                                        ۸,۳۰۰,۰۰۰
+                                <a href="#" title="">
+                                    <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/product.jpg">
+                                    <h3>محصول یک</h3>
+                                    <span>
+                                        <del>
+                                            <span class="woocommerce-Price-amount amount">
+                                                <span class="woocommerce-Price-currencySymbol">ریال</span>
+                                                ۳,۲۰۰,۰۰۰
+                                            </span>
+                                        </del>
+                                        <ins>
+                                            <span class="woocommerce-Price-amount amount">
+                                                <span class="woocommerce-Price-currencySymbol">ریال</span>۲,۹۹۰,۰۰۰
+                                            </span>
+                                        </ins>
                                     </span>
-                                </span>
+                                </a>
                             </div>
+
+
+                            <div class="col-sm-6 product-item">
+                                <a href="#" title="">
+                                    <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/product.jpg">
+                                    <h3>محصول دو</h3>
+                                    <span>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <span class="woocommerce-Price-currencySymbol">
+                                                ریال
+                                            </span>
+                                            ۸,۳۰۰,۰۰۰
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+
                         </div>
 
                         <div class="row">
+
                             <div class="col-sm-6 product-item">
-                                <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/product.jpg">
-                                <h3>محصول سه</h3>
-                                <span>
-                                    <span class="woocommerce-Price-amount amount">
-                                        <span class="woocommerce-Price-currencySymbol">
-                                            ریال
+                                <a href="#" title="">
+                                    <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/product.jpg">
+                                    <h3>محصول سه</h3>
+                                    <span>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <span class="woocommerce-Price-currencySymbol">
+                                                ریال
+                                            </span>
+                                            ۸,۳۰۰,۰۰۰
                                         </span>
-                                        ۸,۳۰۰,۰۰۰
                                     </span>
-                                </span>
+                                </a>
                             </div>
                             <div class="col-sm-6 product-item">
-                                <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/product.jpg">
-                                <h3>محصول چهار</h3>
-                                <span>
-                                    <span class="woocommerce-Price-amount amount">
-                                        <span class="woocommerce-Price-currencySymbol">
-                                            ریال
+                                <a href="#" title="">
+                                    <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/product.jpg">
+                                    <h3>محصول چهار</h3>
+                                    <span>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <span class="woocommerce-Price-currencySymbol">
+                                                ریال
+                                            </span>
+                                            ۸,۳۰۰,۰۰۰
                                         </span>
-                                        ۸,۳۰۰,۰۰۰
                                     </span>
-                                </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -92,60 +105,68 @@
                     <div class="tab-menu-content product-tab">
                         <div class="row">
                             <div class="col-sm-6 product-item">
-                                <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/product2.jpg">
-                                <h3>محصول یک</h3>
-                                <span>
-                                    <del>
-                                        <span class="woocommerce-Price-amount amount">
-                                            <span class="woocommerce-Price-currencySymbol">ریال</span>
-                                            ۳,۲۰۰,۰۰۰
-                                        </span>
-                                    </del>
-                                    <ins>
-                                        <span class="woocommerce-Price-amount amount">
-                                            <span class="woocommerce-Price-currencySymbol">ریال</span>۲,۹۹۰,۰۰۰
-                                        </span>
-                                    </ins>
-                                </span>
+                                <a href="#" title="">
+                                    <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/product2.jpg">
+                                    <h3>محصول یک</h3>
+                                    <span>
+                                        <del>
+                                            <span class="woocommerce-Price-amount amount">
+                                                <span class="woocommerce-Price-currencySymbol">ریال</span>
+                                                ۳,۲۰۰,۰۰۰
+                                            </span>
+                                        </del>
+                                        <ins>
+                                            <span class="woocommerce-Price-amount amount">
+                                                <span class="woocommerce-Price-currencySymbol">ریال</span>۲,۹۹۰,۰۰۰
+                                            </span>
+                                        </ins>
+                                    </span>
+                                </a>
                             </div>
                             <div class="col-sm-6 product-item">
-                                <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/product.jpg">
-                                <h3>محصول دو</h3>
-                                <span>
-                                    <span class="woocommerce-Price-amount amount">
-                                        <span class="woocommerce-Price-currencySymbol">
-                                            ریال
+                                <a href="#" title="">
+                                    <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/product.jpg">
+                                    <h3>محصول دو</h3>
+                                    <span>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <span class="woocommerce-Price-currencySymbol">
+                                                ریال
+                                            </span>
+                                            ۸,۳۰۰,۰۰۰
                                         </span>
-                                        ۸,۳۰۰,۰۰۰
                                     </span>
-                                </span>
+                                </a>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-sm-6 product-item">
-                                <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/product2.jpg">
-                                <h3>محصول سه</h3>
-                                <span>
-                                    <span class="woocommerce-Price-amount amount">
-                                        <span class="woocommerce-Price-currencySymbol">
-                                            ریال
+                                <a href="#" title="">
+                                    <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/product2.jpg">
+                                    <h3>محصول سه</h3>
+                                    <span>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <span class="woocommerce-Price-currencySymbol">
+                                                ریال
+                                            </span>
+                                            ۸,۳۰۰,۰۰۰
                                         </span>
-                                        ۸,۳۰۰,۰۰۰
                                     </span>
-                                </span>
+                                </a>
                             </div>
                             <div class="col-sm-6 product-item">
-                                <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/product.jpg">
-                                <h3>محصول چهار</h3>
-                                <span>
-                                    <span class="woocommerce-Price-amount amount">
-                                        <span class="woocommerce-Price-currencySymbol">
-                                            ریال
+                                <a href="#" title="">
+                                    <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/product.jpg">
+                                    <h3>محصول چهار</h3>
+                                    <span>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <span class="woocommerce-Price-currencySymbol">
+                                                ریال
+                                            </span>
+                                            ۸,۳۰۰,۰۰۰
                                         </span>
-                                        ۸,۳۰۰,۰۰۰
                                     </span>
-                                </span>
+                                </a>
                             </div>
                         </div>
                     </div>
