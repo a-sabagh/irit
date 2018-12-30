@@ -22,7 +22,7 @@ function irtt_subtitle_metabox_save($post_id) {
 add_action('save_post', 'irtt_subtitle_metabox_save');
 
 function irtt_subtitle_metabox_init() {
-    add_meta_box("irtt-subtitle", __('زیر عنوان', 'irtt'), "irtt_subtitle_metabox_input", array('post', 'page'), 'side', 'high');
+    add_meta_box("irtt-subtitle", __('زیر عنوان', 'irtt'), "irtt_subtitle_metabox_input", array('post'), 'side', 'high');
 }
 
 add_action('add_meta_boxes', 'irtt_subtitle_metabox_init');
