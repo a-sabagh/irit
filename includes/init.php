@@ -14,10 +14,10 @@ if (!function_exists("irtt_setup")) {
         load_theme_textdomain("irtt", get_template_directory() . "/languages");
 
         //add image template size
-        add_image_size("thumb1", 240, 230);
-        add_image_size("thumb2", 240, 230);
-        add_image_size("thumb3", 240, 230);
-        add_image_size("thumb4", 240, 230);
+	add_image_size("slider" , 710 , 390 , true);
+	add_image_size("thumbh" , 110 , 150);
+	add_image_size("thumbw" , 400 , 220 );
+        add_image_size("thumbw2" , 195 , 105 );
     }
 
 }
@@ -55,14 +55,14 @@ function irtt_widgets_init() {
         'after_title' => '</h3></div><div class="widget-content">',
         'after_widget' => '</div></section>',
     ));
-    register_sidebar(array(
+/*    register_sidebar(array(
         'name' => __('سایدبار فروشگاه', 'irtt'),
         'id' => 'shop_side',
         'before_widget' => '<section class="widget">',
         'before_title' => '<div class="widget-title"><h3>',
         'after_title' => '</h3></div><div class="widget-content">',
         'after_widget' => '</div></section>',
-    ));
+    )); */
     register_sidebar(array(
         'name' => __('سایدبار فوتر', 'irtt'),
         'id' => 'footer_widg',
