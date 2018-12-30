@@ -9,8 +9,12 @@ function custom_excerpt($count) {
     return $output;
 }
 
+function slider_excerpt() {
+    return custom_excerpt(200);
+}
+
 function archive_excerpt() {
-    return custom_excerpt(300);
+    return custom_excerpt(200);
 }
 
 function title_excerpt() {
