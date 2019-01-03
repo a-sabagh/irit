@@ -12,7 +12,7 @@
                 <?php the_content(); ?>
             </div>
             <div class="tab-menu-content author-contact">
-                <?php echo (get_post_meta(get_the_ID() , 'irtt_memcontact',true)); ?>
+                <?php echo wpautop(get_post_meta(get_the_ID() , 'irtt_memcontact',true)); ?>
             </div>
         </div>
         <!--.featured-content-->
