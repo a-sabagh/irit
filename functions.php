@@ -17,6 +17,7 @@ require_once 'includes/post-types/member.php';
 require_once 'includes/metaboxes/category-featured.php';
 require_once 'includes/metaboxes/subtitle.php';
 require_once 'includes/metaboxes/member.php';
+require_once 'includes/metaboxes/user-meta.php';
 
 //widgets
 require_once 'includes/widgets/latest-blog-cat.php';
