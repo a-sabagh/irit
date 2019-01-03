@@ -14,7 +14,7 @@ function slider_excerpt() {
 }
 
 function archive_excerpt() {
-    return custom_excerpt(200);
+    return custom_excerpt(280);
 }
 
 function title_excerpt() {
@@ -35,6 +35,14 @@ function course_excerpt() {
 
 function share_excerpt() {
     return custom_excerpt(140);
+}
+
+function brief_excerpt() {
+    return custom_excerpt(80);
+}
+
+function small_excerpt() {
+    return custom_excerpt(40);
 }
 
 /**
