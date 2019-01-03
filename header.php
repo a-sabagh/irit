@@ -19,7 +19,7 @@
                     </div>
                     <!--.top-header-right-->
                     <div class="col-md-8 top-header-left">
-                        <ul class="col-md-4 account">
+                        <ul class="account">
 
                             <?php
                             if (is_user_logged_in()) {
@@ -52,12 +52,12 @@
                             ?>
                         </ul>
                         <!--.account-->
-                        <ul class="col-md-4 language">
+                        <!--<ul class="col-md-4 language">
                             <li class="lang"><a href="#">فارسی</a></li>
                             <li class="lang"><a href="#">عربی</a></li>
                             <li class="lang"><a href="#">English</a></li>
-                        </ul>
-                        <div class="col-md-4 search">
+                        </ul>-->
+                        <div class="search">
                             <form role="search" method="get" id="searchform" class="searchform" action="<?php echo home_url(); ?>">
                                 <input value="" name="s" id="s" placeholder="<?php _e('جستجو در وبسایت', 'irtt'); ?>" type="text"><input id="searchsubmit" value="" type="submit">
                             </form>
