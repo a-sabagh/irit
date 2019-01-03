@@ -217,7 +217,7 @@ textarea {
 
 #header .top-header-left #searchform {
     overflow: hidden;
-    width: 80%;
+    /*width: 80%;*/
     box-shadow: 0 0 3px #f0f0f0;
     -moz-box-shadow: 0 0 3px #f0f0f0;
     -o-box-shadow: 0 0 3px #f0f0f0;
@@ -370,7 +370,13 @@ textarea {
     z-index: 999;
     font-weight: lighter;
 }
+.slider-wrapper .slide {
+    max-height: 400px;
+}
 
+.slider-wrapper .slide img {
+    width: 100%;
+}
 .arrow-next {
     right: 0;
 }
@@ -492,6 +498,7 @@ textarea {
     position: relative;
     margin-bottom: 7px;
     display: grid;
+    width: 100%;
 }
 
 .article-1 .article-body h3 {
@@ -528,7 +535,9 @@ textarea {
 .left-border {
     border-left: 3px solid #e21800;
 }
-
+.right-border {
+    border-right: 3px solid #e21800;
+}
 .bottom-border {
     border-bottom: 3px solid #e21800;
 }
@@ -550,6 +559,7 @@ textarea {
     padding: 5px;
     width: 100%;
     text-align: center;
+    cursor: pointer;
 }
 
 .sale-slider-product {}
@@ -569,6 +579,7 @@ textarea {
 .sale-slider-product div img {
     margin: 31px 0;
     transition: all 300ms ease;
+    min-height: 150px;
 }
 
 .sale-slider-product .slick-current div img {
@@ -674,6 +685,7 @@ textarea {
 
 .product-tab .product-item img {
     width: 135px;
+    min-height: 190px;
     float: left;
     padding: 10px;
     vertical-align: middle;
@@ -683,7 +695,7 @@ textarea {
     font-weight: normal;
     line-height: 25px;
     margin-bottom: 5px;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .banners-2-wrapper .banner-item {
@@ -705,6 +717,7 @@ textarea {
 .ht-blog-box .ht-blog-item img {
     float: right;
     max-width: 45%;
+    min-height: 150px;
     margin-left: 15px;
 }
 
@@ -947,7 +960,28 @@ textarea {
     color: white;
     display: inline-block;
 }
-
+.shortlink-wrapper {
+    display: block;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.shortlink-wrapper br {
+    display: none;
+}.shortlink-wrapper .align-left {
+    display: inline-block;
+}
+.shortlink-wrapper code {
+    display: inline-block;
+    height: auto;
+    line-height: 10px;
+    background: #f3f3f3;
+    padding: 7px;
+    vertical-align: middle;
+}
+.shortlink-wrapper label {
+    display: inline-block;  
+}
 .single-header .author {
     color: white;
     display: block;
@@ -1018,6 +1052,7 @@ textarea {
 .container .single-main-content .editor-content h1,
 .container .single-main-content .editor-content h2 {
     line-height: 33px;
+    margin-bottom: 10px;
 }
 
 .container .single-main-content .editor-content h3,
@@ -1351,6 +1386,7 @@ table {
     display: block;
     margin: auto;
     width: 100%;
+    height: 150px;
 }
 .widg-content .slider-arrow {
     top: 30%;
@@ -1670,7 +1706,11 @@ table {
     margin-bottom: 10px;
     border-bottom: 1px solid #ccc;
 }
-
+.author-research-posts .p-thumbnail img {
+    min-height: 230px;
+    height: auto;
+    width: 100%;
+}
 .author-main-content .author-research-header .research-count {
     font-size: 19px;
 }
@@ -1741,12 +1781,15 @@ table {
     min-height: 100px;
 }
 /* widgets stylesheet */
-.search-field {
+.search-form label {
     padding: 7px;
     width: 80%;
 }
 .search-form {
     text-align: center;
+}
+.search-form label {
+    display: inline-block;
 }
 .screen-reader-text {
     display: none;
@@ -1782,6 +1825,46 @@ table {
     font-size: 14px;
     margin-right: 8px;
 }
+.box-content.home-featured-product img {
+    min-height: 150px;
+}
+.featured-blog .full-featured-article {
+    height: 215px;
+    overflow: hidden;
+    align-items: center;
+}
+.featured-blog .article-half {
+    height: 109px;
+    align-items: center;
+    overflow: hidden;
+}
+.featured-blog .full-featured-article img {
+    width: 100%;
+    min-height: 215px;
+}
+.featured-blog .article-half img {
+    width: 100%;
+}
+/* contact form stylesheets */
+.wpcf7-textarea {
+    min-height: 170px;
+}
+.wpcf7-submit {
+    border: 1px solid black;
+    background: black;
+    color: white;
+    padding: 8px 15px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.contact-info td,
+.contact-info th{
+    width: 50%;
+    padding: 8px 0;
+    font-size: 17px;
+}
+
 /*---------------------------- R E S P O N S I V E -------------------------------*/
 
 @media (min-width: 1200px) {
@@ -1790,6 +1873,12 @@ table {
         overflow: hidden;
         display: flex;
         align-items: center;
+    }
+    .slider-wrapper .slide img {
+        height: 400px;
+    }
+    .box-content.home-featured-product img {
+        min-height: 150px;
     }
 }
 
@@ -1802,6 +1891,10 @@ table {
         float: left;
     }
     .header-cart {float: left;}
+    #header .top-header-left {
+        display: flex;
+        justify-content: space-between;
+    }
     /* navigation */
     .navigation-wrapper {
         padding-top: 10px;
@@ -1845,7 +1938,7 @@ table {
 
     }
 
-    .navigation-wrapper #main-menu > li.current-menu-item a {
+    .navigation-wrapper #main-menu > li.current-menu-item > a {
         background: #e21800;
         color: #fff;
     }
@@ -1928,7 +2021,9 @@ table {
     .row.fixe-height-seven div {
         min-height: 225px;
     }
-
+    .slider-wrapper .slide img {
+        min-height: 400px;
+    }
 }
 
 @media (min-width: 768px) {}
@@ -1955,7 +2050,7 @@ table {
         margin: auto;
         width: 70%;
     }
-    .search-field {
+    .search-form label {
         width: 70%;
     }
 }
@@ -2140,8 +2235,12 @@ table {
         margin-bottom: 15px;
     }
 
-    .single-header h1 {
+    .single-header h1{
         font-size: 24px;
+    }
+
+    .page-header h1 {
+        font-size: 20px;
     }
 
     .single-header .single-header-content {
@@ -2151,7 +2250,18 @@ table {
     .featured-tab-container.author-info-tab .featured-head {
         border-left: none;
     }
-
+    .featured-blog .article-half {
+        height: auto;
+    }
+    .featured-blog .full-featured-article img{
+        height: auto;
+    }
+    .box-content.home-featured-product img {
+        height: auto;
+    }
+    .featured-blog .full-featured-article {
+        height: auto;
+    }
 }
 
 @media (max-width: 479px) {

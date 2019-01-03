@@ -2209,7 +2209,8 @@ p.demo_store a {
 }
 
 .woocommerce form .form-row label.inline {
-    display: inline
+    display: block;
+    margin-top: 8px;
 }
 
 .woocommerce form .form-row .woocommerce-input-wrapper .description {
@@ -3521,9 +3522,17 @@ textarea {
     font-weight: normal;
     margin-bottom: 10px;
 }
+.pswp__caption__center {
+    text-align: center;
+}
 /************************ C U S T O M E - R E S P O N S I V E ************************/
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .woocommerce ul.products li.product a img {
+        max-height: 340px;
+        min-height: 340px;
+    }
+}
 
 @media (min-width: 992px) {}
 
@@ -3553,6 +3562,22 @@ textarea {
     }
     .woocommerce ul.products li.product,
     .woocommerce-page ul.products li.product {
+        width: 100%;
+    }
+    .woocommerce #content div.product div.images,
+    .woocommerce div.product div.images,
+    .woocommerce-page #content div.product div.images,
+    .woocommerce-page div.product div.images {
+        float: none;
+        width: 100%;
+        display: block;
+    }
+    .woocommerce #content div.product div.summary,
+    .woocommerce div.product div.summary,
+    .woocommerce-page #content div.product div.summary,
+    .woocommerce-page div.product div.summary{
+        float: none;
+        display: block;
         width: 100%;
     }
 }
