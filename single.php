@@ -13,6 +13,7 @@ if (have_posts()):
                     </article><!--.editor-content-->
                     <?php
                     get_template_part('templates/single/taglist');
+                    get_template_part('templates/single/shortlink');
                     get_template_part('templates/single/share');
                     get_template_part('templates/single/author');
                     get_template_part('templates/single/related', 'posts');
