@@ -21,7 +21,7 @@ function irtt_member_metabox_input($post) {
             <div style="width: 50%; padding-right: 10px;">
                 <p><?php _e('انتخاب کاربر', 'irtt'); ?></p>
                 <?php
-                $users = get_users(array('role' => 'administrator'));
+                $users = get_users(array('role__in' => array('Editor','Author','Administrator')));
                 ?>
                 <select style="width: 100%;height:40px;" name="irtt_memberuser">
                     <option value="" ><?php _e('انتخاب','irtt'); ?></option>
