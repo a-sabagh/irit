@@ -1619,6 +1619,7 @@ table {
 
 .author-header .author-img img {
     max-width: 280px;
+    min-width: 210px;
 }
 
 .author-header .author-description .author-name {

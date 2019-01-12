@@ -18,8 +18,16 @@
                 <h1 class="author-name"><?php the_title(); ?></h1>
                 <span class="position"><?php echo esc_html(get_post_meta(get_the_ID(), 'irtt_position', true)); ?></span>
                 <p class="skills">
-                    <strong><?php _e('تخصص', 'irtt'); ?> : </strong>
-                    <span><?php echo esc_html(get_post_meta(get_the_ID(), 'irtt_skills', true)); ?></span>
+                    <?php
+                    $skills = get_post_meta(get_the_ID(), 'irtt_skills', true);
+                    if (!empty($skills)) {
+                        ?>
+                        <strong><?php _e('تخصص', 'irtt'); ?> : </strong>
+                        <span><?php echo esc_html(get_post_meta(get_the_ID(), 'irtt_skills', true)); ?></span>
+                        <?php
+                    }
+                    ?>
+
                 </p>
             </div>
             <div class="col-md-3 author-social">

@@ -1,16 +1,20 @@
 <?php
-$author_id = get_post_meta(get_the_ID(), "irtt_memberuser", true);
+$author_id = (!empty(get_post_meta(get_the_ID(), "irtt_memberuser", true))) ?
+        get_post_meta(get_the_ID(), "irtt_memberuser", true) : false;
 $posts_per_page = get_option('posts_per_page');
-$paginate_num = (get_query_var("paged")) ? get_query_var("paged") : false;
+$paginate_num = (isset($_GET['cpaged'])) ? $_GET['cpaged'] : 1;
 $offset = ($paginate_num) ? (($paginate_num - 1) * $posts_per_page) : "0";
 $order = (isset($_GET['order_type'])) ? $_GET['order_type'] : null;
 
 $researc_query_args = array(
     'post_type' => 'post',
     'author' => $author_id,
-    'offset' => $offset,
+    'paged' => $paginate_num,
     'posts_per_page' => $posts_per_page
 );
+if(empty($author_id)){
+    $researc_query_args['post__in'] = array(0);
+}
 if (isset($order)) {
     switch ($order):
         case 'newest':
@@ -69,7 +73,8 @@ $post_count = $rq->found_posts;
         </div>
         <!--.author-research-posts-->
         <?php
-        irtt_pagination($rq);
+//                wp_pagenavi(array('query'=> $rq));
+        irtt_cpagination($rq);
     } else {
         ?>
         <div class="author-research-posts">

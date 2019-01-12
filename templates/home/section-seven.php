@@ -35,7 +35,7 @@
         <div class="col-md-4 right-border">
             <div class="box">
                 <?php
-                $category_id = 25;
+                $category_id = 85;
                 ?>
                 <header class="box-title">
                     <h3><?php echo get_term($category_id)->name; ?></h3>

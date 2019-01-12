@@ -1,18 +1,35 @@
 <section class="widget single-related">
     <?php
+    $categories = get_the_category();
+    $post_cats_id = array();
+    foreach ($categories as $value) {
+        $post_cats_id[] = $value->term_id;
+    }
     $author_id = get_the_author_meta('ID');
-
+    
     $rquery_args = array(
+        'cat' => $post_cats_id,
         'post_type' => 'post',
         'author' => $author_id,
         'posts_per_page' => 10,
-        'post__not_in' => array(get_the_ID())
+        'post__not_in' => array(get_the_ID()),
+        'orderby' => 'rand'
     );
+
+    $related_post_ids = get_post_meta(get_the_ID(), "rng_related_posts", true);
+
+    if (count($related_post_ids) > 2) {
+        $rquery_args['post__in'] = $related_post_ids;
+        $rquery_args['posts_per_page'] = count($related_post_ids);
+        unset($rquery_args['cat']);
+        unset($rquery_args['orderby']);
+    }
+
     $rquery = new WP_Query($rquery_args);
     ?>
     <div class="widget-title">
         <h3><?php _e('پست های مرتبط', 'irtt') ?></h3>
-        <span><?php _e('از این نویسنده بخوانید', 'irtt') ?></span>
+        <span><?php _e('از این نویسنده بخوانید', 'irtt'); ?></span>
     </div>
     <div class="widg-content">
         <?php

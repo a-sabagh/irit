@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-8">
             <?php
-            $category_id = 62;
+            $category_id = 17;
             ?>
             <div class="box">
                 <header class="box-title">
