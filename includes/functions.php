@@ -150,6 +150,12 @@ if (!function_exists("irtt_breadcrumbs")) {
                 'link' => '#'
             );
             array_push($bd, $bd_category);
+        }elseif (is_404()) {
+            $error = array(
+                'title' => __('خطای ۴۰۴','irtt'),
+                'link' => '#'
+            );
+            array_push($bd, $error);
         }
         ?>
         <nav class="breadcrumbs-wrapper">
@@ -170,3 +176,7 @@ if (!function_exists("irtt_breadcrumbs")) {
 
 }
 
+    function custom_excerpt_length( $length ) {
+        return 0;
+    }
+    add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

@@ -19,6 +19,7 @@ require_once 'includes/metaboxes/subtitle.php';
 require_once 'includes/metaboxes/member.php';
 require_once 'includes/metaboxes/user-meta.php';
 require_once 'includes/metaboxes/related-posts.php';
+require_once 'includes/metaboxes/home-template.php';
 
 //widgets
 require_once 'includes/widgets/latest-blog-cat.php';
@@ -27,7 +28,7 @@ require_once 'includes/widgets/papular-tag.php';
 
 //admin-settings
 require_once 'includes/admin-settings.php';
-require_once 'includes/related-posts.php';
+require_once 'includes/ajax.php';
 
 //woocommerce
 require_once 'includes/woocommerce.php';

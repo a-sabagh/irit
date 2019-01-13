@@ -1,20 +1,23 @@
+<?php $home_template = get_query_var('irtt_home_template'); ?>
 <section class="five container">
     <div class="row">
         <div class="col-md-5 banners-2-wrapper left-border">
-            <a href="#" class="banner-item">
-                <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/banner.jpg">
+            <a href="<?php echo (!empty($home_template['b5'][1]['link']))? $home_template['b5'][1]['link'] : "#"; ?>" class="banner-item">
+                <img alt="<?php _e('اندیشکده روابط بین الملل','irtt') ?>" class="img-responsive" src="<?php echo current(wp_get_attachment_image_src($home_template['b5'][1]['src'], 'full'));?>">
             </a>
             <!--.cat-item -->
-            <a href="#" class="banner-item">
-                <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/banner2.jpg">
-            </a>
-            <a href="#" class="banner-item">
-                <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/banner.jpg">
+            <a href="<?php echo (!empty($home_template['b5'][2]['link']))? $home_template['b5'][2]['link'] : "#"; ?>" class="banner-item">
+                <img alt="<?php _e('اندیشکده روابط بین الملل','irtt') ?>" class="img-responsive" src="<?php echo current(wp_get_attachment_image_src($home_template['b5'][2]['src'], 'full'));?>">
             </a>
             <!--.cat-item -->
-            <a href="#" class="banner-item">
-                <img class="img-responsive" src="<?php echo trailingslashit(IRTT_FRONT); ?>images/banner2.jpg">
+            <a href="<?php echo (!empty($home_template['b5'][3]['link']))? $home_template['b5'][3]['link'] : "#"; ?>" class="banner-item">
+                <img alt="<?php _e('اندیشکده روابط بین الملل','irtt') ?>" class="img-responsive" src="<?php echo current(wp_get_attachment_image_src($home_template['b5'][3]['src'], 'full'));?>">
             </a>
+            <!--.cat-item -->
+            <a href="<?php echo (!empty($home_template['b5'][4]['link']))? $home_template['b5'][4]['link'] : "#"; ?>" class="banner-item">
+                <img alt="<?php _e('اندیشکده روابط بین الملل','irtt') ?>" class="img-responsive" src="<?php echo current(wp_get_attachment_image_src($home_template['b5'][4]['src'], 'full'));?>">
+            </a>
+            <!--.cat-item -->
         </div>
         <!--.banner-2-wrapper-->
         <div class="col-md-7 product-tab-wrapper">
@@ -26,7 +29,7 @@
                         $product_cats = array(5455, 5456, 5460);
                         for ($i = 0; $i < count($product_cats); $i++):
                             $active = ($i == 0) ? 'class="active"' : '';
-                            echo '<li ><a href="' . $active . '">' . get_term($product_cats[$i])->name . '</a></li>';
+                            echo '<li ><a href="#" ' . $active . '>' . get_term($product_cats[$i])->name . '</a></li>';
                         endfor;
                         ?>
                     </ul>

@@ -24,7 +24,13 @@ jQuery(document).ready(function ($) {
         $(this).prop("disabled", true);
 
     });
-    if (typeof RELATED !== "undefined") {
+    if (
+            $('.rng-related-posts').length
+            || $('.rng-ajax-call-posts').length
+            || $('.rng-ajax-call-products').length
+            || $('.rng-ajax-call-categories').length
+            )
+    {
         (function () {
             if (jQuery && jQuery.fn && jQuery.fn.select2 && jQuery.fn.select2.amd)
                 var e = jQuery.fn.select2.amd;
@@ -50,10 +56,13 @@ jQuery(document).ready(function ($) {
                 };
             }), {define: e.define, require: e.require};
         })();
-        console.log(RELATED);
+    }
+
+    if (typeof RELATED !== "undefined") {
         $(".rng-related-posts").select2({
-        
+
             minimumInputLength: 3,
+            width: '100%',
             ajax: {
                 url: RELATED.url,
                 type: "post",
@@ -76,7 +85,106 @@ jQuery(document).ready(function ($) {
             }
         });
     }
+    //posts , product , categories ajax call
+    if (typeof ADMIN_AJAX !== "undefined") {
+        $(".rng-ajax-call-posts").select2({
+            minimumInputLength: 3,
+            width: '100%',
+            ajax: {
+                url: ADMIN_AJAX.url,
+                type: "post",
+                dataType: 'json',
+                data: function (params) {
+                    return {
+                        selected: $(this).val(),
+                        s: params.term,
+                        action: "rng_ajax_call_posts"
+                    };
+                },
+                processResults: function (response) {
+                    return {
+                        results: response
+                    };
+                },
+                cache: true
+            }
+        });
+        $(".rng-ajax-call-products").select2({
+            minimumInputLength: 3,
+            width: '100%',
+            ajax: {
+                url: ADMIN_AJAX.url,
+                type: "post",
+                dataType: 'json',
+                data: function (params) {
+                    return {
+                        selected: $(this).val(),
+                        s: params.term,
+                        action: "rng_ajax_call_products"
+                    };
+                },
+                processResults: function (response) {
+                    return {
+                        results: response
+                    };
+                },
+                cache: true
+            }
+        });
+        $(".rng-ajax-call-categories").select2({
+            minimumInputLength: 3,
+            width: '100%',
+            ajax: {
+                url: ADMIN_AJAX.url,
+                type: "post",
+                dataType: 'json',
+                data: function (params) {
+                    return {
+                        selected: $(this).val(),
+                        s: params.term,
+                        action: "rng_ajax_call_categories"
+                    };
+                },
+                processResults: function (response) {
+                    return {
+                        results: response
+                    };
+                },
+                cache: true
+            }
+        });
+    } //endif
+
+    //set variable
+    var modal = $(".modal");
+    var btn = $(".modal-button");
+
+    if (modal.length) {
+        //open modal
+        btn.on("click", function (e) {
+            e.preventDefault();
+            var modal = $(this).data("modal");
+            $("#" + modal).show(0, function () {
+                $(this).addClass("open-modal");
+            });
+        });
+        //close modal
+        $(".modal-close").on("click", function () {
+            var modal = $(this).closest(".modal");
+            modal.hide();
+        });
+
+//        $(".modal").click(function (event) {
+//            var modal_content = $(".modal-content").find("*");
+//            var target = $(event.target);
+//            if (!target.is(modal_content)) {
+//                $(this).hide();
+//            }
+//        });
+    }
 });
+
+
 
 
 

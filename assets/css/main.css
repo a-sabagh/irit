@@ -114,6 +114,19 @@ p {
     display: inline-block;
     direction: ltr;
 }
+/*
+::placeholder {  Chrome, Firefox, Opera, Safari 10.1+ 
+    color: #cccccc;
+}
+
+:-ms-input-placeholder {  Internet Explorer 10-11 
+    color: #cccccc;
+
+}
+
+::-ms-input-placeholder {  Microsoft Edge 
+    color: #cccccc;
+}*/
 
 /* --------------------------------- G E N E R A L ----------------------------------------*/
 
@@ -546,7 +559,8 @@ textarea {
     border-top: 4px solid #e21800;
 }
 
-.btn {
+.btn,
+.widget_wysija_cont .wysija-submit{
     border: none;
     margin-top: 0px;
     background: #ef7e70;
@@ -554,7 +568,8 @@ textarea {
     font-size: 15px;
 }
 
-.btn-full {
+.btn-full,
+.widget_wysija_cont .wysija-submit{
     display: block;
     padding: 5px;
     width: 100%;
@@ -1005,6 +1020,18 @@ textarea {
     max-width: 100%;
     height: auto;
     display: inline-block;
+}
+.container .single-main-content .editor-content img.aligncenter {
+    display: block;
+    margin: 15px auto;
+}
+
+.container .single-main-content .editor-content img.alignright{
+    float: right;
+}
+
+.container .single-main-content .editor-content img.alignleft{
+    float: left;
 }
 
 .container .single-main-content .editor-content .table-ltr td {
@@ -1866,6 +1893,21 @@ table {
     font-size: 17px;
 }
 
+.not-found-guid li {
+    list-style: disclosure-closed;
+    margin-right: 20px;
+    line-height: 30px;
+}
+.error404 h3 {
+    line-height: 30px;
+    font-weight: normal;
+}
+.error404 h2 {    
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+}
+
 /*---------------------------- R E S P O N S I V E -------------------------------*/
 
 @media (min-width: 1200px) {
@@ -2019,7 +2061,7 @@ table {
         display: none;
     }
 
-    .row.fixe-height-seven div {
+    .row.fixe-height-seven > div {
         min-height: 225px;
     }
     .slider-wrapper .slide img {

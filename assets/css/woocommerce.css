@@ -3507,7 +3507,7 @@ textarea {
     color: rgba(0, 0, 0, 0.75);
     display: block;
     font-size: 1em;
-    margin: 0 0 1.07692em 0;
+    margin-bottom: 10px;
     padding: 0.53846em;
     height: 35px;
     width: 100%;

@@ -1,17 +1,22 @@
+<?php $home_template = get_query_var('irtt_home_template'); ?>
 <section class="seven container">
     <div class="row fixe-height-seven">
         <div class="col-md-4 mailpoet-wrapper">
 
             <div class="box">
                 <header class="box-title">
-                    <h3>عضویت در خبرنامه</h3>
+                    <h3><?php _e('عضویت در خبرنامه','irtt'); ?></h3>
                 </header>
                 <div class="box-content bullet-list">
-                    <p>برای وارد کردن جدید ترین اخبار اندیشکده روابط بین الملل در پست الکترونیک خود ، ایمیل را در این جا وارد کرده و در خبر نامه عضو شوید.</p>
-                    <form action="" method="post">
-                        <input type="email" name="" value="" placeholder="ایمیل خود را وارد کنید.">
-                        <input class="btn-full btn" type="submit" value="ثبت">
-                    </form>
+                    <p><?php _e('برای وارد کردن جدید ترین اخبار اندیشکده روابط بین الملل در پست الکترونیک خود ، ایمیل را در این جا وارد کرده و در خبر نامه عضو شوید.','irtt'); ?></p>
+                    <?php
+                    $widgetNL = new WYSIJA_NL_Widget(true);
+                    echo $widgetNL->widget(array('form' => 1, 'form_type' => 'php'));
+                    ?>
+                    <!--                    <form action="" method="post">
+                                            <input type="email" name="" value="" placeholder="ایمیل خود را وارد کنید.">
+                                            <input class="btn-full btn" type="submit" value="ثبت">
+                                        </form>-->
                 </div>
             </div>
 
@@ -35,7 +40,7 @@
         <div class="col-md-4 right-border">
             <div class="box">
                 <?php
-                $category_id = 85;
+                $category_id = (int) $home_template['post_cat_seven'];
                 ?>
                 <header class="box-title">
                     <h3><?php echo get_term($category_id)->name; ?></h3>

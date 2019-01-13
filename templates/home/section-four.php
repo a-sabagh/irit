@@ -1,3 +1,4 @@
+<?php $home_template = get_query_var('irtt_home_template'); ?>
 <section class="four container">
     <div class="row">
 
@@ -10,6 +11,7 @@
                     <?php
                     $args = array(
                         'post_type' => 'product',
+                        'post__in' => $home_template['product_sales'],
                         /* 'meta_query' => array(
                           'relation' => 'OR',
                           array(// Simple products type
@@ -75,11 +77,11 @@
         <!--.product-slider-->
         <div class="col-md-7 home-video-wrapper">
             <div class="home-video">
-                <video id="home-video-dom" width="100%" loop preload="none" poster="<?php echo trailingslashit(IRTT_FRONT); ?>images/fidelcastro.jpg">
-                    <source src="https://hw16.cdn.asset.aparat.com/aparat-video/d0791f4c904bf8402148775953b07a2412792129-480p__24836.mp4" type="video/mp4" />
+                <video id="home-video-dom" width="100%" loop preload="none" poster="<?php echo current(wp_get_attachment_image_src($home_template['video']['banner'] , 'full')); ?>">
+                    <source src="<?php echo $home_template['video']['src']; ?>" type="video/mp4" />
                 </video>
                 <span class="play-icon"><i class="fa fa-play"></i></span>
-                <h3>مستند فیدل کاسترو</h3>
+                <h3><?php echo $home_template['video']['title']; ?></h3>
             </div>
         </div>
         <!--.home-video-->

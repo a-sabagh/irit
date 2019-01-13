@@ -1,17 +1,27 @@
 <?php
 get_header();
+get_template_part('templates/headers/archive');
 ?>
-<main id="main">
-    <?php
-    get_template_part('templates/home/section', 'one');
-    get_template_part('templates/home/section', 'tow');
-    get_template_part('templates/home/section', 'three');
-    get_template_part('templates/home/section', 'four');
-    get_template_part('templates/home/section', 'five');
-    get_template_part('templates/home/section', 'six');
-    get_template_part('templates/home/section', 'seven');
-    get_template_part('templates/home/section', 'eight');
-    ?>
+<main class="container">
+    <div class="single-main-content row">
+        <div class="col-md-8">
+            <?php
+            if (have_posts()) {
+                while (have_posts()) {
+                    the_post();
+                    get_template_part('templates/loops/archive');
+                }
+                
+            } else {
+                get_template_part('templates/loops/no', 'result');
+            }
+            irtt_pagination();
+            ?>
+
+        </div>
+        <!--.col-md-8-->
+        <?php get_sidebar(); ?>
+    </div>
 </main>
-<!--#main-->
+<!--.single-main-content-->
 <?php get_footer(); ?>

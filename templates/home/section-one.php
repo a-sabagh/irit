@@ -1,10 +1,12 @@
+<?php $home_template = get_query_var('irtt_home_template'); ?>
 <section class="one container">
     <div class="col-md-8 slider-wrapper pull-left-md">
         <div class="slider full-slider">
             <?php
             $qs_args = array(
                 'post_type' => 'post',
-                'posts_per_page' => 5
+                'post__in' => $home_template['slider'],
+                'posts_per_page' => 7
             );
             $qs = new WP_Query($qs_args);
             if ($qs->have_posts()) {
@@ -48,7 +50,7 @@
                     <?php
                     $qpc_args = array(
                         'post_type' => 'product',
-                        'offset' => 10,
+                        'post__in' => $home_template['product_top'],
                         'posts_per_page' => 3
                     );
                     $qpc = new WP_Query($qpc_args);
@@ -90,7 +92,7 @@
                     <?php
                     $qpsc_args = array(
                         'post_type' => 'post',
-                        'offset' => 9,
+                        'post__in' => $home_template['posts_top'],
                         'posts_per_page' => 4
                     );
                     $qpsc = new WP_Query($qpsc_args);

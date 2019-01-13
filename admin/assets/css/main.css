@@ -11,20 +11,20 @@ and open the template in the editor.
 .rngwp-btn-wrapper {
     width: 100%;
     margin: 15px auto;
-	overflow: hidden;
+    overflow: hidden;
 }
 .wp-core-ui.button.rng-btn-select {
-	float: right;
-	width: 50%;
-	border-radius: 0 8px 8px 0;
-	height: 35px;
+    float: right;
+    width: 50%;
+    border-radius: 0 8px 8px 0;
+    height: 35px;
 }
 .wp-core-ui.button.rng-btn-reset2 {
-	float: left;
-	width: 50%;
-	border-radius: 8px 0 0 8px;
-	border-right: none;
-	height: 35px;
+    float: left;
+    width: 50%;
+    border-radius: 8px 0 0 8px;
+    border-right: none;
+    height: 35px;
 }
 .input-full {
     width: 100%;
@@ -56,4 +56,89 @@ and open the template in the editor.
     font-size: 15px;
     margin-bottom: 10px;
 
+}
+.irtt-home-template {
+    width: 100%;
+    border-collapse: collapse;
+}
+.irtt-home-template tr > td {
+    border: 1px solid black;
+    padding: 0px 8px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    padding-top: 5%; /* Location of the box */
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 25;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.modal-close {
+    cursor: pointer;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.modal-body,.modal-footer,.modal-header { padding: 2px 16px; border-bottom: 1px solid #ccc;}
+.modal-body{
+    padding-bottom: 20px;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* modal-content width */
+
+.modal-content { width: 768px; }
+@media screen and (max-width: 768px){
+    .modal-content {
+        width: auto;
+        margin: 0 30px;
+    }
+}
+.irtt-home-template td:first-child {
+    width: 50%;
+}
+.irtt-home-template p span {
+    margin-left: 8px;
+}
+.modal-header h2 {
+    padding: 8px 0 !important;
+}
+.select2-container--open .select2-dropdown--below {
+    z-index: 99999;
 }

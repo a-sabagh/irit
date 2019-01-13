@@ -3,7 +3,9 @@ get_header();
 if (have_posts()):
     while (have_posts()):
         the_post();
-        get_template_part('templates/headers/page')
+        if (!is_page(get_option('page_on_front')) or get_option('page_on_front') == 0) {
+            get_template_part('templates/headers/page');
+        }
         ?>
         <main class="container">
             <div class="single-main-content row">
