@@ -21,9 +21,22 @@ $category_cover_src = current(wp_get_attachment_image_src($category_cover_id, 'f
     <div class="black-layer"></div>
     <div class="single-header-content">
         <!--.black-layer-->
-        <h1 class="title"><?php echo $category->name; ?></h1>
+        <?php
+        if (is_404()) {
+            ?>
+            <h1 class="title"><?php _e('خطای ۴۰۴','irtt'); ?></h1>
 
-        <h3 class="subtitle"><?php echo $category->category_description; ?></h3>
+            <h3 class="subtitle"><?php _e('برگه ای که به دنبال آن هستید یافت نشد.','irtt'); ?></h3>
+            <?php
+        } else {
+            ?>
+            <h1 class="title"><?php echo $category->name; ?></h1>
+
+            <h3 class="subtitle"><?php echo $category->category_description; ?></h3>
+            <?php
+        }
+        ?>
+
         <!--.subtitle-->
     </div>
     <!--.single-header-content-->

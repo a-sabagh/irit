@@ -22,6 +22,8 @@ if (!function_exists("irtt_setup")) {
 
 }
 
+add_action("after_setup_theme", "irtt_setup");
+
 function irtt_widgets_init() {
     register_sidebar(array(
         'name' => __('سایدبار آرشیو', 'irtt'),
@@ -73,6 +75,8 @@ function irtt_widgets_init() {
     ));
 }
 
+add_action("widgets_init", "irtt_widgets_init");
+
 $menu_position = array("main" => __('منوی اصلی', 'irtt'));
 register_nav_menus($menu_position);
 
@@ -99,5 +103,21 @@ function rngwc_filter_request($vars) {
 
 add_action('init', 'rngwc_add_endpoints');
 add_filter('request', 'rngwc_filter_request');
-add_action("widgets_init", "irtt_widgets_init");
-add_action("after_setup_theme", "irtt_setup");
+
+
+function irtt_order_category_loop( $query ) {
+    $order = (isset($_GET['order_type'])) ? $_GET['order_type'] : null;
+    if ( $query->is_archive() && $query->is_main_query() && isset($order)) {
+        switch ($order):
+            case 'newest':
+                $query->set('order_by', 'ID');
+                $query->set('order', 'DESC');
+                break;
+            case 'oldest':
+                $query->set('order_by', 'ID');
+                $query->set('order', 'ASC');
+                break;
+        endswitch;
+    }
+}
+add_action( 'pre_get_posts', 'irtt_order_category_loop' );

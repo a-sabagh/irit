@@ -33,36 +33,10 @@ $post_count = $rq->found_posts;
 <div class="tab-content author-research-body">
     <?php
     if ($rq->have_posts()) {
+        set_query_var('posts_count', $post_count);
+        set_query_var('order_type', $order);
+        get_template_part('templates/loops/archive','order');
         ?>
-        <header class="author-research-header">
-            <span class="research-count"><?php echo sprintf(__('%u پست'), $post_count); ?></span>
-            <!--.research-count-->
-            <div class="research-order-wrapper">
-                <span class="label"><?php _e('مرتب سازی بر اساس', 'irtt'); ?></span>
-                <div class="research-order">
-                    <span class="current-item">
-                        <?php
-                        switch ($order):
-                            case 'newest':
-                                _e('جدیدترین ها', 'irtt');
-                                break;
-                            case 'oldest':
-                                _e('قدیمی ترین ها', 'irtt');
-                                break;
-                            default :
-                                _e('پیش فرض', 'irtt');
-                                break;
-                        endswitch;
-                        ?>
-                    </span>
-                    <ul>
-                        <li><a href="<?php echo add_query_arg(array('order_type' => 'newest')); ?>"><?php _e('جدیدترین ها', 'irtt') ?></a></li>
-                        <li><a href="<?php echo add_query_arg(array('order_type' => 'oldest')); ?>"><?php _e('قدیمی ترین ها', 'irtt') ?></a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--.research-order-query-->
-        </header>
         <div class="author-research-posts">
             <?php
             while ($rq->have_posts()) {
