@@ -5,7 +5,7 @@ get_template_part('templates/headers/archive');
 <main class="container">
     <div class="single-main-content row">
         <div class="col-md-8">
-            <section class="col-md-8 single-main-content pull-md-left">
+            <section class="error-not-found">
                 <h2><?php _e('خطای ۴۰۴', 'irtt') ?></h2>
                 <h3>
                     متاسفانه صفحه ای که به دنبال آن هستید موجود نمی باشد لطفا برای پیدا کردن مطلب مورد نظر خود یکی از راه های زیر را انتخاب کنید:
