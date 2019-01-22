@@ -521,7 +521,7 @@
 }
 
 .woocommerce #payment #place_order,
-.woocommerce-page #payment #place_order {
+.woocommerce-page #payment #place_order{
     float: left;
     background: transparent;
 }
@@ -1474,7 +1474,7 @@ p.demo_store a {
     position: relative;
     text-decoration: none;
     overflow: visible;
-    padding: 6px 10px;
+    padding: 10px 10px;
     font-weight: 700;
     /*! border-radius: 3px; */
     right: auto;
@@ -3524,6 +3524,30 @@ textarea {
 }
 .pswp__caption__center {
     text-align: center;
+}
+.comment-send-product{
+    margin: 20px 0;
+}
+
+ul.comment-send-product {
+    list-style: none;
+}
+ul.comment-send-product li {
+    padding: 2px 0;
+    font-size: 14px;
+}
+.comment-send-product i{
+    margin-left: 14px;
+    font-size: 25px;
+    vertical-align: middle;
+    color: #666;
+    width: 25px;
+}
+.woocommerce ul.products li.product a img{
+    border: 1px solid #ccc;
+}
+.woocommerce-MyAccount-navigation > ul li.woocommerce-MyAccount-navigation-link--woo-wallet a::before{
+    display: none;
 }
 /************************ C U S T O M E - R E S P O N S I V E ************************/
 

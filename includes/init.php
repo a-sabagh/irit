@@ -104,10 +104,9 @@ function rngwc_filter_request($vars) {
 add_action('init', 'rngwc_add_endpoints');
 add_filter('request', 'rngwc_filter_request');
 
-
-function irtt_order_category_loop( $query ) {
+function irtt_order_category_loop($query) {
     $order = (isset($_GET['order_type'])) ? $_GET['order_type'] : null;
-    if ( $query->is_archive() && $query->is_main_query() && isset($order)) {
+    if ($query->is_archive() && $query->is_main_query() && isset($order)) {
         switch ($order):
             case 'newest':
                 $query->set('order_by', 'ID');
@@ -117,7 +116,34 @@ function irtt_order_category_loop( $query ) {
                 $query->set('order_by', 'ID');
                 $query->set('order', 'ASC');
                 break;
+            case 'papular':
+                $query->set('meta_key', 'ja_postviews');
+                $query->set('orderby', 'meta_value_num ID');
+                $query->set('order', 'DESC');
+                break;
         endswitch;
     }
 }
-add_action( 'pre_get_posts', 'irtt_order_category_loop' );
+
+add_action('pre_get_posts', 'irtt_order_category_loop');
+
+/**
+ * reference list shortcode
+ * @param type $atts
+ * @param type $content
+ * @return type
+ */
+function irtt_shortcode_reference_list($atts, $content) {
+    ob_start();
+    echo '<div class="reference-list">'
+    . '<h3>'
+    . __('منابع', 'irtt')
+    . '<i class="fa fa-book"></i>'
+    . '</h3>'
+    . $content
+    . '</div>';
+    $outpout = ob_get_clean();
+    return $outpout;
+}
+
+add_shortcode('r', 'irtt_shortcode_reference_list');

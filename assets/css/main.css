@@ -1476,7 +1476,8 @@ table {
     max-height: 200px;
 }
 .search-submit,
-.comment-form .submit {
+.comment-form .submit,
+.woo-add-to-wallet{
     background: black;
     color: white;
     padding: 8px;
@@ -1699,17 +1700,17 @@ table {
     font-size: 16px;
 }
 
- .author-tab-header {
+.author-tab-header {
     position: relative;
     top: -54px
 }
 
- .author-tab-header li {
+.author-tab-header li {
     display: inline-block;
     list-style: none;
 }
 
- .author-tab-header li a {
+.author-tab-header li a {
     padding: 13px 19px;
     border: 1px solid #ccc;
     font-size: 18px;
@@ -1719,13 +1720,13 @@ table {
     font-weight: lighter;
 }
 
- .author-tab-header li.active a {
+.author-tab-header li.active a {
     background: white;
     border-bottom: 1px solid white;
     color: inherit;
 }
 
- .author-research-header {
+.author-research-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1739,15 +1740,15 @@ table {
     height: auto;
     width: 100%;
 }
- .author-research-header .research-count {
+.author-research-header .research-count {
     font-size: 19px;
 }
 
- .author-research-header .research-order-wrapper span {
+.author-research-header .research-order-wrapper span {
     padding-left: 8px;
 }
 
- .author-research-header .research-order-wrapper .research-order {
+.author-research-header .research-order-wrapper .research-order {
     position: relative;
     border: 1px solid #ddd;
     border-bottom: none;
@@ -1755,18 +1756,18 @@ table {
     min-width: 150px;
 }
 
- .author-research-header .research-order-wrapper .research-order:hover ul {
+.author-research-header .research-order-wrapper .research-order:hover ul {
     display: block;
 }
 
- .author-research-header .research-order-wrapper .research-order .current-item {
+.author-research-header .research-order-wrapper .research-order .current-item {
     border-bottom: 1px solid #ccc;
     padding: 10px 8px;
     display: block;
     cursor: pointer;
 }
 
- .author-research-header .research-order-wrapper .research-order ul {
+.author-research-header .research-order-wrapper .research-order ul {
     display: none;
     border: 1px solid #ccc;
     border-top: 0;
@@ -1779,18 +1780,18 @@ table {
 
 }
 
- .author-research-header .research-order-wrapper .research-order ul li {
+.author-research-header .research-order-wrapper .research-order ul li {
     line-height: 28px;
 }
 
- .author-research-header .research-order-wrapper .research-order ul li a {
+.author-research-header .research-order-wrapper .research-order ul li a {
     display: block;
     padding: 5px 8px;
 
     border-bottom: 1px solid #ccc;
 }
 
- .author-research-header .research-order-wrapper .research-order ul li:hover a {
+.author-research-header .research-order-wrapper .research-order ul li:hover a {
     background: #6e0000;
     color: white;
 }
@@ -1907,7 +1908,78 @@ table {
     line-height: 60px;
     text-align: center;
 }
+.apdf-wrapper{
+    min-height: 30px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 7px;
+}
 
+.print-button {
+    display: inline-block;
+    font-size: 30px;
+    background: #c3161c;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    float: right;
+    margin-left: 10px;
+}
+.print-button .fa{
+    color: #fff;
+}
+.woocommerce .print-button {
+    display: none;
+}
+.reference-list {
+    background: #eaeaea;
+    padding: 10px 15px;
+    border-right: 3px solid #c3161c;
+    margin: 10px auto;
+}
+.reference-list ul li {
+    list-style: square !important;
+    line-height: 30px !important;
+}
+.reference-list h3 {
+    font-weight: normal;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+.reference-list h3 .fa {
+    float: right;
+    margin-left: 7px;
+    line-height: 30px;
+}
+.page .apdf-wrapper {
+    display: none;
+}
+.woocommerce-MyAccount-navigation > ul li.woocommerce-MyAccount-navigation-link--woo-wallet a::before{
+    display: none;
+}
+.poll-wrapper .btn {
+    background: #ef7e70 !important;
+    border-color: #ef7e70 !important;
+}
+.poll-wrapper br{
+    display: none;
+}
+.poll-wrapper div.wpcf7-response-output {
+    margin-top: 0 !important;
+}
+/*---------------------------- R E S P O N S I V E -------------------------------*/
+@media print
+{
+    #header,
+    .single-header,
+    .widget.single-related,
+    .single-comment-form,
+    .single-share,.sidebar,footer{
+        display: none;
+    }
+}
 /*---------------------------- R E S P O N S I V E -------------------------------*/
 
 @media (min-width: 1200px) {
@@ -2241,7 +2313,7 @@ table {
         margin-top: 5%;
     }
 
-     .author-tab-header {
+    .author-tab-header {
         top: -53px;
     }
 

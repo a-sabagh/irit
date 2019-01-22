@@ -96,9 +96,9 @@ jQuery(document).ready(function ($) {
     $(".home-video .play-icon").on('click', function (e) {
         e.preventDefault();
         $("#home-video-dom").get(0).play();
-        $("#home-video-dom").attr("controls",true); 
-        $("#home-video-dom").prop("controls",true); 
-        
+        $("#home-video-dom").attr("controls", true);
+        $("#home-video-dom").prop("controls", true);
+
         $(".home-video .play-icon").hide();
         $(".home-video h3").hide();
     });
@@ -111,4 +111,10 @@ jQuery(document).ready(function ($) {
         e.preventDefault();
         $(this).next("#main-menu").slideToggle();
     });
+    //print page
+    $(".print-button").on('click',function(){
+        window.print();
+    });
+
+
 });

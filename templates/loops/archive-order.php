@@ -17,6 +17,9 @@ $order = get_query_var('order_type');
                     case 'oldest':
                         _e('قدیمی ترین ها', 'irtt');
                         break;
+                    case 'papular':
+                        _e('پربازدیدترین ها', 'irtt');
+                        break;
                     default :
                         _e('پیش فرض', 'irtt');
                         break;
@@ -26,6 +29,7 @@ $order = get_query_var('order_type');
             <ul>
                 <li><a href="<?php echo add_query_arg(array('order_type' => 'newest')); ?>"><?php _e('جدیدترین ها', 'irtt') ?></a></li>
                 <li><a href="<?php echo add_query_arg(array('order_type' => 'oldest')); ?>"><?php _e('قدیمی ترین ها', 'irtt') ?></a></li>
+                <li><a href="<?php echo add_query_arg(array('order_type' => 'papular')); ?>"><?php _e('پربازدیدترین ها', 'irtt') ?></a></li>
             </ul>
         </div>
     </div>

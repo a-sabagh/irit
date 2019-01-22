@@ -7,7 +7,7 @@
         endif;
         ?>
         <section class="col-md-3 footer-widg">
-            <a href="#" title="<?php _e('دانلود نسخه موبایل','irtt'); ?>"><img src="<?php echo trailingslashit(IRTT_FRONT); ?>images/application.png" alt="<?php _e('دانلود نسخه موبایل','irtt'); ?>" class="img-responsive footer-logo"></a>
+            <img src="<?php echo trailingslashit(IRTT_FRONT); ?>images/logo.jpg" alt="<?php _e('دانلود نسخه موبایل','irtt'); ?>" class="img-responsive footer-logo">
             <ul class="socials">
                 <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
                 <li><a class="facebook" href="https://www.facebook.com/irtt2/"><i class="fa fa-facebook"></i></a></li>

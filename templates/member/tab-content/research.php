@@ -23,6 +23,9 @@ if (isset($order)) {
         case 'oldest':
             $researc_query_args = array_merge($researc_query_args, array('order_by' => 'ID', 'order' => 'ASC'));
             break;
+        case 'papular':
+            $researc_query_args = array_merge($researc_query_args, array('meta_key'=> 'ja_postviews','orderby'=> 'meta_value_num ID','order'=> 'DESC'));
+            break;
     endswitch;
 }
 

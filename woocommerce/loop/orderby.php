@@ -19,7 +19,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-
+$catalog_orderby_options['date'] = __('مرتب سازی بر اساس جدیدترین','irtt');
 ?>
 <form class="woocommerce-ordering" method="get">
 	<select name="orderby" class="orderby">

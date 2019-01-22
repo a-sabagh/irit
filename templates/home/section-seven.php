@@ -25,14 +25,10 @@
         <div class="col-md-4 right-border poll-wrapper">
             <div class="box">
                 <header class="box-title">
-                    <h3>پرسش و پاسخ</h3>
+                    <h3><?php _e('پرسش و پاسخ','irtt'); ?></h3>
                 </header>
                 <div class="box-content bullet-list">
-                    <p>مهم ترین نقطه قوت اندیشکده روابط بین الملل را چه می دانید.</p>
-                    <form action="" method="post">
-                        <textarea name="" placeholder="پاسخ خود را اینجا بنویسید."></textarea>
-                        <input class="btn-full btn" type="submit" value="ثبت پاسخ">
-                    </form>
+                    <?php echo do_shortcode('[contact-form-7 id="11649"]'); ?>
                 </div>
             </div>
         </div>
