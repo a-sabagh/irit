@@ -1,0 +1,564 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2019-03-02 10:33+0330\n"
+"PO-Revision-Date: 2019-03-02 10:05+0330\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.8\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: woocommerce\n"
+
+#: 404.php:9 includes/functions.php:155 templates/headers/archive.php:27
+msgid "خطای ۴۰۴"
+msgstr ""
+
+#: 404.php:14
+msgid ""
+"از منوی بالای صفحه استفاده کنید. دسته بندی مطالب در منو و زیر منو ها موجود "
+"است."
+msgstr ""
+
+#: 404.php:15
+msgid "از فیلد جستجو استفاده کنید. کلمه مورد نظر خود را وارد کرده و کلیک کنید."
+msgstr ""
+
+#: 404.php:16
+msgid ""
+"در سمت چپ صفحه یا همان ساید بار برخی مطالب ذکر شده اند ، می توانید مطلب مورد "
+"نظرتان را آنجا بیابید."
+msgstr ""
+
+#: 404.php:17
+msgid ""
+"در آخر اگر موفق به پیدا کردن مطلب مورد نظر نشدید با ما تماس حاصل فرمایید"
+msgstr ""
+
+#: admin/templates/metaboxes/section-eight.php:6
+msgid "بنر های انتهای صفحه اصلی زیر خبر نامه (۲ عدد)"
+msgstr ""
+
+#: admin/templates/metaboxes/section-eight.php:7
+#: admin/templates/metaboxes/section-five.php:7
+#: admin/templates/metaboxes/section-four.php:6
+#: admin/templates/metaboxes/section-four.php:40
+#: admin/templates/metaboxes/section-one.php:6
+#: admin/templates/metaboxes/section-one.php:49
+#: admin/templates/metaboxes/section-seven.php:6
+#: admin/templates/metaboxes/section-six.php:6
+#: admin/templates/metaboxes/section-three.php:7
+msgid "ویرایش"
+msgstr ""
+
+#: admin/templates/metaboxes/section-eight.php:16
+#: admin/templates/metaboxes/section-five.php:16
+#: admin/templates/metaboxes/section-three.php:16
+msgid "بنر های میانی"
+msgstr ""
+
+#: admin/templates/metaboxes/section-eight.php:21
+msgid "بنر سمت راست"
+msgstr ""
+
+#: admin/templates/metaboxes/section-eight.php:24
+#: admin/templates/metaboxes/section-eight.php:33
+#: admin/templates/metaboxes/section-five.php:24
+#: admin/templates/metaboxes/section-five.php:33
+#: admin/templates/metaboxes/section-five.php:42
+#: admin/templates/metaboxes/section-five.php:51
+#: admin/templates/metaboxes/section-four.php:61
+#: admin/templates/metaboxes/section-three.php:24
+#: admin/templates/metaboxes/section-three.php:33
+#: admin/templates/metaboxes/section-three.php:42
+#: admin/templates/metaboxes/section-three.php:51
+#: includes/admin-settings.php:35 includes/admin-settings.php:47
+#: includes/admin-settings.php:59 includes/metaboxes/category-featured.php:9
+#: includes/metaboxes/category-featured.php:34
+msgid "افزودن فایل"
+msgstr ""
+
+#: admin/templates/metaboxes/section-eight.php:25
+#: admin/templates/metaboxes/section-eight.php:34
+#: admin/templates/metaboxes/section-five.php:25
+#: admin/templates/metaboxes/section-five.php:34
+#: admin/templates/metaboxes/section-five.php:43
+#: admin/templates/metaboxes/section-five.php:52
+#: admin/templates/metaboxes/section-four.php:62
+#: admin/templates/metaboxes/section-three.php:25
+#: admin/templates/metaboxes/section-three.php:34
+#: admin/templates/metaboxes/section-three.php:43
+#: admin/templates/metaboxes/section-three.php:52
+#: includes/admin-settings.php:36 includes/admin-settings.php:48
+#: includes/admin-settings.php:60 includes/metaboxes/category-featured.php:10
+#: includes/metaboxes/category-featured.php:35
+msgid "پاک کردن فایل"
+msgstr ""
+
+#: admin/templates/metaboxes/section-eight.php:30
+msgid "بنر سمت چپ"
+msgstr ""
+
+#: admin/templates/metaboxes/section-five.php:6
+msgid "بنر های عمودی واقع در میانه صفحه کنار تب محصولات (۴ عدد زیر هم)"
+msgstr ""
+
+#: admin/templates/metaboxes/section-five.php:21
+msgid "بنر اول از بالا"
+msgstr ""
+
+#: admin/templates/metaboxes/section-five.php:30
+msgid "بنر دوم از بالا"
+msgstr ""
+
+#: admin/templates/metaboxes/section-five.php:39
+msgid "بنر سوم از بالا"
+msgstr ""
+
+#: admin/templates/metaboxes/section-five.php:48
+msgid "بنر چهارم از بالا"
+msgstr ""
+
+#: admin/templates/metaboxes/section-four.php:5
+msgid "پیشنهادات ویژه محصولات"
+msgstr ""
+
+#: admin/templates/metaboxes/section-four.php:17
+msgid "محصولات پیشنهاد ویژه"
+msgstr ""
+
+#: admin/templates/metaboxes/section-four.php:20
+msgid "محصولات پیشنهاد ویژه را انتخاب کنید. (حداقل ۴ محصول و حداکثر ۱۰ محصول)"
+msgstr ""
+
+#: admin/templates/metaboxes/section-four.php:39
+msgid "ویدئو"
+msgstr ""
+
+#: admin/templates/metaboxes/section-four.php:51
+msgid "تنظیمات ویدئو"
+msgstr ""
+
+#: admin/templates/metaboxes/section-four.php:54
+msgid "لینک ویدئوی با فرمت ترجیحا با فرمت mp4"
+msgstr ""
+
+#: admin/templates/metaboxes/section-four.php:56
+msgid "تیتر ویدئو"
+msgstr ""
+
+#: admin/templates/metaboxes/section-four.php:58
+msgid "بنر ویدئو"
+msgstr ""
+
+#: admin/templates/metaboxes/section-one.php:5
+#: admin/templates/metaboxes/section-one.php:17
+msgid "پست ها و محصولات برگزیده"
+msgstr ""
+
+#: admin/templates/metaboxes/section-one.php:20
+msgid "محصولات برگزیده: حداکثر ۳ محصول"
+msgstr ""
+
+#: admin/templates/metaboxes/section-one.php:31
+msgid "پست های برگزیده: حداکثر ۴ پست"
+msgstr ""
+
+#: admin/templates/metaboxes/section-one.php:48
+#: admin/templates/metaboxes/section-one.php:60
+msgid "اسلایدر"
+msgstr ""
+
+#: admin/templates/metaboxes/section-one.php:63
+msgid ""
+"لیست پست های مربوطه را جهت نمایش در اسلایدر انتخابت کنید.حد اقل ۲ پست و "
+"حداکثر ۷پست"
+msgstr ""
+
+#: admin/templates/metaboxes/section-seven.php:5
+msgid "دسته بندی نوشته (قسمت هفتم کنار خبرنامه)"
+msgstr ""
+
+#: admin/templates/metaboxes/section-seven.php:16
+#: admin/templates/metaboxes/section-six.php:16
+msgid "دسته بندی نوشته ها"
+msgstr ""
+
+#: admin/templates/metaboxes/section-seven.php:19
+msgid "دسته بندی نوشته ها."
+msgstr ""
+
+#: admin/templates/metaboxes/section-six.php:5
+msgid "دسته بندی نوشته (قسمت ششم بالای خبرنامه)"
+msgstr ""
+
+#: admin/templates/metaboxes/section-six.php:19
+msgid "دسته بندی برای نوشته های سمت راست پیدا کنید."
+msgstr ""
+
+#: admin/templates/metaboxes/section-six.php:28
+msgid "دسته بندی برای نوشته های سمت چپ پیدا کنید."
+msgstr ""
+
+#: admin/templates/metaboxes/section-three.php:6
+msgid "بنر های میانی برگه . بالای ویدئو (چهار عدد)"
+msgstr ""
+
+#: admin/templates/metaboxes/section-three.php:21
+msgid "بنر اول"
+msgstr ""
+
+#: admin/templates/metaboxes/section-three.php:30
+msgid "بنر دوم"
+msgstr ""
+
+#: admin/templates/metaboxes/section-three.php:39
+msgid "بنر سوم"
+msgstr ""
+
+#: admin/templates/metaboxes/section-three.php:48
+msgid "بنر چهارم"
+msgstr ""
+
+#: admin/templates/settings.php:7
+msgid "تنظیمات ذخیره شد"
+msgstr ""
+
+#: admin/templates/settings.php:9
+msgid "خطا در ذخیره سازی"
+msgstr ""
+
+#: admin/templates/settings.php:18
+msgid "ذخیره"
+msgstr ""
+
+#: footer.php:10
+msgid "دانلود نسخه موبایل"
+msgstr ""
+
+#: header.php:28
+msgid "خروج از ناحیه کاربری"
+msgstr ""
+
+#: header.php:29
+msgid "خروج"
+msgstr ""
+
+#: header.php:33
+msgid "پروفایل کاربری"
+msgstr ""
+
+#: header.php:34
+msgid "پروفایل"
+msgstr ""
+
+#: header.php:41
+msgid "ورود یا عضویت"
+msgstr ""
+
+#: header.php:42
+msgid "ورود"
+msgstr ""
+
+#: header.php:46
+msgid "شرایط و ضوابط"
+msgstr ""
+
+#: header.php:47
+msgid "قوانین"
+msgstr ""
+
+#: header.php:62
+msgid "جستجو در وبسایت"
+msgstr ""
+
+#: header.php:81
+msgid "سبد خرید"
+msgstr ""
+
+#: includes/admin-settings.php:12
+msgid "تنظیمات اختصاصی اندیشکده بین الملل"
+msgstr ""
+
+#: includes/admin-settings.php:12
+msgid "تنظیمات اختصاصی"
+msgstr ""
+
+#: includes/admin-settings.php:17
+msgid ""
+"تصاویر پیش فرض مورد استفاده برای وبسایت . اگر تصویر شاخص را برای هر یک از "
+"پست ها نگذارید از تصاویر پیش فرض استفاده می شود."
+msgstr ""
+
+#: includes/admin-settings.php:22
+msgid "تصاویر پیش فرض"
+msgstr ""
+
+#: includes/admin-settings.php:24
+msgid "تصویر پیش فرض پست"
+msgstr ""
+
+#: includes/admin-settings.php:25
+msgid "تصویر پیش فرض دسته بندی"
+msgstr ""
+
+#: includes/admin-settings.php:26
+msgid "تصویر پیش فرض محصول"
+msgstr ""
+
+#: includes/init.php:29
+msgid "سایدبار آرشیو"
+msgstr ""
+
+#: includes/init.php:37
+msgid "سایدبار صفحه داخلی"
+msgstr ""
+
+#: includes/init.php:45
+msgid "سایدبار جستجو"
+msgstr ""
+
+#: includes/init.php:53
+msgid "سایدبار ۴۰۴"
+msgstr ""
+
+#: includes/init.php:69
+msgid "سایدبار فوتر"
+msgstr ""
+
+#: includes/init.php:80
+msgid "منوی اصلی"
+msgstr ""
+
+#: includes/init.php:140
+msgid "منابع"
+msgstr ""
+
+#: includes/metaboxes/category-featured.php:6
+#: includes/metaboxes/category-featured.php:29
+msgid "تصویر شاخص"
+msgstr ""
+
+#: includes/metaboxes/home-template.php:50
+msgid "محتویات اصلی برگه"
+msgstr ""
+
+#: includes/metaboxes/member.php:18
+msgid "موقعیت"
+msgstr ""
+
+#: includes/metaboxes/member.php:22
+msgid "انتخاب کاربر"
+msgstr ""
+
+#: includes/metaboxes/member.php:27
+msgid "انتخاب"
+msgstr ""
+
+#: includes/metaboxes/member.php:37
+msgid "مهارت ها"
+msgstr ""
+
+#: includes/metaboxes/member.php:44
+msgid "وب سایت"
+msgstr ""
+
+#: includes/metaboxes/member.php:48
+msgid "تلگرام"
+msgstr ""
+
+#: includes/metaboxes/member.php:52
+msgid "ایمیل"
+msgstr ""
+
+#: includes/metaboxes/member.php:56
+msgid "توئیتر"
+msgstr ""
+
+#: includes/metaboxes/member.php:60
+msgid "فیس بوک"
+msgstr ""
+
+#: includes/metaboxes/member.php:67 templates/member/tab-content/intro.php:6
+msgid "اطلاعات تماس"
+msgstr ""
+
+#: includes/metaboxes/member.php:95
+msgid "تنظیمات دیگر"
+msgstr ""
+
+#: includes/metaboxes/subtitle.php:25
+msgid "زیر عنوان"
+msgstr ""
+
+#: includes/metaboxes/user-meta.php:12
+msgid "انتخاب از میان هیئت علمی"
+msgstr ""
+
+#: includes/metaboxes/user-meta.php:15
+msgid "انتخاب کنید"
+msgstr ""
+
+#: includes/post-types/member.php:8
+msgid "هیئت علمی"
+msgstr ""
+
+#: includes/post-types/member.php:9
+msgid "اعضای هیئت علمی"
+msgstr ""
+
+#: includes/woocommerce.php:71
+msgid "گارانتی بازگشت"
+msgstr ""
+
+#: includes/woocommerce.php:74
+msgid "گارانتی بازگشت شامل این محصول می گردد"
+msgstr ""
+
+#: includes/woocommerce.php:111
+msgid "تا ۷ روز ضمانت بازگشت محصول"
+msgstr ""
+
+#: includes/woocommerce.php:115
+msgid "پشتیبانی محصولات"
+msgstr ""
+
+#: templates/headers/archive.php:29
+msgid "برگه ای که به دنبال آن هستید یافت نشد."
+msgstr ""
+
+#: templates/headers/date.php:2
+#, php-format
+msgid "نمایش بر اساس تاریخ %s"
+msgstr ""
+
+#: templates/headers/member.php:25
+msgid "تخصص"
+msgstr ""
+
+#: templates/headers/search.php:2
+#, php-format
+msgid "جستجو بر اساس عبارت %s"
+msgstr ""
+
+#: templates/home/section-eight.php:5 templates/home/section-eight.php:9
+#: templates/home/section-five.php:6 templates/home/section-five.php:10
+#: templates/home/section-five.php:14 templates/home/section-five.php:18
+#: templates/home/section-three.php:5 templates/home/section-three.php:9
+#: templates/home/section-three.php:13 templates/home/section-three.php:17
+msgid "اندیشکده روابط بین الملل"
+msgstr ""
+
+#: templates/home/section-five.php:26
+msgid "محصولات"
+msgstr ""
+
+#: templates/home/section-four.php:8
+msgid "پیشنهاد ویژه"
+msgstr ""
+
+#: templates/home/section-four.php:68
+msgid "در حال حاضر محصولی برای فروش ویژه وجود ندارد"
+msgstr ""
+
+#: templates/home/section-one.php:46
+msgid "محصولات برگزیده"
+msgstr ""
+
+#: templates/home/section-one.php:87
+msgid "اخبار برگزیده"
+msgstr ""
+
+#: templates/home/section-seven.php:8
+msgid "عضویت در خبرنامه"
+msgstr ""
+
+#: templates/home/section-seven.php:11
+msgid ""
+"برای وارد کردن جدید ترین اخبار اندیشکده روابط بین الملل در پست الکترونیک "
+"خود ، ایمیل را در این جا وارد کرده و در خبر نامه عضو شوید."
+msgstr ""
+
+#: templates/home/section-seven.php:28
+msgid "پرسش و پاسخ"
+msgstr ""
+
+#: templates/home/section-seven.php:83 templates/home/section-six.php:97
+#: templates/home/section-tow.php:112 templates/home/section-tow.php:232
+msgid "مطالب بیشتر"
+msgstr ""
+
+#: templates/loops/archive-order.php:6
+#, php-format
+msgid "%u پست"
+msgstr ""
+
+#: templates/loops/archive-order.php:9
+msgid "مرتب سازی بر اساس"
+msgstr ""
+
+#: templates/loops/archive-order.php:15 templates/loops/archive-order.php:30
+msgid "جدیدترین ها"
+msgstr ""
+
+#: templates/loops/archive-order.php:18 templates/loops/archive-order.php:31
+msgid "قدیمی ترین ها"
+msgstr ""
+
+#: templates/loops/archive-order.php:21 templates/loops/archive-order.php:32
+msgid "پربازدیدترین ها"
+msgstr ""
+
+#: templates/loops/archive-order.php:24
+msgid "پیش فرض"
+msgstr ""
+
+#: templates/loops/no-result.php:1
+msgid "پستی جهت نمایش وجود ندارد"
+msgstr ""
+
+#: templates/member/tab-content/intro.php:5
+msgid "زندگی نامه"
+msgstr ""
+
+#: templates/member/tabs.php:7
+msgid "پژوهش ها"
+msgstr ""
+
+#: templates/member/tabs.php:8
+msgid "بررسی اجمالی"
+msgstr ""
+
+#: templates/single/comment-template.php:3
+msgid "دیدگاه ها"
+msgstr ""
+
+#: templates/single/related-posts.php:31
+msgid "پست های مرتبط"
+msgstr ""
+
+#: templates/single/related-posts.php:32
+msgid "از این نویسنده بخوانید"
+msgstr ""
+
+#: templates/single/share.php:2 templates/single/share.php:4
+#: templates/single/share.php:5 templates/single/share.php:6
+#: templates/single/share.php:7 templates/single/share.php:8
+#: templates/single/share.php:9
+msgid "اشتراک گذاری"
+msgstr ""
+
+#: templates/single/shortlink.php:3
+msgid "لینک کوتاه :"
+msgstr ""
+
+#: templates/single/taglist.php:7
+msgid "برچسب ها"
+msgstr ""
