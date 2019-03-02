@@ -1971,11 +1971,15 @@ table {
 .poll-wrapper div.wpcf7-response-output {
     margin-top: 0 !important;
 }
+.single-member .print-button {
+    display: none;
+}
 /*---------------------------- R E S P O N S I V E -------------------------------*/
 @media print
 {
     #header,
     .single-header,
+    .single-member .print-button,
     .widget.single-related,
     .single-comment-form,
     .single-share,.sidebar,footer{
