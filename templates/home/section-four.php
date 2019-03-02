@@ -77,7 +77,9 @@
         <!--.product-slider-->
         <div class="col-md-7 home-video-wrapper">
             <div class="home-video">
-                <video id="home-video-dom" width="100%" loop preload="none" poster="<?php echo current(wp_get_attachment_image_src($home_template['video']['banner'] , 'full')); ?>">
+                <video id="home-video-dom" width="100%" loop preload="none" poster=""
+                       style="background:transparent no-repeat url('<?php echo current(wp_get_attachment_image_src($home_template['video']['banner'] , 'slider')); ?>');background-size:100%"
+                       >
                     <source src="<?php echo $home_template['video']['src']; ?>" type="video/mp4" />
                 </video>
                 <span class="play-icon"><i class="fa fa-play"></i></span>
