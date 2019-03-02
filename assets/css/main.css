@@ -2080,9 +2080,11 @@ table {
         display: none;
         transition: all .2s;
     }
-
+    .navigation-wrapper #main-menu li > ul > li {
+        position: relative;
+    }
     .navigation-wrapper #main-menu > li:hover > ul,
-    .navigation-wrapper #main-menu > li > ul > li:hover > ul {
+    .navigation-wrapper #main-menu > li > ul li:hover > ul {
         display: block;
     }
 
@@ -2117,7 +2119,7 @@ table {
         border-right: 3px solid #e21800;
     }
 
-    .navigation-wrapper #main-menu > li > ul > li > ul {
+    .navigation-wrapper #main-menu > li > ul > li ul {
         position: absolute;
         box-shadow: 0 0 4px #f8f8f8;
         width: 250px;
@@ -2222,7 +2224,7 @@ table {
     }
 
     .navigation-wrapper #main-menu > li > ul,
-    .navigation-wrapper #main-menu > li > ul > li > ul {
+    .navigation-wrapper #main-menu > li > ul > li ul {
         display: none;
     }
 
@@ -2230,7 +2232,7 @@ table {
         padding-right: 20px;
     }
 
-    .navigation-wrapper #main-menu > li > ul > li > ul {
+    .navigation-wrapper #main-menu > li > ul > li ul {
         padding-right: 20px;
     }
 

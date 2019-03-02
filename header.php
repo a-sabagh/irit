@@ -52,11 +52,11 @@
                             ?>
                         </ul>
                         <!--.account-->
-                        <!--<ul class="col-md-4 language">
-                            <li class="lang"><a href="#">فارسی</a></li>
-                            <li class="lang"><a href="#">عربی</a></li>
-                            <li class="lang"><a href="#">English</a></li>
-                        </ul>-->
+                        <ul class="col-md-4 language">
+                            <li class="lang"><a href="https://www.irthink.com" target="_blank">فارسی</a></li>
+                            <li class="lang"><a href="https://www.irthink.com/ar" target="_blank">عربی</a></li>
+                            <li class="lang"><a href="https://www.irthink.com/en" target="_blank">English</a></li>
+                        </ul>
                         <div class="search">
                             <form role="search" method="get" id="searchform" class="searchform" action="<?php echo home_url(); ?>">
                                 <input value="" name="s" id="s" placeholder="<?php _e('جستجو در وبسایت', 'irtt'); ?>" type="text"><input id="searchsubmit" value="" type="submit">
@@ -73,7 +73,7 @@
                             "theme_location" => "main",
                             "menu_id" => "main-menu",
                             "container" => FALSE,
-                            "depth" => 3,
+                            "depth" => 5,
                             'after' => '<span class="menu-plus"></span>',
                         );
                         wp_nav_menu($header_menu);
