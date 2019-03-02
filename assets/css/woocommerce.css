@@ -51,7 +51,7 @@
 .woocommerce-page #content div.product div.images,
 .woocommerce-page div.product div.images {
     float: left;
-    width: 48%
+    width: 30%;
 }
 
 .woocommerce #content div.product div.thumbnails::after,
@@ -132,7 +132,7 @@
 .woocommerce-page #content div.product div.summary,
 .woocommerce-page div.product div.summary {
     float: right;
-    width: 48%;
+    width: 65%;
     clear: none
 }
 
@@ -2441,7 +2441,7 @@ p.demo_store a {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     margin-right: .618em;
-    content: "";
+    content: "î€·";
     text-decoration: none;
     margin-left: -1.5em;
     line-height: 1.75;
@@ -2457,7 +2457,7 @@ p.demo_store a {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     margin-right: .618em;
-    content: "";
+    content: "î€­";
     text-decoration: none;
     margin-left: -1.5em;
     line-height: 1.75;
@@ -2500,7 +2500,7 @@ p.demo_store a {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     margin-right: .618em;
-    content: "";
+    content: "î€“";
     text-decoration: none;
     color: #a00
 }
@@ -2537,7 +2537,7 @@ p.demo_store a {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     margin-right: .618em;
-    content: "";
+    content: "î€“";
     text-decoration: none;
     color: #a00;
     vertical-align: inherit;
@@ -2653,7 +2653,7 @@ p.demo_store a {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     margin-right: .618em;
-    content: "";
+    content: "î€“";
     text-decoration: none;
     color: #a00
 }
@@ -2813,7 +2813,7 @@ p.demo_store a {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     margin-right: .618em;
-    content: "";
+    content: "î€Š";
     text-decoration: none
 }
 
@@ -2913,7 +2913,7 @@ p.demo_store a {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     margin-left: .618em;
-    content: "";
+    content: "î€™";
     text-decoration: none
 }
 

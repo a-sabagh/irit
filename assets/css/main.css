@@ -1949,6 +1949,7 @@ table {
 @media print
 {
     #header,
+    .single-member .print-button,
     .single-header,
     .widget.single-related,
     .single-comment-form,
@@ -2070,7 +2071,7 @@ table {
         z-index: 9999;
     }
 
-    .navigation-wrapper #main-menu > li > ul > li {
+    .navigation-wrapper #main-menu > li > ul li {
         position: relative;
     }
 
@@ -2091,7 +2092,7 @@ table {
         border-left: 3px solid #e21800;
     }
 
-    .navigation-wrapper #main-menu > li > ul > li > ul {
+    .navigation-wrapper #main-menu > li > ul > li  ul {
         position: absolute;
         box-shadow: 0 0 4px #f8f8f8;
         width: 250px;
@@ -2196,7 +2197,7 @@ table {
     }
 
     .navigation-wrapper #main-menu > li > ul,
-    .navigation-wrapper #main-menu > li > ul > li > ul {
+    .navigation-wrapper #main-menu > li > ul > li  ul {
         display: none;
     }
 
@@ -2204,7 +2205,7 @@ table {
         padding-left: 20px;
     }
 
-    .navigation-wrapper #main-menu > li > ul > li > ul {
+    .navigation-wrapper #main-menu > li > ul > li  ul {
         padding-left: 20px;
     }
 

@@ -73,7 +73,7 @@
                             "theme_location" => "main",
                             "menu_id" => "main-menu",
                             "container" => FALSE,
-                            "depth" => 3,
+                            "depth" => 5,
                             'after' => '<span class="menu-plus"></span>',
                         );
                         wp_nav_menu($header_menu);
