@@ -11,7 +11,7 @@ get_header();
     <?php
     $page_id = get_option( 'page_on_front' );
     if(isset($page_id) and !empty($page_id)){
-        echo __("برگه ایستا را در صفحه اصلی انتخاب کنید.","irtt");
+        echo __("لطفا صفحه جاری را با شناسه {$page_id} به عنوان صفحه اصلی انتخاب کنید تا محتوا نمایش داده شود","irtt");
     }else{
         $home_template = get_post_meta($page_id, "irtt_home_template", true);
         set_query_var('irtt_home_template', $home_template);
