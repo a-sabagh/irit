@@ -23,3 +23,13 @@ function irtt_admin_enqueue_scripts() {
 
 add_action('admin_enqueue_scripts', 'irtt_admin_enqueue_scripts');
 add_action('wp_enqueue_scripts', 'irtt_enqueue_style');
+
+/**
+ * add comment reply scripts before show comment form
+ */
+function rng_enqueue_comment_reply_script() {
+    if ( get_option( 'thread_comments' ) ) {
+        wp_enqueue_script( 'comment-reply' );
+    }
+}
+add_action( 'comment_form_before', 'rng_enqueue_comment_reply_script' );

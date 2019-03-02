@@ -6,8 +6,9 @@
         <?php
         $comments = get_comments(array(
             'post_id' => get_the_ID(),
-            'status' => 'approve' //Change this to the type of comments to be displayed
+            //'status' => 'approved' //Change this to the type of comments to be displayed
         ));
+
         if (!empty($comments)) {
             echo '<ol class="comment-list">';
             wp_list_comments(array(

@@ -22,7 +22,7 @@
         </section>
     </div>
     <div class="copyright-wrapper">
-        <p class="copyright"><?php _e('ّInternational Relation Think Tank(www.irthink.com) All Right Reserved 2004-2018','irtt') ?></p>
+        <p class="copyright">International Relations Think Tank(www.irthink.com) All Right Reserved 2004-<?php echo date('Y'); ?></p>
     </div>
     <!--.copright-wrapper-->
 

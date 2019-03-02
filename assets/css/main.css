@@ -775,8 +775,8 @@ textarea {
 #footer {
     padding-top: 15px;
     margin-top: 15px;
-    background: #ffe5e1;
-    border-bottom: 3px solid #f4a69c;
+    background: #0b0b0b;
+    border-bottom: 3px solid #0b0b0b;
 }
 
 #footer .footer-widg ul li {
@@ -792,6 +792,7 @@ textarea {
     display: block;
     font-size: 17px;
     font-weight: lighter;
+    color: #fff;
 }
 
 #footer .socials {
@@ -864,11 +865,12 @@ textarea {
 }
 
 #footer .copyright {
-    background: #f4a69c;
+    background: #0b0b0b;
     width: 70%;
     display: inline-block;
     padding: 8px 0 6px;
     margin-top: 5px;
+    color: #fff;
 }
 
 /*----------------------------------- S I N G L E -------------------------------*/
@@ -1002,7 +1004,7 @@ textarea {
     display: block;
     color: white;
     z-index: 99;
-    margin-top: 9%;
+    margin-top: 5%;
     font-size: 16px;
     font-weight: lighter;
 }

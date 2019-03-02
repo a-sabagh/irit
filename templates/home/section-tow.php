@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-6 featured-blog  left-border">
             <?php
-            $term_id = 52;
+            $term_id = 31;
             $term_array = get_categories(
                     array(
                         'child_of' => $term_id,
@@ -122,7 +122,7 @@
         <!--.featured-blog-->
         <div class="col-md-6 featured-blog">
             <?php
-            $term_id = 17;
+            $term_id = 64;
             $term_array = get_categories(
                     array(
                         'child_of' => $term_id,

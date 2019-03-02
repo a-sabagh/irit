@@ -59,6 +59,7 @@
                 <?php
             endwhile;
             echo '</div>';
+            wp_reset_postdata();
         } else {
             get_template_part('templates/loops/no', 'result');
         }
