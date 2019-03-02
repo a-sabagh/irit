@@ -22,7 +22,7 @@
                 <span class="date"><i class="fa fa-calendar"></i><?php the_date(); ?></span><span class="cat"><i class="fa fa-folder"></i><?php the_category(" ، "); ?></span>
             </div><!--.p-meta-->
             <p><?php echo archive_excerpt(); ?></p>
-            <a href="<?php the_permalink(); ?>" title="<?php echo title_excerpt(); ?>" class="p-read-more">ادامه مطلب</a>
+            <a href="<?php the_permalink(); ?>" title="<?php echo title_excerpt(); ?>" class="p-read-more"><?php _e("ادامه مطلب","irtt"); ?></a>
         </section><!--.post-content-->
     </div><!--.row-->
 </article>
