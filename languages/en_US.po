@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-03-02 10:32+0330\n"
-"PO-Revision-Date: 2019-03-02 10:33+0330\n"
+"POT-Creation-Date: 2019-03-02 12:32+0330\n"
+"PO-Revision-Date: 2019-03-02 12:49+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -18,28 +18,28 @@ msgstr ""
 
 #: 404.php:9 includes/functions.php:155 templates/headers/archive.php:27
 msgid "خطای ۴۰۴"
-msgstr ""
+msgstr "404 ERROR"
 
 #: 404.php:14
 msgid ""
 "از منوی بالای صفحه استفاده کنید. دسته بندی مطالب در منو و زیر منو ها موجود "
 "است."
-msgstr ""
+msgstr "Use main navigation."
 
 #: 404.php:15
 msgid "از فیلد جستجو استفاده کنید. کلمه مورد نظر خود را وارد کرده و کلیک کنید."
-msgstr ""
+msgstr "Use search field."
 
 #: 404.php:16
 msgid ""
 "در سمت چپ صفحه یا همان ساید بار برخی مطالب ذکر شده اند ، می توانید مطلب مورد "
 "نظرتان را آنجا بیابید."
-msgstr ""
+msgstr "Use side bar content."
 
 #: 404.php:17
 msgid ""
 "در آخر اگر موفق به پیدا کردن مطلب مورد نظر نشدید با ما تماس حاصل فرمایید"
-msgstr ""
+msgstr "At last if you never find out your content contact us"
 
 #: admin/templates/metaboxes/section-eight.php:6
 msgid "بنر های انتهای صفحه اصلی زیر خبر نامه (۲ عدد)"
@@ -236,27 +236,27 @@ msgstr ""
 
 #: admin/templates/settings.php:18
 msgid "ذخیره"
-msgstr ""
+msgstr "save"
 
 #: footer.php:10
 msgid "دانلود نسخه موبایل"
-msgstr ""
+msgstr "Download Mobile App"
 
 #: header.php:28
 msgid "خروج از ناحیه کاربری"
-msgstr ""
+msgstr "Logout"
 
 #: header.php:29
 msgid "خروج"
-msgstr ""
+msgstr "Logout"
 
 #: header.php:33
 msgid "پروفایل کاربری"
-msgstr ""
+msgstr "Profile"
 
 #: header.php:34
 msgid "پروفایل"
-msgstr ""
+msgstr "Profile"
 
 #: header.php:41
 msgid "ورود یا عضویت"
@@ -276,19 +276,19 @@ msgstr ""
 
 #: header.php:62
 msgid "جستجو در وبسایت"
-msgstr ""
+msgstr "Search in Website"
 
 #: header.php:81
 msgid "سبد خرید"
-msgstr ""
+msgstr "Cart"
 
 #: includes/admin-settings.php:12
 msgid "تنظیمات اختصاصی اندیشکده بین الملل"
-msgstr ""
+msgstr "Special Theme Setting"
 
 #: includes/admin-settings.php:12
 msgid "تنظیمات اختصاصی"
-msgstr ""
+msgstr "Theme Setting"
 
 #: includes/admin-settings.php:17
 msgid ""
@@ -318,32 +318,32 @@ msgstr ""
 
 #: includes/init.php:37
 msgid "سایدبار صفحه داخلی"
-msgstr ""
+msgstr "home sidebar"
 
 #: includes/init.php:45
 msgid "سایدبار جستجو"
-msgstr ""
+msgstr "Search sidebar"
 
 #: includes/init.php:53
 msgid "سایدبار ۴۰۴"
-msgstr ""
+msgstr "404 sidebar"
 
 #: includes/init.php:69
 msgid "سایدبار فوتر"
-msgstr ""
+msgstr "sidebar"
 
 #: includes/init.php:80
 msgid "منوی اصلی"
-msgstr ""
+msgstr "Main menu"
 
 #: includes/init.php:140
 msgid "منابع"
-msgstr ""
+msgstr "Resources"
 
 #: includes/metaboxes/category-featured.php:6
 #: includes/metaboxes/category-featured.php:29
 msgid "تصویر شاخص"
-msgstr ""
+msgstr "Featured Image"
 
 #: includes/metaboxes/home-template.php:50
 msgid "محتویات اصلی برگه"
@@ -355,7 +355,7 @@ msgstr ""
 
 #: includes/metaboxes/member.php:22
 msgid "انتخاب کاربر"
-msgstr ""
+msgstr "Select User"
 
 #: includes/metaboxes/member.php:27
 msgid "انتخاب"
@@ -375,15 +375,15 @@ msgstr ""
 
 #: includes/metaboxes/member.php:52
 msgid "ایمیل"
-msgstr ""
+msgstr "Email"
 
 #: includes/metaboxes/member.php:56
 msgid "توئیتر"
-msgstr ""
+msgstr "Twitter"
 
 #: includes/metaboxes/member.php:60
 msgid "فیس بوک"
-msgstr ""
+msgstr "Facebook"
 
 #: includes/metaboxes/member.php:67 templates/member/tab-content/intro.php:6
 msgid "اطلاعات تماس"
@@ -391,11 +391,11 @@ msgstr ""
 
 #: includes/metaboxes/member.php:95
 msgid "تنظیمات دیگر"
-msgstr ""
+msgstr "Other Settings"
 
 #: includes/metaboxes/subtitle.php:25
 msgid "زیر عنوان"
-msgstr ""
+msgstr "Subtitle"
 
 #: includes/metaboxes/user-meta.php:12
 msgid "انتخاب از میان هیئت علمی"
@@ -403,15 +403,15 @@ msgstr ""
 
 #: includes/metaboxes/user-meta.php:15
 msgid "انتخاب کنید"
-msgstr ""
+msgstr "Select"
 
 #: includes/post-types/member.php:8
 msgid "هیئت علمی"
-msgstr ""
+msgstr "Members"
 
 #: includes/post-types/member.php:9
 msgid "اعضای هیئت علمی"
-msgstr ""
+msgstr "Members"
 
 #: includes/woocommerce.php:71
 msgid "گارانتی بازگشت"
@@ -436,7 +436,7 @@ msgstr ""
 #: templates/headers/date.php:2
 #, php-format
 msgid "نمایش بر اساس تاریخ %s"
-msgstr ""
+msgstr "Show based on date  %s"
 
 #: templates/headers/member.php:25
 msgid "تخصص"
@@ -457,11 +457,11 @@ msgstr ""
 
 #: templates/home/section-five.php:26
 msgid "محصولات"
-msgstr ""
+msgstr "Producuts"
 
 #: templates/home/section-four.php:8
 msgid "پیشنهاد ویژه"
-msgstr ""
+msgstr "Recomended"
 
 #: templates/home/section-four.php:68
 msgid "در حال حاضر محصولی برای فروش ویژه وجود ندارد"
@@ -469,15 +469,15 @@ msgstr ""
 
 #: templates/home/section-one.php:46
 msgid "محصولات برگزیده"
-msgstr ""
+msgstr "Special Product"
 
 #: templates/home/section-one.php:87
 msgid "اخبار برگزیده"
-msgstr ""
+msgstr "Best News"
 
 #: templates/home/section-seven.php:8
 msgid "عضویت در خبرنامه"
-msgstr ""
+msgstr "Sign in News Letter"
 
 #: templates/home/section-seven.php:11
 msgid ""
@@ -487,12 +487,12 @@ msgstr ""
 
 #: templates/home/section-seven.php:28
 msgid "پرسش و پاسخ"
-msgstr ""
+msgstr "Qestion and Answer"
 
 #: templates/home/section-seven.php:83 templates/home/section-six.php:97
 #: templates/home/section-tow.php:112 templates/home/section-tow.php:232
 msgid "مطالب بیشتر"
-msgstr ""
+msgstr "Show More"
 
 #: templates/loops/archive-order.php:6
 #, php-format
@@ -501,27 +501,31 @@ msgstr ""
 
 #: templates/loops/archive-order.php:9
 msgid "مرتب سازی بر اساس"
-msgstr ""
+msgstr "Sort By"
 
 #: templates/loops/archive-order.php:15 templates/loops/archive-order.php:30
 msgid "جدیدترین ها"
-msgstr ""
+msgstr "Latest Posts"
 
 #: templates/loops/archive-order.php:18 templates/loops/archive-order.php:31
 msgid "قدیمی ترین ها"
-msgstr ""
+msgstr "Oldest Posts"
 
 #: templates/loops/archive-order.php:21 templates/loops/archive-order.php:32
 msgid "پربازدیدترین ها"
-msgstr ""
+msgstr "Most Viewed"
 
 #: templates/loops/archive-order.php:24
 msgid "پیش فرض"
 msgstr ""
 
+#: templates/loops/archive.php:25
+msgid "ادامه مطلب"
+msgstr "Read more"
+
 #: templates/loops/no-result.php:1
 msgid "پستی جهت نمایش وجود ندارد"
-msgstr ""
+msgstr "No Post Found"
 
 #: templates/member/tab-content/intro.php:5
 msgid "زندگی نامه"
@@ -529,35 +533,35 @@ msgstr ""
 
 #: templates/member/tabs.php:7
 msgid "پژوهش ها"
-msgstr ""
+msgstr "Research"
 
 #: templates/member/tabs.php:8
 msgid "بررسی اجمالی"
-msgstr ""
+msgstr "Quick view"
 
 #: templates/single/comment-template.php:3
 msgid "دیدگاه ها"
-msgstr ""
+msgstr "Comments"
 
 #: templates/single/related-posts.php:31
 msgid "پست های مرتبط"
-msgstr ""
+msgstr "Related Posts"
 
 #: templates/single/related-posts.php:32
 msgid "از این نویسنده بخوانید"
-msgstr ""
+msgstr "Read From Author"
 
 #: templates/single/share.php:2 templates/single/share.php:4
 #: templates/single/share.php:5 templates/single/share.php:6
 #: templates/single/share.php:7 templates/single/share.php:8
 #: templates/single/share.php:9
 msgid "اشتراک گذاری"
-msgstr ""
+msgstr "Share"
 
 #: templates/single/shortlink.php:3
 msgid "لینک کوتاه :"
-msgstr ""
+msgstr "Shortlink:"
 
 #: templates/single/taglist.php:7
 msgid "برچسب ها"
-msgstr ""
+msgstr "tags"
