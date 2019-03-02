@@ -106,7 +106,7 @@ a:active {
 
 p {
     line-height: 18px;
-    direction: rtl;
+    direction: ltr;
 }
 
 p a,
