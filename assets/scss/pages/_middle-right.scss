@@ -1,0 +1,36 @@
+.middle-right{
+	.big-blog {
+		.title{
+			font: {
+				size: 1.5em;
+			}
+			margin-bottom: .8em;
+		}
+		.author {
+      margin-bottom: .8em;
+			font-size: 1.4em;
+			color: #9f9f9f;
+		}
+		.content {
+      
+		}
+		@at-root .read-more {
+			font-size: .85em;
+			display: inline-block;
+			border: 1px solid #ccc;
+			background: #f9f9f9;
+			color: $black;
+			padding: .5em;
+			margin: .7em 0;
+			@include border-radius(2px);
+		}
+	}
+	.small-blog {
+		.title {
+			color: $blue;
+		}
+		.content {
+			
+		}
+	}
+}

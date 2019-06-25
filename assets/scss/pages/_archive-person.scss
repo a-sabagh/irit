@@ -1,0 +1,20 @@
+.archive-person-contnet {
+    margin: 2.3em 0;
+    .person-wrapper {
+        .person-item {
+            @include media-breakpoint-up(md){
+                width: 30%;
+            }
+            margin: 1em;
+            .img-wrapper {
+                text-align: center;
+                img {
+                    display: inline-block;
+                    max-width: 150px;
+                    max-height: 150px;
+                    @include border-radius(50%);
+                }
+            }
+        }
+    }
+}
