@@ -1,0 +1,25 @@
+#home-slider {
+	.full-slider {
+		.slick-slide {
+			max-height: 75vh;
+			display: flex;
+			align-items: center;
+			position: relative;
+			.slider-caption-wrapper {
+				color: $white;
+				background: rgba(0,0,0,0.3);
+				padding: 1.2em;
+				.slider-caption-content {
+					font-size: 1.2em;
+					line-height: 2.5em;
+				}
+				.slider-caption-title {
+					font-size: 2.2em;
+				}
+				position: absolute;
+				right: 8%;
+				bottom: 2em;
+			}
+		}
+	}
+}

@@ -1,0 +1,126 @@
+#papular-product {
+	@at-root .section-title {
+		line-height: 1.8em;
+		margin-bottom: .5em;
+		font : {
+			size: 2em;
+			weight: normal;
+		}
+	}
+	.product-item {
+		padding: 0;
+		border: 1px solid #ccc;
+		$pp-padding: .3em .8em;
+		a.img-wrapper {
+			max-height: 350px;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			img { width: 100%; }
+		}
+		.title {
+			padding: $pp-padding;
+		}
+		.content{
+			padding: $pp-padding;
+			border-bottom: 1px solid #ccc;
+			margin-bottom: .5em;
+		}
+		.price {
+
+			padding: $pp-padding;
+		}
+		.category {
+			padding: $pp-padding;
+		}
+		.add-to-cart-wrapper a{
+			display: block;
+			padding: .5em;
+			text-align: center;
+			background-color: $yellow;
+			color: #fff;
+			margin: .5em;
+		}
+	}
+	//.papular-product-sidebar {
+	@at-root .mail-poet-wrapper {
+		border: 1px solid #ccc;
+		padding: 1em;
+		header {
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 1em;
+			margin-bottom: 1em;
+			.fa {
+				font: {
+					size: 4em;
+				}
+				color: $yellow;
+			}//.fa
+			.text-wrapper {
+				margin-right: .7em;
+				.medium-text {
+					font: {
+						weight: bold;
+						size: 1em;
+					}
+				}
+				.small-text {
+					font: {
+						size: .8em;
+						weight: lighter;
+					}
+					line-height: 2em;
+					text-align: justify;
+				}
+			}
+		}//header
+		.form-wrapper {
+			input[type="text"] {
+				width: 100%;
+				padding: .5em .8em;
+				margin-bottom: 1em;
+				@include border-radius(2em);
+				border: 1px solid #ddd;
+			}
+			input[type="submit"]{
+				background: $yellow;
+				color: $white;
+				border: none;
+				padding: .5em;
+				width: 100%;
+				@include border-radius(2em);
+				cursor: pointer;
+			}
+		}
+	}
+	@at-root .special-sign-in-wrapper {
+		margin-top: 2.2em;
+		padding: 1em;
+		border: 1px solid #ccc;
+		header{
+			text-align: center;
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 1em;
+			margin-bottom: 1em;
+			.fa {
+				color: $yellow;
+				font-size: 4em;
+				margin-bottom: .2em;
+			}
+			p{
+				font: {
+					weight: bold;
+					size: 1em;
+				}
+			}
+		}
+		ul {
+			padding-right: 1em;
+			li {
+				list-style: circle;
+				line-height: 1.7em;
+			}
+		}
+	}
+	//}
+}

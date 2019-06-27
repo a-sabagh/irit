@@ -1,0 +1,64 @@
+.archive-person-contnet {
+    margin: 2.3em 0;
+    .person-wrapper {
+        .person-item {
+            @include media-breakpoint-up(md){
+                width: 30%;
+            }
+            margin: 1em;
+            .img-wrapper {
+                text-align: center;
+                img {
+                    display: inline-block;
+                    max-width: 150px;
+                    max-height: 150px;
+                    @include border-radius(50%);
+                }
+            }
+        }
+    }
+    .search-person-wrapper {
+        form {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            border: 1px solid #ddd;
+            input[type="text"] {
+                border: none;
+                padding: .7em 1em;
+                border-left: 1px solid #ddd;
+            }
+            input[type="submit"] {
+                position: relative;
+                cursor: pointer;
+                width: 2.4em;
+                height: 100%;
+                border: none;
+                background: transparent;
+            }
+            &:before {
+                color: $black;
+                position: absolute;
+                left: .6em;
+                top: .3em;
+                content: "\f002";
+                display: block;
+                font: {
+                    family: "fontAwesome";
+                    size: 1.2em;
+                }
+            }
+        }
+    }
+    .last-news-wrapper {
+        margin-top: 1em;
+        padding-top: 1em;
+        .img-wrapper {
+            margin-left: .8em;
+            img {
+                max-width: 130px;
+            }
+        }
+        
+    }
+}

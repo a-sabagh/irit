@@ -1,0 +1,24 @@
+.middle-left{
+	.col-md-8 {
+		.author-name{
+			color: $blue;
+			font: {
+				size: 1.7em;
+				weight: bold;
+			}
+			margin-bottom: .7em;
+		}
+		.bio {
+			
+		}
+	}
+	.col-md-4.author {
+		text-align: left;
+		margin-bottom: .5em;
+		img {
+			display: inline-block;
+		  width: 170px;
+			@include border-radius(50%);
+		}
+	}
+}
