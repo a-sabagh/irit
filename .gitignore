@@ -6,3 +6,5 @@ lorem
 ._lorem
 ._*
 html-static
+assets/.sass-cache/
+assets/css/master.css.map
