@@ -86,6 +86,7 @@ jQuery(document).ready(function ($) {
         });
     }
     //posts , product , categories ajax call
+    console.log(ADMIN_AJAX);
     if (typeof ADMIN_AJAX !== "undefined") {
         $(".rng-ajax-call-posts").select2({
             minimumInputLength: 3,

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2019-03-02 12:32+0330\n"
-"PO-Revision-Date: 2019-03-02 12:49+0330\n"
+"PO-Revision-Date: 2019-03-10 06:43+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -55,7 +55,7 @@ msgstr ""
 #: admin/templates/metaboxes/section-six.php:6
 #: admin/templates/metaboxes/section-three.php:7
 msgid "ویرایش"
-msgstr ""
+msgstr "Edit"
 
 #: admin/templates/metaboxes/section-eight.php:16
 #: admin/templates/metaboxes/section-five.php:16
@@ -272,7 +272,7 @@ msgstr ""
 
 #: header.php:47
 msgid "قوانین"
-msgstr ""
+msgstr "Terms"
 
 #: header.php:62
 msgid "جستجو در وبسایت"
@@ -351,7 +351,7 @@ msgstr ""
 
 #: includes/metaboxes/member.php:18
 msgid "موقعیت"
-msgstr ""
+msgstr "Position"
 
 #: includes/metaboxes/member.php:22
 msgid "انتخاب کاربر"
@@ -359,19 +359,19 @@ msgstr "Select User"
 
 #: includes/metaboxes/member.php:27
 msgid "انتخاب"
-msgstr ""
+msgstr "Select"
 
 #: includes/metaboxes/member.php:37
 msgid "مهارت ها"
-msgstr ""
+msgstr "Skills"
 
 #: includes/metaboxes/member.php:44
 msgid "وب سایت"
-msgstr ""
+msgstr "Web Site"
 
 #: includes/metaboxes/member.php:48
 msgid "تلگرام"
-msgstr ""
+msgstr "Telegram"
 
 #: includes/metaboxes/member.php:52
 msgid "ایمیل"
@@ -497,7 +497,7 @@ msgstr "Show More"
 #: templates/loops/archive-order.php:6
 #, php-format
 msgid "%u پست"
-msgstr ""
+msgstr "% u post"
 
 #: templates/loops/archive-order.php:9
 msgid "مرتب سازی بر اساس"
@@ -517,7 +517,7 @@ msgstr "Most Viewed"
 
 #: templates/loops/archive-order.php:24
 msgid "پیش فرض"
-msgstr ""
+msgstr "Default"
 
 #: templates/loops/archive.php:25
 msgid "ادامه مطلب"
@@ -529,7 +529,7 @@ msgstr "No Post Found"
 
 #: templates/member/tab-content/intro.php:5
 msgid "زندگی نامه"
-msgstr ""
+msgstr "Biographical Info"
 
 #: templates/member/tabs.php:7
 msgid "پژوهش ها"

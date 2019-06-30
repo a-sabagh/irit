@@ -1,7 +1,11 @@
 <?php
 
-function custom_excerpt($count) {
-    $output = get_the_content();
+function custom_excerpt($count, $content = false) {
+    if($content == false){
+        $output = get_the_content();
+    }else{
+        $output = $content;
+    }
     $output = strip_tags($output);
     $output = mb_substr($output, 0, $count);
     $output = mb_substr($output, 0, mb_strrpos($output, " "));
@@ -150,9 +154,9 @@ if (!function_exists("irtt_breadcrumbs")) {
                 'link' => '#'
             );
             array_push($bd, $bd_category);
-        }elseif (is_404()) {
+        } elseif (is_404()) {
             $error = array(
-                'title' => __('خطای ۴۰۴','irtt'),
+                'title' => __('خطای ۴۰۴', 'irtt'),
                 'link' => '#'
             );
             array_push($bd, $error);
@@ -176,7 +180,8 @@ if (!function_exists("irtt_breadcrumbs")) {
 
 }
 
-    function custom_excerpt_length( $length ) {
-        return 0;
-    }
-    add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+function custom_excerpt_length($length) {
+    return 0;
+}
+
+add_filter('excerpt_length', 'custom_excerpt_length', 999);

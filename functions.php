@@ -11,7 +11,7 @@ require_once 'includes/functions.php';
 require_once 'includes/scripts.php';
 
 //post types
-require_once 'includes/post-types/member.php';
+require_once 'includes/post-types.php';
 
 //metabox
 require_once 'includes/metaboxes/category-featured.php';
@@ -20,6 +20,7 @@ require_once 'includes/metaboxes/member.php';
 require_once 'includes/metaboxes/user-meta.php';
 require_once 'includes/metaboxes/related-posts.php';
 require_once 'includes/metaboxes/home-template.php';
+require_once 'includes/metaboxes/slider-link.php';
 
 //widgets
 require_once 'includes/widgets/latest-blog-cat.php';
@@ -29,6 +30,7 @@ require_once 'includes/widgets/papular-tag.php';
 //admin-settings
 require_once 'includes/admin-settings.php';
 require_once 'includes/ajax.php';
+require_once 'includes/home-customizer.php';
 
 //woocommerce
 require_once 'includes/woocommerce.php';

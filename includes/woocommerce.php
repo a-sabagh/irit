@@ -4,9 +4,9 @@
  */
 add_filter('woocommerce_enqueue_styles', '__return_false');
 
-add_filter('woocommerce_default_address_fields', 'irtt_move_checkout_fields');
+add_filter('woocommerce_default_address_fields', 'rng_move_checkout_fields');
 
-function irtt_move_checkout_fields($fields) {
+function rng_move_checkout_fields($fields) {
 
     /*
       default priorities: default priorities:
@@ -41,9 +41,9 @@ function irtt_move_checkout_fields($fields) {
  * @snippet       Remove some field from checkout form
  * @testedwith    WooCommerce 3.0.4
  */
-add_filter('woocommerce_checkout_fields', 'irtt_custom_override_checkout_fields');
+add_filter('woocommerce_checkout_fields', 'rng_custom_override_checkout_fields');
 
-function irtt_custom_override_checkout_fields($fields) {
+function rng_custom_override_checkout_fields($fields) {
 
 //    unset($fields['billing']['billing_first_name']);
 //    unset($fields['billing']['billing_last_name']);

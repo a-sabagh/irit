@@ -43,7 +43,7 @@
 			@include media-breakpoint-down(lg){
 				display: none;
 				position: absolute;
-				top: 10.75em;
+				top: 12.75em;
 				z-index: 9999;
 				left: 0;
 				right: 0;
@@ -77,6 +77,7 @@
 						}
 						background: $white;
 						li {
+							position: relative;
 							a{
 								display: block;
 								padding: .4em .7em;
@@ -93,7 +94,7 @@
 								width: 250px;
 								position: absolute;
 								right: 250px;
-								top: 2em;
+								top: 0em;
 								li {
 									ul {
 										top: 0;

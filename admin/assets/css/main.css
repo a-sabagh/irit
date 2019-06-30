@@ -142,3 +142,6 @@ and open the template in the editor.
 .select2-container--open .select2-dropdown--below {
     z-index: 99999;
 }
+.select2-container {
+    z-index: 999999;
+}

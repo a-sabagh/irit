@@ -122,7 +122,7 @@
         <!--.featured-blog-->
         <div class="col-md-6 featured-blog">
             <?php
-            $term_id = 64;
+            $term_id = 23;
             $term_array = get_categories(
                     array(
                         'child_of' => $term_id,

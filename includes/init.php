@@ -77,7 +77,10 @@ function irtt_widgets_init() {
 
 add_action("widgets_init", "irtt_widgets_init");
 
-$menu_position = array("main" => __('منوی اصلی', 'irtt'));
+$menu_position = array(
+    "main" => __('منوی اصلی', 'irtt'),
+    "top" => __("منوی بالا", "irtt")
+);
 register_nav_menus($menu_position);
 
 /**
